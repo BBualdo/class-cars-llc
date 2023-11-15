@@ -15,8 +15,9 @@ const Navbar = () => {
       key={link.key}
       href={link.href}
       className={clsx(
-        "text-white text-base hover:text-gold hover:scale-110 hover:text-shadow-xl shadow-gold transition-all duration-300",
-        { "text-gold": pathname === link.href }
+        "text-base hover:text-gold hover:scale-110 hover:text-shadow-xl shadow-gold transition-all duration-300",
+        { "text-gold scale-110": pathname === link.href },
+        { "text-white": pathname !== link.href }
       )}
     >
       {link.name}
