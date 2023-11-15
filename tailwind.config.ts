@@ -8,10 +8,10 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      gold: "#d4af37",
-    },
     extend: {
+      colors: {
+        gold: "#d4af37",
+      },
       textShadow: {
         sm: "1px 1px 2px var(--tw-shadow-color)",
         DEFAULT: "2px 2px 4px var(--tw-shadow-color)",
