@@ -1,7 +1,7 @@
-import { Oswald, Crimson_Text } from "next/font/google";
+import { Raleway, Merriweather } from "next/font/google";
 
-export const oswald = Oswald({ subsets: ["latin"] });
-export const crimson = Crimson_Text({
+export const raleway = Raleway({ subsets: ["latin"] });
+export const merriweather = Merriweather({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  weight: ["300", "400", "700"],
 });

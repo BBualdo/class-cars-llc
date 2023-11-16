@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
-import { oswald } from "@/fonts/fonts";
+import { raleway } from "@/fonts/fonts";
 
 export const metadata: Metadata = {
   title:
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={oswald.className}>
+      <body className={`${raleway.className} antialiased`}>
         <Navbar />
         {children}
       </body>
