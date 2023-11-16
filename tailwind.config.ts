@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         gold: "#d4af37",
+        darkGrey: "#1c1c1c",
       },
       textShadow: {
         sm: "1px 1px 2px var(--tw-shadow-color)",
