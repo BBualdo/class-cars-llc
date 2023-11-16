@@ -48,9 +48,7 @@ export default function Page() {
 
   return (
     <main className="flex min-h-screen flex-col p-24 text-white gap-10">
-      <h1 className={`${merriweather.className} text-[52px] leading-[72px]`}>
-        FAQ
-      </h1>
+      <h1 className={merriweather.className}>FAQ</h1>
       <div className="flex flex-col gap-3">{faqElements}</div>
     </main>
   );

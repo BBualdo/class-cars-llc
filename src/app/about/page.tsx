@@ -6,9 +6,7 @@ export default function Page() {
   return (
     <main className="flex min-h-screen p-24 text-white">
       <div className="flex-1 flex flex-col gap-4">
-        <h1 className={`${merriweather.className} text-[64px] leading-[72px]`}>
-          {heading}
-        </h1>
+        <h1 className={merriweather.className}>{heading}</h1>
         <p className="text-[24px] leading-[40px] mt-4 text-white/50">
           {description}
         </p>
