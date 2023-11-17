@@ -8,8 +8,7 @@ const importProcess: Array<ImportProcess> = [
   {
     id: "1",
     title: "Selekcja Pojazdu",
-    description:
-      "Rozpocznij od wybrania pojazdu, który Cię interesuje, lub bezpośredniego kontaktu w celu przeszukania naszej bazy danych, aby znaleźć poszukiwany model samochodu.",
+    description: `Rozpocznij od wybrania pojazdu, który Cię interesuje, lub bezpośredniego kontaktu w celu przeszukania naszej bazy danych, aby znaleźć poszukiwany model samochodu.`,
   },
   {
     id: "2",

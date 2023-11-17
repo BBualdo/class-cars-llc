@@ -4,7 +4,7 @@ import { merriweather } from "@/fonts/fonts";
 export default function Page() {
   const processElements = importProcess.map((step) => (
     <div key={step.id} className="flex items-start gap-6">
-      <div className="border border-gold p-3 rounded-full inline-block">
+      <div className="border-2 border-gold p-3 rounded-full inline-block">
         <p className="uppercase text-center font-bold text-sm leading-[19px]">
           Krok
           <br />

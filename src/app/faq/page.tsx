@@ -1,55 +1,69 @@
 "use client";
 
-import faq from "@/data/faq";
-import { TiArrowSortedDown } from "react-icons/ti";
 import { merriweather } from "@/fonts/fonts";
+
+import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
 import { useState } from "react";
-import clsx from "clsx";
 
 export default function Page() {
-  const [openedItemId, setOpenedItemId] = useState<number | null>(null);
+  const [expanded, setExpanded] = useState<string | false>(false);
 
-  const faqElements = faq.map((item) => {
-    const isOpen = item.id === openedItemId;
-
-    const toggleOpen = () => {
-      setOpenedItemId(isOpen ? null : item.id);
-    };
-
-    return (
-      <div
-        key={item.id}
-        className={`group bg-darkGrey py-2 px-4 rounded-sm cursor-pointer`}
-        onClick={toggleOpen}
-      >
-        <div>
-          <button
-            className={clsx(
-              "flex items-center justify-between w-full group-hover:text-gold",
-              { "text-gold": item.id === openedItemId }
-            )}
-          >
-            <p className="text-base font-bold">{item.question}</p>
-            <TiArrowSortedDown
-              className={clsx("transition-transform duration-300", {
-                "rotate-180": item.id === openedItemId,
-              })}
-            />
-          </button>
-        </div>
-        {isOpen && (
-          <div>
-            <p className="text-base pt-5">{item.answer}</p>
-          </div>
-        )}
-      </div>
-    );
-  });
+  const handleChange = (isExpanded: boolean, question: string) => {
+    setExpanded(isExpanded ? question : false);
+  };
 
   return (
     <main className="flex min-h-screen flex-col p-24 text-white gap-10">
       <h1 className={merriweather.className}>FAQ</h1>
-      <div className="flex flex-col gap-3">{faqElements}</div>
+      <div className="flex flex-col">
+        <Accordion
+          expanded={expanded === "question-1"}
+          onChange={(event, isExpanded) =>
+            handleChange(isExpanded, "question-1")
+          }
+        >
+          <AccordionSummary
+            id="question-1"
+            aria-controls="question-1-content"
+            expandIcon={<ExpandMoreIcon />}
+          >
+            Pytanie 1
+          </AccordionSummary>
+          <AccordionDetails>Odpowiedź 1</AccordionDetails>
+        </Accordion>
+        <Accordion
+          expanded={expanded === "question-2"}
+          onChange={(event, isExpanded) =>
+            handleChange(isExpanded, "question-2")
+          }
+        >
+          <AccordionSummary
+            id="question-2"
+            aria-controls="question-2-content"
+            expandIcon={<ExpandMoreIcon />}
+          >
+            Pytanie 2
+          </AccordionSummary>
+          <AccordionDetails>Odpowiedź 2</AccordionDetails>
+        </Accordion>
+        <Accordion
+          expanded={expanded === "question-3"}
+          onChange={(event, isExpanded) =>
+            handleChange(isExpanded, "question-3")
+          }
+        >
+          <AccordionSummary
+            id="question-3"
+            aria-controls="question-3-content"
+            expandIcon={<ExpandMoreIcon />}
+          >
+            Pytanie 3
+          </AccordionSummary>
+          <AccordionDetails>Odpowiedź 3</AccordionDetails>
+        </Accordion>
+      </div>
     </main>
   );
 }
