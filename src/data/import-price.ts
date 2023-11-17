@@ -4,7 +4,7 @@ interface ImportPrice {
   description: string;
 }
 
-const importPrice = [
+const importPrice: Array<ImportPrice> = [
   {
     id: "1",
     title: "Zabezpieczenie Transakcji - Kaucja",

@@ -13,7 +13,7 @@ export default function Page() {
         <h2 className="text-[24px] font-bold">Why choose us?</h2>
         <ul className="flex flex-col gap-3 text-[20px]">
           {whyChooseUs.map((reason) => (
-            <li key={reason.key}>
+            <li key={reason.id}>
               <span className="font-bold">{reason.title}: </span>{" "}
               {reason.description}
             </li>

@@ -1,39 +1,41 @@
+import { Lists } from "@/types/types";
+
 const heading = "Comprehensive Car Import Services from Dubai.";
 const description =
   "In the world of car imports, details are the key to success. With our direct presence in Dubai, we offer you a comprehensive car import service from this exotic market, catering to both individual customers and businesses.";
-const whyChooseUs = [
+const whyChooseUs: Array<Lists> = [
   {
-    key: 0,
+    id: 0,
     title: "Direct Presence in Dubai",
     description:
       "We are among the few who operate physically on-site in the United Arab Emirates. This gives us a full overview and control over the entire import process.",
   },
   {
-    key: 1,
+    id: 1,
     title: "Comprehensive Inspection",
     description:
       "We offer a detailed vehicle inspection directly in the UAE, ensuring the car you choose meets your expectations.",
   },
   {
-    key: 2,
+    id: 2,
     title: "Full Process Control",
     description:
       "From verification, through purchase, to transport – you can be certain that every step is carried out with utmost care.",
   },
   {
-    key: 3,
+    id: 3,
     title: "Support in European Registration",
     description:
       "We assist in the entire registration process, from clearance, translations, to the final registration.",
   },
   {
-    key: 4,
+    id: 4,
     title: "Track Progress",
     description:
       'After the container is loaded, we provide you with a "tracking code", allowing you to monitor your car\'s delivery.',
   },
   {
-    key: 5,
+    id: 5,
     title: "Experience and Consultation",
     description:
       "With us, you're not alone. We advise on purchases, investments in classics, and selecting unique models. We encourage you to take advantage of our free consultations.",
