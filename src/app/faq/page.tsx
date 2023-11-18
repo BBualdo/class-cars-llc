@@ -30,15 +30,30 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-1")
           }
-          className="group bg-darkGrey py-4"
+          className="group py-4"
+          sx={{ backgroundColor: "#1c1c1c" }}
         >
           <AccordionSummary
             id="question-1"
             aria-controls="question-1-content"
             expandIcon={
-              <ExpandMoreIcon className="group-hover:text-gold transition-all duration-200" />
+              <ExpandMoreIcon
+                className={clsx(
+                  "group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-1",
+                    "text-white": expanded !== "question-1",
+                  }
+                )}
+              />
             }
-            className="font-bold text-lg group-hover:text-gold transition-all duration-200"
+            className={clsx(
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-1",
+                "text-white": expanded !== "question-1",
+              }
+            )}
           >
             Czy wymagana jest moja wiedza na temat licytacji w domach
             aukcyjnych?
