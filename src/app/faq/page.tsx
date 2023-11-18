@@ -36,23 +36,9 @@ export default function Page() {
             id="question-1"
             aria-controls="question-1-content"
             expandIcon={
-              <ExpandMoreIcon
-                className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
-                  {
-                    "text-gold": expanded === "question-1",
-                    "text-white": expanded !== "question-1",
-                  }
-                )}
-              />
+              <ExpandMoreIcon className="group-hover:text-gold transition-all duration-200" />
             }
-            className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
-              {
-                "text-gold": expanded === "question-1",
-                "text-white": expanded !== "question-1",
-              }
-            )}
+            className="font-bold text-lg group-hover:text-gold transition-all duration-200"
           >
             Czy wymagana jest moja wiedza na temat licytacji w domach
             aukcyjnych?
