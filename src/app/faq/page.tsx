@@ -6,7 +6,6 @@ import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
-  CssBaseline,
   Link,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -23,7 +22,7 @@ export default function Page() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col p-24 text-white gap-10">
+    <main className="flex min-h-screen flex-col p-24 gap-10">
       <h1 className={merriweather.className}>FAQ</h1>
       <div className="flex flex-col">
         <Accordion
@@ -31,28 +30,34 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-1")
           }
-          className="group bg-darkGrey text-white py-4"
+          className="group bg-darkGrey py-4"
         >
           <AccordionSummary
             id="question-1"
             aria-controls="question-1-content"
             expandIcon={
               <ExpandMoreIcon
-                className={clsx({
-                  "text-gold": expanded === "question-1",
-                  "text-white": expanded !== "question-1",
-                })}
+                className={clsx(
+                  "group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-1",
+                    "text-white": expanded !== "question-1",
+                  }
+                )}
               />
             }
-            className={clsx("font-bold text-lg", {
-              "text-gold": expanded === "question-1",
-              "text-white": expanded !== "question-1",
-            })}
+            className={clsx(
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-1",
+                "text-white": expanded !== "question-1",
+              }
+            )}
           >
             Czy wymagana jest moja wiedza na temat licytacji w domach
             aukcyjnych?
           </AccordionSummary>
-          <AccordionDetails className="pr-20">
+          <AccordionDetails className="pr-20 text-white">
             Nie ma konieczności, abyś posiadał szczegółową wiedzę na temat
             procesu licytacji w domach aukcyjnych. Zajmuję się tym zawodowo od
             wielu lat i dysponuję obszerną wiedzą oraz doświadczeniem w tej
@@ -69,27 +74,33 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-2")
           }
-          className="group bg-darkGrey text-white py-4"
+          className="group bg-darkGrey py-4"
         >
           <AccordionSummary
             id="question-2"
             aria-controls="question-2-content"
             expandIcon={
               <ExpandMoreIcon
-                className={clsx({
-                  "text-gold": expanded === "question-2",
-                  "text-white": expanded !== "question-2",
-                })}
+                className={clsx(
+                  "group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-2",
+                    "text-white": expanded !== "question-2",
+                  }
+                )}
               />
             }
-            className={clsx("font-bold text-lg", {
-              "text-gold": expanded === "question-2",
-              "text-white": expanded !== "question-2",
-            })}
+            className={clsx(
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-2",
+                "text-white": expanded !== "question-2",
+              }
+            )}
           >
             Jak mogę oszacować całkowity koszt sprowadzenia pojazdu do Polski?
           </AccordionSummary>
-          <AccordionDetails className="pr-20">
+          <AccordionDetails className="pr-20 text-white">
             Całkowity koszt sprowadzenia samochodu z Dubaju do Polski zależy od
             wielu czynników. Średnie koszty frachtu morskiego oscylują wokół
             <span className="font-bold"> XXX</span>. Jednak to tylko jedna z
@@ -133,27 +144,33 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-3")
           }
-          className="group bg-darkGrey text-white py-4"
+          className="group bg-darkGrey py-4"
         >
           <AccordionSummary
             id="question-3"
             aria-controls="question-3-content"
             expandIcon={
               <ExpandMoreIcon
-                className={clsx({
-                  "text-gold": expanded === "question-3",
-                  "text-white": expanded !== "question-3",
-                })}
+                className={clsx(
+                  "group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-3",
+                    "text-white": expanded !== "question-3",
+                  }
+                )}
               />
             }
-            className={clsx("font-bold text-lg", {
-              "text-gold": expanded === "question-3",
-              "text-white": expanded !== "question-3",
-            })}
+            className={clsx(
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-3",
+                "text-white": expanded !== "question-3",
+              }
+            )}
           >
             Jaki jest termin na finalizację płatności po wygranej aukcji?
           </AccordionSummary>
-          <AccordionDetails className="pr-20">
+          <AccordionDetails className="pr-20 text-white">
             Po wygraniu aukcji, istotne jest, aby dokonać płatności w ustalonym
             terminie, który wynosi<span className="font-bold"> 48 godzin</span>,
             licząc od dnia sprzedaży. Zaleca się, aby przelew został wykonany
@@ -169,27 +186,33 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-4")
           }
-          className="group bg-darkGrey text-white py-4"
+          className="group bg-darkGrey py-4"
         >
           <AccordionSummary
             id="question-4"
             aria-controls="question-4-content"
             expandIcon={
               <ExpandMoreIcon
-                className={clsx({
-                  "text-gold": expanded === "question-4",
-                  "text-white": expanded !== "question-4",
-                })}
+                className={clsx(
+                  "group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-4",
+                    "text-white": expanded !== "question-4",
+                  }
+                )}
               />
             }
-            className={clsx("font-bold text-lg", {
-              "text-gold": expanded === "question-4",
-              "text-white": expanded !== "question-4",
-            })}
+            className={clsx(
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-4",
+                "text-white": expanded !== "question-4",
+              }
+            )}
           >
             Czy jest możliwość śledzenia lokalizacji zakupionego pojazdu?
           </AccordionSummary>
-          <AccordionDetails className="pr-20">
+          <AccordionDetails className="pr-20 text-white">
             Tak, istnieje możliwość śledzenia lokalizacji zakupionego pojazdu.
             Po dokonaniu zakupu i załadunku auta do kontenera, zapewniamy Ci
             pełną przejrzystość procesu importu. Otrzymasz od nas zdjęcia
@@ -233,27 +256,33 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-5")
           }
-          className="group bg-darkGrey text-white py-4"
+          className="group bg-darkGrey  py-4"
         >
           <AccordionSummary
             id="question-5"
             aria-controls="question-5-content"
             expandIcon={
               <ExpandMoreIcon
-                className={clsx({
-                  "text-gold": expanded === "question-5",
-                  "text-white": expanded !== "question-5",
-                })}
+                className={clsx(
+                  "group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-5",
+                    "text-white": expanded !== "question-5",
+                  }
+                )}
               />
             }
-            className={clsx("font-bold text-lg", {
-              "text-gold": expanded === "question-5",
-              "text-white": expanded !== "question-5",
-            })}
+            className={clsx(
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-5",
+                "text-white": expanded !== "question-5",
+              }
+            )}
           >
             Czy import samochodów z Dubaju jest opłacalny?
           </AccordionSummary>
-          <AccordionDetails className="pr-20">
+          <AccordionDetails className="pr-20 text-white">
             Importowanie aut z Dubaju na zamówienie jest zdecydowanie opłacalnym
             rozwiązaniem, szczególnie w przypadku rzadkich lub luksusowych
             pojazdów. Nasza współpraca z klientami umożliwia oszczędności
@@ -290,27 +319,33 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-6")
           }
-          className="group bg-darkGrey text-white py-4"
+          className="group bg-darkGrey py-4"
         >
           <AccordionSummary
             id="question-6"
             aria-controls="question-6-content"
             expandIcon={
               <ExpandMoreIcon
-                className={clsx({
-                  "text-gold": expanded === "question-6",
-                  "text-white": expanded !== "question-6",
-                })}
+                className={clsx(
+                  "group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-6",
+                    "text-white": expanded !== "question-6",
+                  }
+                )}
               />
             }
-            className={clsx("font-bold text-lg", {
-              "text-gold": expanded === "question-6",
-              "text-white": expanded !== "question-6",
-            })}
+            className={clsx(
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-6",
+                "text-white": expanded !== "question-6",
+              }
+            )}
           >
             Jakie opłaty celne i podatkowe mnie obowiązują przy imporcie?
           </AccordionSummary>
-          <AccordionDetails className="pr-20">
+          <AccordionDetails className="pr-20 text-white">
             <ul>
               <li>
                 <span className="font-bold text-gold">Opłaty Aukcyjne: </span>
@@ -368,28 +403,34 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-7")
           }
-          className="group bg-darkGrey text-white py-4"
+          className="group bg-darkGrey py-4"
         >
           <AccordionSummary
             id="question-7"
             aria-controls="question-7-content"
             expandIcon={
               <ExpandMoreIcon
-                className={clsx({
-                  "text-gold": expanded === "question-7",
-                  "text-white": expanded !== "question-7",
-                })}
+                className={clsx(
+                  "group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-7",
+                    "text-white": expanded !== "question-7",
+                  }
+                )}
               />
             }
-            className={clsx("font-bold text-lg", {
-              "text-gold": expanded === "question-7",
-              "text-white": expanded !== "question-7",
-            })}
+            className={clsx(
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-7",
+                "text-white": expanded !== "question-7",
+              }
+            )}
           >
             Jakie dokumenty są potrzebne do rejestracji auta przywiezionego z
             Dubaju?
           </AccordionSummary>
-          <AccordionDetails className="pr-20">
+          <AccordionDetails className="pr-20 text-white">
             Odpowiadając na pytanie dotyczące dokumentów potrzebnych do
             rejestracji auta przywiezionego z Dubaju, kluczowe jest zrozumienie,
             że wymagane dokumenty mogą się różnić w zależności od pochodzenia
@@ -442,27 +483,33 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-8")
           }
-          className="group bg-darkGrey text-white py-4"
+          className="group bg-darkGrey py-4"
         >
           <AccordionSummary
             id="question-8"
             aria-controls="question-8-content"
             expandIcon={
               <ExpandMoreIcon
-                className={clsx({
-                  "text-gold": expanded === "question-8",
-                  "text-white": expanded !== "question-8",
-                })}
+                className={clsx(
+                  "group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-8",
+                    "text-white": expanded !== "question-8",
+                  }
+                )}
               />
             }
-            className={clsx("font-bold text-lg", {
-              "text-gold": expanded === "question-8",
-              "text-white": expanded !== "question-8",
-            })}
+            className={clsx(
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-8",
+                "text-white": expanded !== "question-8",
+              }
+            )}
           >
             Gdzie mogę znaleźć oferty samochodów na sprzedaż w Dubaju?
           </AccordionSummary>
-          <AccordionDetails className="pr-20">
+          <AccordionDetails className="pr-20 text-white">
             Jeśli poszukujesz ofert samochodów na sprzedaż w Dubaju, istnieje
             szereg renomowanych stron internetowych i domów aukcyjnych, które
             mogą spełnić Twoje oczekiwania. Oto kilka z nich, gdzie możesz
@@ -606,27 +653,33 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-9")
           }
-          className="group bg-darkGrey text-white py-4"
+          className="group bg-darkGrey py-4"
         >
           <AccordionSummary
             id="question-9"
             aria-controls="question-9-content"
             expandIcon={
               <ExpandMoreIcon
-                className={clsx({
-                  "text-gold": expanded === "question-9",
-                  "text-white": expanded !== "question-9",
-                })}
+                className={clsx(
+                  "group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-9",
+                    "text-white": expanded !== "question-9",
+                  }
+                )}
               />
             }
-            className={clsx("font-bold text-lg", {
-              "text-gold": expanded === "question-9",
-              "text-white": expanded !== "question-9",
-            })}
+            className={clsx(
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-9",
+                "text-white": expanded !== "question-9",
+              }
+            )}
           >
             Czy możliwe jest dokładne oszacowanie ceny wylicytowanego samochodu?
           </AccordionSummary>
-          <AccordionDetails className="pr-20">
+          <AccordionDetails className="pr-20 text-white">
             Oszacowanie ceny wylicytowanego samochodu jest możliwe, ale ważne
             jest, aby pamiętać, że taka wycena nie może być traktowana jako
             absolutna pewność. Cena finalna może być pod wpływem wielu zmiennych
@@ -643,28 +696,34 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-10")
           }
-          className="group bg-darkGrey text-white py-4"
+          className="group bg-darkGrey py-4"
         >
           <AccordionSummary
             id="question-10"
             aria-controls="question-10-content"
             expandIcon={
               <ExpandMoreIcon
-                className={clsx({
-                  "text-gold": expanded === "question-10",
-                  "text-white": expanded !== "question-10",
-                })}
+                className={clsx(
+                  "group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-10",
+                    "text-white": expanded !== "question-10",
+                  }
+                )}
               />
             }
-            className={clsx("font-bold text-lg", {
-              "text-gold": expanded === "question-10",
-              "text-white": expanded !== "question-10",
-            })}
+            className={clsx(
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-10",
+                "text-white": expanded !== "question-10",
+              }
+            )}
           >
             Czy wymagane jest podpisanie umowy przed rozpoczęciem procesu
             importu?
           </AccordionSummary>
-          <AccordionDetails className="pr-20">
+          <AccordionDetails className="pr-20 text-white">
             Tak, przed rozpoczęciem procesu importu samochodu z Dubaju wymagane
             jest podpisanie formalnej umowy. Jest to standardowa praktyka
             zapewniająca obopólną pewność i bezpieczeństwo transakcji.
@@ -675,27 +734,33 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-11")
           }
-          className="group bg-darkGrey text-white py-4"
+          className="group bg-darkGrey py-4"
         >
           <AccordionSummary
             id="question-11"
             aria-controls="question-11-content"
             expandIcon={
               <ExpandMoreIcon
-                className={clsx({
-                  "text-gold": expanded === "question-11",
-                  "text-white": expanded !== "question-11",
-                })}
+                className={clsx(
+                  "group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-11",
+                    "text-white": expanded !== "question-11",
+                  }
+                )}
               />
             }
-            className={clsx("font-bold text-lg", {
-              "text-gold": expanded === "question-11",
-              "text-white": expanded !== "question-11",
-            })}
+            className={clsx(
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-11",
+                "text-white": expanded !== "question-11",
+              }
+            )}
           >
             Czy konieczna jest wpłata kaucji przed licytacją?
           </AccordionSummary>
-          <AccordionDetails className="pr-20">
+          <AccordionDetails className="pr-20 text-white">
             Tak, konieczne jest wpłacenie kaucji, która stanowi gwarancję
             realizacji umowy.
           </AccordionDetails>
@@ -705,27 +770,33 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-12")
           }
-          className="group bg-darkGrey text-white py-4"
+          className="group bg-darkGrey py-4"
         >
           <AccordionSummary
             id="question-12"
             aria-controls="question-12-content"
             expandIcon={
               <ExpandMoreIcon
-                className={clsx({
-                  "text-gold": expanded === "question-12",
-                  "text-white": expanded !== "question-12",
-                })}
+                className={clsx(
+                  "font-bold text-lg group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-12",
+                    "text-white": expanded !== "question-12",
+                  }
+                )}
               />
             }
-            className={clsx("font-bold text-lg", {
-              "text-gold": expanded === "question-12",
-              "text-white": expanded !== "question-12",
-            })}
+            className={clsx(
+              "group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-12",
+                "text-white": expanded !== "question-12",
+              }
+            )}
           >
             W jakiej walucie dokonywane są transakcje?
           </AccordionSummary>
-          <AccordionDetails className="pr-20">
+          <AccordionDetails className="pr-20 text-white">
             Akceptowane są dwie waluty: dolar amerykański (USD) i euro (EUR).
             Kaucja wpłacana jest w USD, natomiast w przypadku transakcji
             realizowanych w porcie niemieckim, płatności są akceptowane w euro.
@@ -738,27 +809,33 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-13")
           }
-          className="group bg-darkGrey text-white py-4"
+          className="group bg-darkGrey py-4"
         >
           <AccordionSummary
             id="question-13"
             aria-controls="question-13-content"
             expandIcon={
               <ExpandMoreIcon
-                className={clsx({
-                  "text-gold": expanded === "question-13",
-                  "text-white": expanded !== "question-13",
-                })}
+                className={clsx(
+                  "group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-13",
+                    "text-white": expanded !== "question-13",
+                  }
+                )}
               />
             }
-            className={clsx("font-bold text-lg", {
-              "text-gold": expanded === "question-13",
-              "text-white": expanded !== "question-13",
-            })}
+            className={clsx(
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-13",
+                "text-white": expanded !== "question-13",
+              }
+            )}
           >
             Kiedy następuje zwrot kaucji, jeśli nie dochodzi do zakupu?
           </AccordionSummary>
-          <AccordionDetails className="pr-20">
+          <AccordionDetails className="pr-20 text-white">
             Zwrot kaucji w przypadku, gdy nie dochodzi do zakupu samochodu, jest
             realizowany w ciągu 48 godzin od momentu anulowania transakcji.
           </AccordionDetails>
@@ -768,27 +845,33 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-14")
           }
-          className="group bg-darkGrey text-white py-4"
+          className="group bg-darkGrey py-4"
         >
           <AccordionSummary
             id="question-14"
             aria-controls="question-14-content"
             expandIcon={
               <ExpandMoreIcon
-                className={clsx({
-                  "text-gold": expanded === "question-14",
-                  "text-white": expanded !== "question-14",
-                })}
+                className={clsx(
+                  "group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-14",
+                    "text-white": expanded !== "question-14",
+                  }
+                )}
               />
             }
-            className={clsx("font-bold text-lg", {
-              "text-gold": expanded === "question-14",
-              "text-white": expanded !== "question-14",
-            })}
+            className={clsx(
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-14",
+                "text-white": expanded !== "question-14",
+              }
+            )}
           >
             Czy samochód jest ubezpieczony podczas transportu?
           </AccordionSummary>
-          <AccordionDetails className="pr-20">
+          <AccordionDetails className="pr-20 text-white">
             Tak, samochód jest ubezpieczony podczas transportu, zapewniając
             podstawową ochronę ładunku. Dodatkowo, istnieje opcja wykupienia
             rozszerzonego ubezpieczenia, co zapewnia większe bezpieczeństwo.
@@ -802,28 +885,34 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-15")
           }
-          className="group bg-darkGrey text-white py-4"
+          className="group bg-darkGrey py-4"
         >
           <AccordionSummary
             id="question-15"
             aria-controls="question-15-content"
             expandIcon={
               <ExpandMoreIcon
-                className={clsx({
-                  "text-gold": expanded === "question-15",
-                  "text-white": expanded !== "question-15",
-                })}
+                className={clsx(
+                  "group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-15",
+                    "text-white": expanded !== "question-15",
+                  }
+                )}
               />
             }
-            className={clsx("font-bold text-lg", {
-              "text-gold": expanded === "question-15",
-              "text-white": expanded !== "question-15",
-            })}
+            className={clsx(
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-15",
+                "text-white": expanded !== "question-15",
+              }
+            )}
           >
             Czym różnią się samochody z Zjednoczonych Emiratów Arabskich od
             modeli europejskich?
           </AccordionSummary>
-          <AccordionDetails className="pr-20">
+          <AccordionDetails className="pr-20 text-white">
             Samochody z Zjednoczonych Emiratów Arabskich, szczególnie te
             spełniające specyfikację GCC (Gulf Cooperation Council), mogą się
             minimalnie różnić od modeli dostępnych na rynku europejskim. Jedną z
@@ -843,27 +932,33 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-16")
           }
-          className="group bg-darkGrey text-white py-4"
+          className="group bg-darkGrey py-4"
         >
           <AccordionSummary
             id="question-16"
             aria-controls="question-16-content"
             expandIcon={
               <ExpandMoreIcon
-                className={clsx({
-                  "text-gold": expanded === "question-16",
-                  "text-white": expanded !== "question-16",
-                })}
+                className={clsx(
+                  "group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-16",
+                    "text-white": expanded !== "question-16",
+                  }
+                )}
               />
             }
-            className={clsx("font-bold text-lg", {
-              "text-gold": expanded === "question-16",
-              "text-white": expanded !== "question-16",
-            })}
+            className={clsx(
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-16",
+                "text-white": expanded !== "question-16",
+              }
+            )}
           >
             Jakie dokumenty otrzymam po zakupie pojazdu?
           </AccordionSummary>
-          <AccordionDetails className="pr-20">
+          <AccordionDetails className="pr-20 text-white">
             Po zakupie pojazdu otrzymasz zestaw dokumentów, których rodzaj
             zależy od pochodzenia samochodu. Możliwe do otrzymania dokumenty to:
             <br />
@@ -906,28 +1001,34 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-17")
           }
-          className="group bg-darkGrey text-white py-4"
+          className="group bg-darkGrey py-4"
         >
           <AccordionSummary
             id="question-17"
             aria-controls="question-17-content"
             expandIcon={
               <ExpandMoreIcon
-                className={clsx({
-                  "text-gold": expanded === "question-17",
-                  "text-white": expanded !== "question-17",
-                })}
+                className={clsx(
+                  "group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-17",
+                    "text-white": expanded !== "question-17",
+                  }
+                )}
               />
             }
-            className={clsx("font-bold text-lg", {
-              "text-gold": expanded === "question-17",
-              "text-white": expanded !== "question-17",
-            })}
+            className={clsx(
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-17",
+                "text-white": expanded !== "question-17",
+              }
+            )}
           >
             Jakie są dalsze kroki i dodatkowe koszty po przywiezieniu samochodu
             do Polski?
           </AccordionSummary>
-          <AccordionDetails className="pr-20">
+          <AccordionDetails className="pr-20 text-white">
             Po sprowadzeniu auta z Dubaju, jest kilka ważnych kroków, które
             należy podjąć w celu przygotowania pojazdu do rejestracji w Polsce:
             <br />
@@ -967,27 +1068,33 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-18")
           }
-          className="group bg-darkGrey text-white py-4"
+          className="group bg-darkGrey py-4"
         >
           <AccordionSummary
             id="question-18"
             aria-controls="question-18-content"
             expandIcon={
               <ExpandMoreIcon
-                className={clsx({
-                  "text-gold": expanded === "question-18",
-                  "text-white": expanded !== "question-18",
-                })}
+                className={clsx(
+                  "group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-18",
+                    "text-white": expanded !== "question-18",
+                  }
+                )}
               />
             }
-            className={clsx("font-bold text-lg", {
-              "text-gold": expanded === "question-18",
-              "text-white": expanded !== "question-18",
-            })}
+            className={clsx(
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-18",
+                "text-white": expanded !== "question-18",
+              }
+            )}
           >
             Ile trwa cały proces importu auta z dubaju?
           </AccordionSummary>
-          <AccordionDetails className="pr-20">
+          <AccordionDetails className="pr-20 text-white">
             Proces importu samochodu z Dubaju trwa zazwyczaj do 10 tygodni.
           </AccordionDetails>
         </Accordion>
@@ -1003,16 +1110,22 @@ export default function Page() {
             aria-controls="question-19-content"
             expandIcon={
               <ExpandMoreIcon
-                className={clsx({
-                  "text-gold": expanded === "question-19",
-                  "text-white": expanded !== "question-19",
-                })}
+                className={clsx(
+                  "group-hover:text-gold transition-all duration-200",
+                  {
+                    "text-gold": expanded === "question-19",
+                    "text-white": expanded !== "question-19",
+                  }
+                )}
               />
             }
-            className={clsx("font-bold text-lg", {
-              "text-gold": expanded === "question-19",
-              "text-white": expanded !== "question-19",
-            })}
+            className={clsx(
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              {
+                "text-gold": expanded === "question-19",
+                "text-white": expanded !== "question-19",
+              }
+            )}
           >
             Jak przebiega proces importu samochodu z Dubaju?
           </AccordionSummary>
