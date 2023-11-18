@@ -1,7 +1,7 @@
 export const links1 = [
   { key: 0, name: "O mnie", href: "/about" },
-  { key: 1, name: "Proces Importu", href: "/import-process" },
-  { key: 2, name: "Cena Importu", href: "/import-price" },
+  { key: 1, name: "Import", href: "/import" },
+  { key: 2, name: "Cena", href: "/price" },
 ];
 
 export const links2 = [

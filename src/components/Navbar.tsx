@@ -17,12 +17,12 @@ const Navbar = () => {
       key={link.key}
       href={link.href}
       className={clsx(
-        "hover:text-gold underline-offset-8 hover:underline transition-all font-bold duration-300",
-        { "text-gold": pathname === link.href },
-        { "text-white": pathname !== link.href }
+        "w-[180px] text-center py-2 transition-all font-bold duration-300",
+        { "bg-gold hover:bg-gold": pathname === link.href },
+        { "bg-transparent hover:bg-gold/30": pathname !== link.href }
       )}
     >
-      {link.name}
+      <p className="skew-x-12">{link.name}</p>
     </Link>
   ));
 
@@ -31,18 +31,18 @@ const Navbar = () => {
       key={link.key}
       href={link.href}
       className={clsx(
-        "hover:text-gold underline-offset-8 hover:underline transition-all font-bold duration-300",
-        { "text-gold": pathname === link.href },
-        { "text-white": pathname !== link.href }
+        "w-[180px] text-center py-2 transition-all font-bold duration-300",
+        { "bg-gold hover:bg-gold": pathname === link.href },
+        { "bg-transparent hover:bg-gold/30": pathname !== link.href }
       )}
     >
-      {link.name}
+      <p className="skew-x-12">{link.name}</p>
     </Link>
   ));
 
   return (
-    <nav className="flex flex-col items-center">
-      <div className="flex-1 flex items-center justify-between w-full px-[20vw] py-10 border-b border-gold">
+    <nav className="relative flex flex-col items-center">
+      <div className="flex-1 flex items-center justify-between w-full px-[10vw] py-5 border-b border-gold">
         <button className="text-gold hover:text-white transition-all duration-200 flex items-center gap-1">
           <Place />
           Znajdź nas
@@ -55,28 +55,23 @@ const Navbar = () => {
           WhatsApp
         </Link>
       </div>
-      <div className="flex-1 flex items-center uppercase w-4/6 py-2 border-b border-gold/50">
+      <div className="flex-1 flex -skew-x-12 items-center justify-between uppercase min-w-5/6 border-b border-gold/50">
         <div className="flex flex-1 items-center">
-          <div className="flex-1 flex sm:flex-col sm:max-xl:gap-4 xl:flex-row items-center justify-between pr-10">
-            {links1Elements}
-          </div>
-          <div>
-            <Link href="/">
-              <Image
-                src="/logo.png"
-                alt="ClassCars Logo"
-                width={90}
-                height={90}
-                className="hover:scale-110 transition-all duration-300"
-                priority
-              />
-            </Link>
-          </div>
-          <div className="flex-1 flex sm:flex-col sm:max-xl:gap-4 xl:flex-row items-center justify-between pl-10">
-            {links2Elements}
-          </div>
+          <div className="flex-1 flex items-center pr-20">{links1Elements}</div>
+          <div className="flex-1"></div>
+          <div className="flex-1 flex items-center pl-20">{links2Elements}</div>
         </div>
       </div>
+      <Link href="/" className="relative -top-16 backdrop-blur-sm">
+        <Image
+          src="/logo.png"
+          alt="ClassCars Logo"
+          width={90}
+          height={90}
+          className="hover:scale-110 transition-all duration-300 relative right-1"
+          priority
+        />
+      </Link>
     </nav>
   );
 };
