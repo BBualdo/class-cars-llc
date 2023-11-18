@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 import { raleway } from "@/fonts/fonts";
+import { StyledEngineProvider } from "@mui/material";
 
 export const metadata: Metadata = {
   title:
@@ -17,11 +18,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${raleway.className} antialiased`}>
-        <Navbar />
-        {children}
-      </body>
-    </html>
+    <StyledEngineProvider injectFirst>
+      <html lang="en">
+        <body className={`${raleway.className} antialiased`}>
+          <Navbar />
+          {children}
+        </body>
+      </html>
+    </StyledEngineProvider>
   );
 }

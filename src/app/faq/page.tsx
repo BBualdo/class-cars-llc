@@ -30,8 +30,7 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-1")
           }
-          className="group py-4"
-          sx={{ backgroundColor: "#1c1c1c" }}
+          className="group py-4 bg-darkGrey"
         >
           <AccordionSummary
             id="question-1"
