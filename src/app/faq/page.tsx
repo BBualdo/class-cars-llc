@@ -778,7 +778,7 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "font-bold text-lg group-hover:text-gold transition-all duration-200",
+                  "group-hover:text-gold transition-all duration-200",
                   {
                     "text-gold": expanded === "question-12",
                     "text-white": expanded !== "question-12",
@@ -787,7 +787,7 @@ export default function Page() {
               />
             }
             className={clsx(
-              "group-hover:text-gold transition-all duration-200",
+              "font-bold text-lg group-hover:text-gold transition-all duration-200",
               {
                 "text-gold": expanded === "question-12",
                 "text-white": expanded !== "question-12",
