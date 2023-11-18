@@ -15,9 +15,9 @@ const Navbar = () => {
       key={link.key}
       href={link.href}
       className={clsx(
-        "text-base hover:text-gold hover:scale-110 hover:text-shadow-xl shadow-gold transition-all duration-300",
-        { "text-gold scale-110": pathname === link.href },
-        { "text-white": pathname !== link.href }
+        "border-y border-gold px-6 py-2 -skew-x-12 text-base hover:text-white transition-all font-bold duration-300 not-italic",
+        { "bg-gold hover:bg-gold": pathname === link.href },
+        { "bg-none hover:bg-gold/30 ": pathname !== link.href }
       )}
     >
       {link.name}
@@ -25,8 +25,7 @@ const Navbar = () => {
   ));
 
   return (
-    <nav className="flex items-center justify-between px-10 py-5 border-stone-900 border-b">
-      <div className="flex items-center gap-10 uppercase">{linkElements}</div>
+    <nav className="flex items-center justify-between px-10 py-4">
       <div>
         <Link href="/">
           <Image
@@ -39,6 +38,7 @@ const Navbar = () => {
           />
         </Link>
       </div>
+      <div className="flex items-center uppercase">{linkElements}</div>
     </nav>
   );
 };

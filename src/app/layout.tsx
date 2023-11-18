@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Backdrop from "@/components/Backdrop";
 
 import { raleway } from "@/fonts/fonts";
 import { StyledEngineProvider } from "@mui/material";
