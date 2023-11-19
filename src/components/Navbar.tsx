@@ -91,7 +91,7 @@ const Navbar = () => {
             ref={containerRef}
           >
             <motion.div
-              className="absolute top-0 left-0 h-[440px] rounded-b-lg w-[50vw] bg-darkGrey z-10"
+              className="absolute top-0 left-0 h-[440px] rounded-b-lg w-[50vw] bg-darkGrey z-20"
               variants={sidebar}
             >
               <MobileNavLinks toggle={() => toggleOpen()} />
