@@ -9,7 +9,36 @@ import { usePathname } from "next/navigation";
 
 import { Place, WhatsApp, Menu } from "@mui/icons-material";
 
+import { motion, useCycle } from "framer-motion";
+import { useRef } from "react";
+import { useDimensions } from "@/utils/useDimensions";
+import { MobileNavLinks } from "./MobileNavLinks";
+import { MenuToggle } from "./MenuToggle";
+
+const sidebar = {
+  open: (height = 1000) => ({
+    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+    transition: {
+      type: "spring",
+      stiffness: 20,
+      restDelta: 2,
+    },
+  }),
+  closed: {
+    clipPath: "circle(0px at 40px 40px)",
+    transition: {
+      type: "spring",
+      stiffness: 400,
+      damping: 40,
+    },
+  },
+};
+
 const Navbar = () => {
+  const [isOpen, toggleOpen] = useCycle(false, true);
+  const containerRef = useRef(null);
+  const { height } = useDimensions(containerRef);
+
   const pathname = usePathname();
 
   const links1Elements = links1.map((link) => (
@@ -42,8 +71,25 @@ const Navbar = () => {
 
   return (
     <nav className="relative flex flex-col items-center">
-      <div className="flex-1 flex items-center justify-between w-full px-5 md:px-[10vw] py-4 md:py-5 border-b border-gold">
-        <Menu className="md:hidden text-gold hover:text-white transition-all duration-200 cursor-pointer" />
+      <div className="flex-1 flex items-center justify-between w-full px-7 md:px-[10vw] py-4 md:py-5 border-b border-gold">
+        <div className="md:hidden">
+          <motion.div
+            initial={false}
+            animate={isOpen ? "open" : "closed"}
+            custom={height}
+            ref={containerRef}
+          >
+            <motion.div
+              className="absolute top-0 left-0 h-[400px] w-[50vw] bg-darkGrey z-1"
+              variants={sidebar}
+            >
+              <MobileNavLinks toggle={() => toggleOpen()} />
+            </motion.div>
+
+            <MenuToggle toggle={() => toggleOpen()} />
+          </motion.div>
+        </div>
+
         <Link href="/" className="relative md:hidden">
           <Image
             src="/logo.png"
