@@ -7,7 +7,7 @@ import { links1, links2 } from "@/data/navbar-links";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
 
-import { Place, WhatsApp } from "@mui/icons-material";
+import { Place, WhatsApp, Menu } from "@mui/icons-material";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -17,7 +17,7 @@ const Navbar = () => {
       key={link.key}
       href={link.href}
       className={clsx(
-        "w-[180px] text-center py-2 transition-all font-bold duration-300",
+        "md:w-[120px] lg:w-[180px] text-center py-2 transition-all font-bold duration-300",
         { "bg-gold hover:bg-gold": pathname === link.href },
         { "bg-transparent hover:bg-gold/30": pathname !== link.href }
       )}
@@ -31,7 +31,7 @@ const Navbar = () => {
       key={link.key}
       href={link.href}
       className={clsx(
-        "w-[180px] text-center py-2 transition-all font-bold duration-300",
+        "md:w-[120px] lg:w-[180px] text-center py-2 transition-all font-bold duration-300",
         { "bg-gold hover:bg-gold": pathname === link.href },
         { "bg-transparent hover:bg-gold/30": pathname !== link.href }
       )}
@@ -42,27 +42,41 @@ const Navbar = () => {
 
   return (
     <nav className="relative flex flex-col items-center">
-      <div className="flex-1 flex items-center justify-between w-full px-[10vw] py-5 border-b border-gold">
-        <button className="text-gold hover:text-white transition-all duration-200 flex items-center gap-1">
+      <div className="flex-1 flex items-center justify-between w-full px-5 md:px-[10vw] py-4 md:py-5 border-b border-gold">
+        <Menu className="md:hidden text-gold hover:text-white transition-all duration-200 cursor-pointer" />
+        <Link href="/" className="relative md:hidden">
+          <Image
+            src="/logo.png"
+            alt="ClassCars Logo"
+            width={60}
+            height={60}
+            className="hover:scale-110 transition-all duration-300"
+            priority
+          />
+        </Link>
+        <button className="xs:max-md:hidden text-gold hover:text-white transition-all duration-200 flex items-center gap-1">
           <Place />
           Znajdź nas
         </button>
         <Link
           href="tel:+971509021467"
-          className="text-gold hover:text-white transition-all duration-200 flex items-center gap-1"
+          className="xs:max-md:hidden text-gold hover:text-white transition-all duration-200 flex items-center gap-1"
         >
           <WhatsApp />
           WhatsApp
         </Link>
       </div>
-      <div className="flex-1 flex -skew-x-12 items-center justify-between uppercase min-w-5/6 border-b border-gold/50">
+      <div className="xs:max-md:hidden flex-1 flex -skew-x-12 items-center justify-between uppercase min-w-5/6 border-b border-gold/50">
         <div className="flex flex-1 items-center">
-          <div className="flex-1 flex items-center pr-20">{links1Elements}</div>
+          <div className="flex-1 flex items-center pr-14">{links1Elements}</div>
           <div className="flex-1"></div>
-          <div className="flex-1 flex items-center pl-20">{links2Elements}</div>
+          <div className="flex-1 flex items-center pl-14">{links2Elements}</div>
         </div>
       </div>
-      <Link href="/" className="relative -top-16 backdrop-blur-sm">
+      <Link
+        href="/"
+        className="relative xs:max-md:hidden -top-16 backdrop-blur-sm"
+      >
         <Image
           src="/logo.png"
           alt="ClassCars Logo"
