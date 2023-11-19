@@ -6,6 +6,7 @@ import { links1, links2 } from "@/data/navbar-links";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+import { Place, WhatsApp } from "@mui/icons-material";
 
 const variants = {
   open: {
@@ -22,7 +23,7 @@ export const MobileNavLinks = ({ toggle }: { toggle: () => void }) => {
   return (
     <motion.div
       variants={variants}
-      className="flex flex-col translate-y-[89px]"
+      className="flex flex-col translate-y-[89px] uppercase"
     >
       {links1.concat(links2).map((link) => (
         <Link
@@ -30,7 +31,7 @@ export const MobileNavLinks = ({ toggle }: { toggle: () => void }) => {
           href={link.href}
           key={link.key}
           className={clsx(
-            "w-full text-center py-2 transition-all font-bold duration-300",
+            "w-full px-7 py-2 transition-all font-bold duration-300",
             {
               "bg-gold hover:bg-gold": pathname === link.href,
               "bg-transparent hover:bg-gold/30": pathname !== link.href,
@@ -40,6 +41,19 @@ export const MobileNavLinks = ({ toggle }: { toggle: () => void }) => {
           {link.name}
         </Link>
       ))}
+      <div className="flex flex-col ml-6 gap-4 mt-6">
+        <button className="text-gold hover:text-white transition-all duration-200 flex items-center gap-1">
+          <Place />
+          Znajdź nas
+        </button>
+        <Link
+          href="tel:+971509021467"
+          className="text-gold hover:text-white transition-all duration-200 normal-case flex items-center gap-1"
+        >
+          <WhatsApp />
+          WhatsApp
+        </Link>
+      </div>
     </motion.div>
   );
 };

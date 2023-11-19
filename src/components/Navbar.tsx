@@ -72,6 +72,7 @@ const Navbar = () => {
   return (
     <nav className="relative flex flex-col items-center">
       <div className="flex-1 flex items-center justify-between w-full px-7 md:px-[10vw] py-4 md:py-5 border-b border-gold">
+        {/* Mobile Navbar */}
         <div className="md:hidden">
           <motion.div
             initial={false}
@@ -80,7 +81,7 @@ const Navbar = () => {
             ref={containerRef}
           >
             <motion.div
-              className="absolute top-0 left-0 h-[400px] w-[50vw] bg-darkGrey z-1"
+              className="absolute top-0 left-0 h-[440px] rounded-b-lg w-[50vw] bg-darkGrey z-1"
               variants={sidebar}
             >
               <MobileNavLinks toggle={() => toggleOpen()} />
@@ -89,7 +90,7 @@ const Navbar = () => {
             <MenuToggle toggle={() => toggleOpen()} />
           </motion.div>
         </div>
-
+        {/* Mobile Navbar Logo */}
         <Link href="/" className="relative md:hidden">
           <Image
             src="/logo.png"
@@ -104,6 +105,7 @@ const Navbar = () => {
           <Place />
           Znajdź nas
         </button>
+        <div className="xs:max-md:hidden flex-1 relative top-8 border-b border-black"></div>
         <Link
           href="tel:+971509021467"
           className="xs:max-md:hidden text-gold hover:text-white transition-all duration-200 flex items-center gap-1"
@@ -112,17 +114,17 @@ const Navbar = () => {
           WhatsApp
         </Link>
       </div>
-      <div className="xs:max-md:hidden flex-1 flex -skew-x-12 items-center justify-between uppercase min-w-5/6 border-b border-gold/50">
+      <div className="xs:max-md:hidden flex-1 flex -skew-x-12 items-center justify-between uppercase min-w-5/6">
         <div className="flex flex-1 items-center">
-          <div className="flex-1 flex items-center pr-14">{links1Elements}</div>
-          <div className="flex-1"></div>
-          <div className="flex-1 flex items-center pl-14">{links2Elements}</div>
+          <div className="flex-1 flex items-center mr-14 border-b-2 border-gold/50">
+            {links1Elements}
+          </div>
+          <div className="flex-1 flex items-center ml-14 border-b-2 border-gold/50">
+            {links2Elements}
+          </div>
         </div>
       </div>
-      <Link
-        href="/"
-        className="relative xs:max-md:hidden -top-16 backdrop-blur-sm"
-      >
+      <Link href="/" className="absolute xs:max-md:hidden top-10">
         <Image
           src="/logo.png"
           alt="ClassCars Logo"
