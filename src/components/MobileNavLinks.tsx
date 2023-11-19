@@ -33,8 +33,10 @@ export const MobileNavLinks = ({ toggle }: { toggle: () => void }) => {
           className={clsx(
             "w-full px-7 py-2 transition-all font-bold duration-300",
             {
-              "bg-gold hover:bg-gold": pathname === link.href,
-              "bg-transparent hover:bg-gold/30": pathname !== link.href,
+              "bg-gradient-to-t from-yellow-600 to-yellow-100 text-black":
+                pathname === link.href,
+              "bg-transparent hover:bg-gradient-to-t from-yellow-600/50 to-yellow-100/50":
+                pathname !== link.href,
             }
           )}
         >

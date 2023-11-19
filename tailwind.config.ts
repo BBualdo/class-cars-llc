@@ -17,7 +17,7 @@ const config: Config = {
     },
     extend: {
       colors: {
-        gold: "#d4af37",
+        gold: "#efd69d",
         darkGrey: "#1c1c1c",
       },
       textShadow: {
@@ -32,6 +32,11 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         bmw: "url('/bmw-bg.jpg')",
+        one: "url('/template-images/1.jpg')",
+        two: "url('/template-images/2.jpg')",
+        three: "url('/template-images/3.jpg')",
+        four: "url('/template-images/4.jpg')",
+        five: "url('/template-images/5.jpg')",
       },
     },
   },

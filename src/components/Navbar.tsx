@@ -7,7 +7,7 @@ import { links1, links2 } from "@/data/navbar-links";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
 
-import { Place, WhatsApp, Menu } from "@mui/icons-material";
+import { Place, WhatsApp } from "@mui/icons-material";
 
 import { motion, useCycle } from "framer-motion";
 import { useRef } from "react";
@@ -47,8 +47,13 @@ const Navbar = () => {
       href={link.href}
       className={clsx(
         "md:w-[120px] lg:w-[180px] text-center py-2 transition-all font-bold duration-300",
-        { "bg-gold hover:bg-gold": pathname === link.href },
-        { "bg-transparent hover:bg-gold/30": pathname !== link.href }
+        {
+          "bg-gradient-to-t from-yellow-600 to-yellow-100 text-black":
+            pathname === link.href,
+
+          "bg-transparent hover:bg-gradient-to-t from-yellow-600/50 to-yellow-100/50":
+            pathname !== link.href,
+        }
       )}
     >
       <p className="skew-x-12">{link.name}</p>
@@ -61,8 +66,13 @@ const Navbar = () => {
       href={link.href}
       className={clsx(
         "md:w-[120px] lg:w-[180px] text-center py-2 transition-all font-bold duration-300",
-        { "bg-gold hover:bg-gold": pathname === link.href },
-        { "bg-transparent hover:bg-gold/30": pathname !== link.href }
+        {
+          "bg-gradient-to-t from-yellow-600 to-yellow-100 text-black":
+            pathname === link.href,
+
+          "bg-transparent hover:bg-gradient-to-t from-yellow-600/50 to-yellow-100/50":
+            pathname !== link.href,
+        }
       )}
     >
       <p className="skew-x-12">{link.name}</p>
@@ -81,7 +91,7 @@ const Navbar = () => {
             ref={containerRef}
           >
             <motion.div
-              className="absolute top-0 left-0 h-[440px] rounded-b-lg w-[50vw] bg-darkGrey z-1"
+              className="absolute top-0 left-0 h-[440px] rounded-b-lg w-[50vw] bg-darkGrey z-10"
               variants={sidebar}
             >
               <MobileNavLinks toggle={() => toggleOpen()} />
@@ -101,14 +111,14 @@ const Navbar = () => {
             priority
           />
         </Link>
-        <button className="xs:max-md:hidden text-gold hover:text-white transition-all duration-200 flex items-center gap-1">
+        <button className="xs:max-md:hidden flex-1 text-gold hover:text-white transition-all duration-200 flex items-center gap-1">
           <Place />
           Znajdź nas
         </button>
         <div className="xs:max-md:hidden flex-1 relative top-8 border-b border-black"></div>
         <Link
           href="tel:+971509021467"
-          className="xs:max-md:hidden text-gold hover:text-white transition-all duration-200 flex items-center gap-1"
+          className="xs:max-md:hidden flex-1 text-gold hover:text-white transition-all duration-200 flex items-center gap-1 justify-end"
         >
           <WhatsApp />
           WhatsApp
@@ -124,7 +134,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <Link href="/" className="absolute xs:max-md:hidden top-10">
+      <Link href="/" className="absolute xs:max-md:hidden top-10 z-10">
         <Image
           src="/logo.png"
           alt="ClassCars Logo"
