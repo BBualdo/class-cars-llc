@@ -126,10 +126,10 @@ const Navbar = () => {
       </div>
       <div className="xs:max-md:hidden flex-1 flex -skew-x-12 items-center justify-between uppercase min-w-5/6">
         <div className="flex flex-1 items-center">
-          <div className="flex-1 flex items-center mr-14 border-b-2 border-gold/50">
+          <div className="flex-1 flex items-center mr-14 border-b border-gold">
             {links1Elements}
           </div>
-          <div className="flex-1 flex items-center ml-14 border-b-2 border-gold/50">
+          <div className="flex-1 flex items-center ml-14 border-b border-gold">
             {links2Elements}
           </div>
         </div>

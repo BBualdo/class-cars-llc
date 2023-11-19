@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { Suspense } from "react";
 
 import { raleway } from "@/fonts/fonts";
 import { StyledEngineProvider } from "@mui/material";
+import Loading from "./loading";
 
 export const metadata: Metadata = {
   title:
@@ -21,8 +23,10 @@ export default function RootLayout({
     <StyledEngineProvider injectFirst>
       <html lang="en">
         <body className={`${raleway.className} antialiased`}>
-          <Navbar />
-          {children}
+          <Suspense fallback={<Loading />}>
+            <Navbar />
+            {children}
+          </Suspense>
         </body>
       </html>
     </StyledEngineProvider>
