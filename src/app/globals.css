@@ -29,6 +29,10 @@
 }
 
 @layer components {
+  .bg-gradient-gold {
+    @apply bg-gradient-to-t from-yellow-300 via-yellow-100 to-white;
+  }
+
   .gradient-gold {
     @apply bg-gradient-to-t from-yellow-600 to-yellow-100;
   }
@@ -45,7 +49,11 @@
     @apply bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-orange-900 via-amber-100 to-orange-900;
   }
 
-  .gradient-oahu {
-    @apply bg-gradient-to-t from-orange-400 to-sky-400;
+  .gradient-gotham {
+    @apply bg-gradient-to-b from-gray-700 via-gray-900 to-black;
+  }
+
+  .gradient-gotham_hover {
+    @apply bg-gradient-to-t from-gray-700 via-gray-900 to-black;
   }
 }

@@ -8,8 +8,8 @@ const Banner3 = () => {
   return (
     <motion.section
       variants={fadeIn("down", 0.1, 1, 0.5)}
-      initial={"hidden"}
-      whileInView={"show"}
+      initial="hidden"
+      whileInView="show"
       viewport={{ once: true }}
       className="py-10 w-full min-h-[1200px] flex flex-col items-center xs:gap-10 md:gap-20"
     >
@@ -29,7 +29,7 @@ const Banner3 = () => {
         <motion.button
           variants={fadeIn("right", 0.3, 1, 0.5)}
           initial="hidden"
-          whileInView={"show"}
+          whileInView="show"
           viewport={{ once: true }}
           whileHover={{ scale: 1.05 }}
           className="group w-full h-full bg-two xs:max-lg:bg-auto bg-no-repeat bg-left overflow-hidden"
@@ -48,7 +48,7 @@ const Banner3 = () => {
         <motion.button
           variants={fadeIn("up", 0.3, 1, 0.5)}
           initial="hidden"
-          whileInView={"show"}
+          whileInView="show"
           viewport={{ once: true }}
           whileHover={{ scale: 1.05 }}
           className="group w-full h-full bg-two xs:max-lg:bg-auto bg-no-repeat bg-center overflow-hidden"
@@ -66,7 +66,7 @@ const Banner3 = () => {
         <motion.button
           variants={fadeIn("left", 0.3, 1, 0.5)}
           initial="hidden"
-          whileInView={"show"}
+          whileInView="show"
           viewport={{ once: true }}
           whileHover={{ scale: 1.05 }}
           className="group w-full h-full bg-two xs:max-lg:bg-auto bg-no-repeat bg-right overflow-hidden"

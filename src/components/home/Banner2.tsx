@@ -11,8 +11,8 @@ const Banner2 = () => {
     <section className="flex w-full bg-black">
       <motion.div
         variants={fadeIn("right", 0.7, 1, 1.2)}
-        initial={"hidden"}
-        whileInView={"show"}
+        initial="hidden"
+        whileInView="show"
         viewport={{ once: true }}
         className="relative w-2/3 bg-black flex flex-col xs:gap-4 md:gap-10 items-center justify-center"
       >
@@ -40,8 +40,8 @@ const Banner2 = () => {
       </motion.div>
       <motion.div
         variants={fadeIn("left", 0.7, 0.5, 1.2)}
-        initial={"hidden"}
-        whileInView={"show"}
+        initial="hidden"
+        whileInView="show"
         viewport={{ once: true }}
         className="flex-1 bg-six bg-center bg-no-repeat bg-cover"
       ></motion.div>
