@@ -10,9 +10,10 @@ const Banner2 = () => {
   return (
     <section className="flex w-full bg-black">
       <motion.div
-        variants={fadeIn("right", 0.7, 1)}
+        variants={fadeIn("right", 0.7, 1, 1.2)}
         initial={"hidden"}
         whileInView={"show"}
+        viewport={{ once: true }}
         className="relative w-2/3 bg-black flex flex-col xs:gap-4 md:gap-10 items-center justify-center"
       >
         <h2
@@ -38,9 +39,10 @@ const Banner2 = () => {
         <div className="absolute bottom-0 gradient-gold xs:h-[52px] md:h-[92px] lg:h-[112px] w-full -translate-x-full peer-hover:translate-x-0 transition-translate duration-500" />
       </motion.div>
       <motion.div
-        variants={fadeIn("left", 0.7, 0.5)}
+        variants={fadeIn("left", 0.7, 0.5, 1.2)}
         initial={"hidden"}
         whileInView={"show"}
+        viewport={{ once: true }}
         className="flex-1 bg-six bg-center bg-no-repeat bg-cover"
       ></motion.div>
     </section>
