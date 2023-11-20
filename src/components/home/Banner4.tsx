@@ -15,7 +15,7 @@ const Banner4 = () => {
   ));
 
   return (
-    <section className="w-full bg-black flex md:max-lg:flex-col md:max-lg:h-screen">
+    <section className="w-full bg-black flex md:max-lg:flex-col md:max-lg:h-screen xs:py-10 md:py-20">
       <div className="flex-1 xs:p-4 lg:p-10 grid xs:grid-rows-1 md:grid-rows-2 xs:grid-cols-2 lg:grid-cols-4 gap-2 xs:max-md:hidden">
         <motion.div
           variants={fadeIn("right", 0.3, 1, 0.3)}

@@ -11,7 +11,7 @@ const Banner3 = () => {
       initial={"hidden"}
       whileInView={"show"}
       viewport={{ once: true }}
-      className="py-10 w-full min-h-[1200px] flex flex-col items-center gap-20"
+      className="py-10 w-full min-h-[1200px] flex flex-col items-center xs:gap-10 md:gap-20"
     >
       <h2
         className={`${blackOps.className} lg:text-[40px] uppercase text-center`}
