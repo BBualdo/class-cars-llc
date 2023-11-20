@@ -5,7 +5,6 @@ import { fadeIn } from "@/utils/fadeIn";
 import { blackOps } from "@/fonts/fonts";
 import Link from "next/link";
 import { KeyboardDoubleArrowRight } from "@mui/icons-material";
-import Image from "next/image";
 
 const Banner2 = () => {
   return (
@@ -42,16 +41,8 @@ const Banner2 = () => {
         variants={fadeIn("left", 0.7, 0.5)}
         initial={"hidden"}
         whileInView={"show"}
-        className="flex-1"
-      >
-        <Image
-          src="/template-images/6.jpg"
-          alt=""
-          width={1920}
-          height={1080}
-          className="h-full object-cover"
-        />
-      </motion.div>
+        className="flex-1 bg-six bg-center bg-no-repeat bg-cover"
+      ></motion.div>
     </section>
   );
 };
