@@ -9,7 +9,7 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      xs: "200px",
+      xs: "100px",
       sm: "440px",
       md: "840px",
       lg: "1200px",
@@ -40,6 +40,7 @@ const config: Config = {
         six: "url('/template-images/6.webp')",
         seven: "url('/template-images/7.jpg')",
         eight: "url('/template-images/8.png')",
+        nine: "url('/template-images/9.jpg')",
       },
     },
   },

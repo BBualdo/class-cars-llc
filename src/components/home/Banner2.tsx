@@ -31,10 +31,10 @@ const Banner2 = () => {
           resztę.
         </p>
         <Link href="/import" className="peer py-5 w-full z-10">
-          <button className="peer text-white xs:text-[12px]  md:text-[28px] lg:text-[40px] w-full flex items-center justify-center xs:gap-4 md:gap-10 font-bold uppercase">
+          <div className="peer text-white xs:text-[12px]  md:text-[28px] lg:text-[40px] w-full flex items-center justify-center xs:gap-4 md:gap-10 font-bold uppercase">
             Sprawdź jak to działa
             <KeyboardDoubleArrowRight className="xs:text-base md:text-[52px] lg:text-[72px]" />
-          </button>
+          </div>
         </Link>
         <div className="absolute bottom-0 gradient-gold xs:h-[52px] md:h-[92px] lg:h-[112px] w-full -translate-x-full peer-hover:translate-x-0 transition-translate duration-500" />
       </motion.div>
