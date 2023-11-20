@@ -40,4 +40,12 @@
   .gradient-beam {
     @apply bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-100 to-gray-900;
   }
+
+  .gradient-sand-beam {
+    @apply bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-orange-900 via-amber-100 to-orange-900;
+  }
+
+  .gradient-oahu {
+    @apply bg-gradient-to-t from-orange-400 to-sky-400;
+  }
 }
