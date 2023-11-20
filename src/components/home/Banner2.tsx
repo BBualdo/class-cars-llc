@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/fadeIn";
-import { blackOps } from "@/fonts/fonts";
+import { alpha } from "@/fonts/fonts";
 import Link from "next/link";
 import { KeyboardDoubleArrowRight } from "@mui/icons-material";
 
@@ -17,7 +17,7 @@ const Banner2 = () => {
         className="relative w-2/3 bg-black flex flex-col xs:gap-4 md:gap-10 items-center justify-center"
       >
         <h2
-          className={`${blackOps.className} md:text-[48px] lg:text-[64px] text-center text-transparent bg-clip-text gradient-beam uppercase`}
+          className={`${alpha.className} md:text-[48px] lg:text-[64px] text-center text-transparent bg-clip-text gradient-beam uppercase`}
         >
           Import Aut z Dubaju
         </h2>
@@ -36,7 +36,7 @@ const Banner2 = () => {
             <KeyboardDoubleArrowRight className="xs:text-base md:text-[52px] lg:text-[72px]" />
           </div>
         </Link>
-        <div className="absolute bottom-0 gradient-gold xs:h-[52px] md:h-[92px] lg:h-[112px] w-full -translate-x-full peer-hover:translate-x-0 transition-translate duration-500" />
+        <div className="absolute bottom-0 gradient-gold xs:h-[5px] md:h-[10px] w-full -translate-x-full peer-hover:translate-x-0 transition-translate duration-500" />
       </motion.div>
       <motion.div
         variants={fadeIn("left", 0.7, 0.5, 1.2)}

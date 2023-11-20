@@ -1,6 +1,6 @@
 "use client";
 
-import { blackOps } from "@/fonts/fonts";
+import { alpha } from "@/fonts/fonts";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/fadeIn";
 
@@ -13,9 +13,7 @@ const Banner3 = () => {
       viewport={{ once: true }}
       className="py-10 w-full min-h-[1200px] flex flex-col items-center xs:gap-10 md:gap-20"
     >
-      <h2
-        className={`${blackOps.className} lg:text-[40px] uppercase text-center`}
-      >
+      <h2 className={`${alpha.className} lg:text-[40px] uppercase text-center`}>
         Nasze usługi
       </h2>
       <p className="text-center md:text-[20px] lg:text-[24px] xs:max-w-[400px] md:max-w-[600px] lg:max-w-[800px] leading-8 font-semibold">
