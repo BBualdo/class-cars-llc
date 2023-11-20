@@ -2,6 +2,7 @@
 
 import { fadeIn } from "@/utils/fadeIn";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Banner1 = () => {
   return (
@@ -11,8 +12,16 @@ const Banner1 = () => {
         initial={"hidden"}
         whileInView={"show"}
         viewport={{ once: true }}
-        className="absolute bg-five bg-no-repeat bg-center bg-cover w-full h-[600px] z-0"
-      />
+        className="absolute w-full h-[600px] z-0"
+      >
+        <Image
+          src="/template-images/5.jpg"
+          alt=""
+          width={1920}
+          height={600}
+          className="h-[600px] object-cover"
+        />
+      </motion.div>
       <div className="w-full px-10 h-[600px] flex flex-col gap-4 items-center justify-center bg-black">
         <motion.h1
           variants={fadeIn("down", 0.8, 1)}
