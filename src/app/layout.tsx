@@ -6,6 +6,7 @@ import { Suspense } from "react";
 import { raleway } from "@/fonts/fonts";
 import { StyledEngineProvider } from "@mui/material";
 import Loading from "./loading";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title:
@@ -26,6 +27,7 @@ export default function RootLayout({
           <Suspense fallback={<Loading />}>
             <Navbar />
             {children}
+            <Footer />
           </Suspense>
         </body>
       </html>
