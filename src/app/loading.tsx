@@ -8,6 +8,7 @@ export default function Loading() {
         size={100}
         aria-label="Loading Spinner"
         data-testid="loader"
+        loading
       />
     </div>
   );
