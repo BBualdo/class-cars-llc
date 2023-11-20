@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/nav/Navbar";
 import { Suspense } from "react";
 
 import { raleway } from "@/fonts/fonts";

@@ -48,11 +48,9 @@ const Navbar = () => {
       className={clsx(
         "md:w-[120px] lg:w-[180px] text-center py-2 transition-all font-bold duration-300",
         {
-          "bg-gradient-to-t from-yellow-600 to-yellow-100 text-black":
-            pathname === link.href,
+          "gradient-gold text-black": pathname === link.href,
 
-          "bg-transparent hover:bg-gradient-to-t from-yellow-600/50 to-yellow-100/50":
-            pathname !== link.href,
+          "bg-transparent hover:gradient-gold_hover": pathname !== link.href,
         }
       )}
     >
@@ -67,11 +65,9 @@ const Navbar = () => {
       className={clsx(
         "md:w-[120px] lg:w-[180px] text-center py-2 transition-all font-bold duration-300",
         {
-          "bg-gradient-to-t from-yellow-600 to-yellow-100 text-black":
-            pathname === link.href,
+          "gradient-gold text-black": pathname === link.href,
 
-          "bg-transparent hover:bg-gradient-to-t from-yellow-600/50 to-yellow-100/50":
-            pathname !== link.href,
+          "bg-transparent hover:gradient-gold_hover": pathname !== link.href,
         }
       )}
     >
@@ -80,7 +76,7 @@ const Navbar = () => {
   ));
 
   return (
-    <nav className="relative flex flex-col items-center">
+    <nav className="relative flex flex-col items-center bg-black text-white">
       <div className="flex-1 flex items-center justify-between w-full px-7 md:px-[10vw] py-4 md:py-5 border-b border-gold">
         {/* Mobile Navbar */}
         <div className="md:hidden">
