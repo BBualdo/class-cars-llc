@@ -101,9 +101,9 @@ const Navbar = () => {
           <Image
             src="/logo.png"
             alt="ClassCars Logo"
-            width={60}
-            height={60}
-            className="hover:scale-110 transition-all duration-300"
+            width={90}
+            height={90}
+            className="hover:scale-110 w-[60px] transition-all duration-300"
             priority
           />
         </Link>
@@ -133,7 +133,7 @@ const Navbar = () => {
       <Link href="/" className="absolute xs:max-md:hidden top-10 z-10">
         <Image
           src="/logo.png"
-          alt="ClassCars Logo"
+          alt="Link to Menu, ClassCars Logo"
           width={90}
           height={90}
           className="hover:scale-110 transition-all duration-300 relative right-1"

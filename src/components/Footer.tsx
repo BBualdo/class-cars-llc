@@ -20,6 +20,7 @@ const Footer = () => {
       <div className="flex-1 flex flex-col gap-4">
         <div className="flex-1 flex gap-4">
           <Link
+            aria-label="Like our Facebook page"
             href="https://www.facebook.com/ClassCars.LLC/"
             target="_blank"
             className="text-white cursor-pointer hover:text-gold transition-all duration-200"
@@ -27,6 +28,7 @@ const Footer = () => {
             <Facebook className="text-[40px]" />
           </Link>
           <Link
+            aria-label="Follow us on Instagram"
             href="https://www.instagram.com/classcars.lifestyle/"
             target="_blank"
             className="text-white cursor-pointer hover:text-gold transition-all duration-200"
@@ -34,6 +36,7 @@ const Footer = () => {
             <Instagram className="text-[40px]" />
           </Link>
           <Link
+            aria-label="Contact on WhatsApp"
             href="tel:+971509021467"
             className="text-white cursor-pointer hover:text-gold transition-all duration-200"
           >
@@ -41,10 +44,11 @@ const Footer = () => {
           </Link>
         </div>
         <div>
-          <p className="text-gray-500">© Copyright 2023 ClassCarsLLC</p>
-          <p className="text-gray-500">
+          <p className="text-gray-400">© Copyright 2023 ClassCarsLLC</p>
+          <p className="text-gray-400" id="credits" aria-hidden>
             Web Development By:{" "}
             <Link
+              aria-labelledby="credits"
               href="https://github.com/BBualdo"
               target="_blank"
               className="hover:text-gold transition-all duration-200"

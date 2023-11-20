@@ -24,7 +24,7 @@ const Banner3 = () => {
         profesjonalizmu, oferując usługi na najwyższym poziomie.
       </p>
       <div className="w-full xs:px-4 md:px-20 lg:px-40 flex-1 grid xs:max-lg:grid-rows-3 lg:grid-cols-3 xs:max-md:gap-y-4 md:max-lg:gap-y-10 lg:gap-x-10">
-        <motion.button
+        <motion.div
           variants={fadeIn("right", 0.3, 1, 0.5)}
           initial="hidden"
           whileInView="show"
@@ -42,8 +42,8 @@ const Banner3 = () => {
               importu jest dla Ciebie wygodny, bezpieczny i bezproblemowy.
             </p>
           </div>
-        </motion.button>
-        <motion.button
+        </motion.div>
+        <motion.div
           variants={fadeIn("up", 0.3, 1, 0.5)}
           initial="hidden"
           whileInView="show"
@@ -60,8 +60,8 @@ const Banner3 = () => {
               importem, oferując Ci pełną spokojność i satysfakcję.
             </p>
           </div>
-        </motion.button>
-        <motion.button
+        </motion.div>
+        <motion.div
           variants={fadeIn("left", 0.3, 1, 0.5)}
           initial="hidden"
           whileInView="show"
@@ -79,7 +79,7 @@ const Banner3 = () => {
               przekroczy wszystkie Twoje oczekiwania.
             </p>
           </div>
-        </motion.button>
+        </motion.div>
       </div>
     </motion.section>
   );
