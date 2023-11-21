@@ -24,9 +24,9 @@ const Slider = ({
   return (
     <div className="w-full bg-darkGrey flex p-8 gap-10">
       <div className="flex flex-col items-center gap-2">
-        <div className="relative flex items-center">
+        <div className="group relative flex items-center overflow-hidden">
           <ArrowBackIosNew
-            className="absolute left-0 bg-black/70 cursor-pointer text-[40px] p-1"
+            className="absolute left-0 bg-black/70 cursor-pointer text-[40px] p-1 -translate-x-full group-hover:translate-x-0 transition-all duration-300"
             onClick={prevImage}
           />
 
@@ -39,14 +39,19 @@ const Slider = ({
           />
 
           <ArrowForwardIos
-            className="absolute right-0 bg-black/70 cursor-pointer text-[40px] p-1"
+            className="absolute right-0 bg-black/70 cursor-pointer text-[40px] p-1 translate-x-full group-hover:translate-x-0 transition-all duration-300"
             onClick={nextImage}
           />
         </div>
 
         <div className="flex items-center gap-1">
-          {images.map((image) => (
-            <button className="w-[20px] h-[14px] -skew-x-12 bg-gold"></button>
+          {images.map((image, index) => (
+            <button
+              onClick={() => setCurrent(index)}
+              className={`${
+                index === current ? "bg-gold" : "bg-transparent"
+              } w-[20px] h-[14px] -skew-x-12 border border-gold`}
+            ></button>
           ))}
         </div>
       </div>
