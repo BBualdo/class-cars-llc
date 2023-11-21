@@ -11,14 +11,14 @@ const Banner3 = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="py-10 w-full min-h-[1200px] flex flex-col items-center xs:gap-10 md:gap-20"
+      className="py-10 w-full min-h-[1200px] flex flex-col items-center xs:gap-4 md:gap-10"
     >
       <h2
         className={`${alpha.className} md:text-[32px] lg:text-[40px] uppercase text-center`}
       >
         Nasze usługi
       </h2>
-      <p className="text-center md:text-[20px] lg:text-[24px] xs:max-w-[400px] md:max-w-[600px] lg:max-w-[800px] leading-8 font-semibold">
+      <p className="text-center xs:text-[10px] md:text-[16px] lg:text-[20px] xs:max-w-[400px] md:max-w-[600px] lg:max-w-[800px] leading-5 md:leading-8 font-bold px-4">
         W ClassCars nie ma rzeczy niemożliwych.
         <br /> Jako liderzy w branży importu samochodów z Dubaju, posiadamy
         ponad 10 lat doświadczenia w spełnianiu nawet najbardziej wyrafinowanych
@@ -35,7 +35,7 @@ const Banner3 = () => {
           className="group w-full h-full bg-two xs:max-lg:bg-auto bg-no-repeat bg-left overflow-hidden"
         >
           <div className="h-full bg-black/70 w-full translate-y-full group-hover:translate-y-0 flex items-center justify-center text-white transition-all duration-300">
-            <p className="font-bold px-4 text-transparent bg-clip-text gradient-sand-beam">
+            <p className="xs:max-md:text-[12px] font-bold px-4 text-transparent bg-clip-text gradient-sand-beam">
               Specjalizujemy się w znalezieniu idealnych samochodów zgodnie z
               indywidualnymi preferencjami naszych klientów. Dzięki naszej
               rozległej wiedzy i doświadczeniu, jesteśmy w stanie zaoferować nie
@@ -54,7 +54,7 @@ const Banner3 = () => {
           className="group w-full h-full bg-two xs:max-lg:bg-auto bg-no-repeat bg-center overflow-hidden"
         >
           <div className="h-full bg-black/70 w-full translate-y-full group-hover:translate-y-0 flex items-center justify-center text-white transition-all duration-300">
-            <p className="font-bold px-4 text-transparent bg-clip-text gradient-sand-beam">
+            <p className="xs:max-md:text-[12px] font-bold px-4 text-transparent bg-clip-text gradient-sand-beam">
               W ClassCars każdy detal ma znaczenie. Zajmujemy się wszystkim – od
               starannej selekcji i zakupu pojazdu, poprzez bezpieczny transport,
               aż po kompleksową obsługę celno-prawną transport z portu do kraju
@@ -72,7 +72,7 @@ const Banner3 = () => {
           className="group w-full h-full bg-two xs:max-lg:bg-auto bg-no-repeat bg-right overflow-hidden"
         >
           <div className="h-full bg-black/70 w-full translate-y-full group-hover:translate-y-0 flex items-center justify-center text-white transition-all duration-300">
-            <p className="font-bold px-4 text-transparent bg-clip-text gradient-sand-beam">
+            <p className="xs:max-md:text-[12px] font-bold px-4 text-transparent bg-clip-text gradient-sand-beam">
               Wybierając ClassCars, wybierasz partnera, który rozumie Twoje
               potrzeby i jest w stanie zrealizować Twoje motoryzacyjne marzenia
               w najbardziej efektywny i satysfakcjonujący sposób. Jesteśmy tu,

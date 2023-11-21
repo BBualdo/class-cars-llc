@@ -19,7 +19,7 @@ const Banner5 = () => {
       >
         Bezpieczeństwo Twojego samochodu to nasz priorytet.
       </h2>
-      <p className="md:text-[24px] max-w-[1200px] font-bold text-center text-black mt-10">
+      <p className="xs:text-[14px] md:text-[24px] max-w-[1200px] font-bold text-center text-black mt-10">
         Specjalizujemy się w imporcie aut z Dubaju, przykładając ogromną wagę do
         bezpieczeństwa i ochrony każdego pojazdu. Nasze samochody są
         transportowane w specjalnie przygotowanych kontenerach, które gwarantują
@@ -31,7 +31,7 @@ const Banner5 = () => {
       </p>
       <Link
         href="/portfolio"
-        className="text-white text-center font-bold gradient-gotham xs:py-2 md:py-4 xs:px-4 md:px-12 rounded-full hover:gradient-gotham_hover transition-all duration-200 mt-12"
+        className="xs:max-md:text-[14px] text-white text-center font-bold gradient-gotham xs:py-2 md:py-4 xs:px-4 md:px-12 rounded-full hover:gradient-gotham_hover transition-all duration-200 mt-12"
       >
         Odkryj naszą wyjątkową kolekcję samochodów!
       </Link>

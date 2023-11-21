@@ -21,7 +21,7 @@ const Banner2 = () => {
         >
           Import Aut z Dubaju
         </h2>
-        <p className="xs:text-[12px] md:text-[16px] lg:text-[20px] text-white font-bold text-center xs:px-4 md:px-20 lg:px-10 md:max-w-[730px] lg:max-w-[900px]">
+        <p className="xs:text-[10px] md:text-[16px] lg:text-[20px] text-white font-bold text-center xs:px-4 md:px-20 lg:px-10 md:max-w-[730px] lg:max-w-[900px]">
           Specjalizujemy się w imporcie luksusowych aut z Dubaju do Europy.
           Twoje marzenie o ekskluzywnym pojeździe teraz stanie się
           rzeczywistością. Oferujemy kompleksową obsługę - od znalezienia
