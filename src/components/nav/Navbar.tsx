@@ -76,7 +76,7 @@ const Navbar = () => {
   ));
 
   return (
-    <nav className="relative flex flex-col items-center bg-black text-white">
+    <nav className="fixed left-0 right-0 top-0 z-50 flex flex-col items-center bg-black text-white">
       <div className="flex w-full flex-1 items-center justify-between border-b border-gold px-7 py-4 md:px-[10vw] md:py-5">
         {/* Mobile Navbar */}
         <div className="md:hidden">

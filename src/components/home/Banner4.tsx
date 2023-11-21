@@ -4,12 +4,13 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/fadeIn";
 import { alpha } from "@/fonts/fonts";
 import whyUs from "@/data/whyUs";
-import { CheckCircle } from "@mui/icons-material";
+import { Check } from "@mui/icons-material";
+import Image from "next/image";
 
 const Banner4 = () => {
   const whyUsElements = whyUs.map((reason) => (
     <li key={reason.key} className="flex items-center gap-10 text-white">
-      <CheckCircle />
+      <Check />
       <p className="md:text-[20px] lg:text-[24px]">{reason.title}</p>
     </li>
   ));
