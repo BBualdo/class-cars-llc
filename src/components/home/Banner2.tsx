@@ -14,14 +14,14 @@ const Banner2 = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="relative w-2/3 bg-black flex flex-col xs:gap-4 md:gap-10 items-center justify-center"
+        className="relative flex w-2/3 flex-col items-center justify-center bg-black xs:gap-4 md:gap-10"
       >
         <h2
-          className={`${alpha.className} md:text-[40px] lg:text-[52px] text-center text-transparent bg-clip-text gradient-beam uppercase`}
+          className={`${alpha.className} gradient-beam bg-clip-text text-center uppercase text-transparent md:text-[40px] lg:text-[52px]`}
         >
           Import Aut z Dubaju
         </h2>
-        <p className="xs:text-[10px] md:text-[16px] lg:text-[20px] text-white font-bold text-center xs:px-4 md:px-20 lg:px-10 md:max-w-[730px] lg:max-w-[900px]">
+        <p className="text-center font-bold text-white xs:px-4 xs:text-[10px] md:max-w-[730px] md:px-20 md:text-[16px] lg:max-w-[900px] lg:px-10 lg:text-[20px]">
           Specjalizujemy się w imporcie luksusowych aut z Dubaju do Europy.
           Twoje marzenie o ekskluzywnym pojeździe teraz stanie się
           rzeczywistością. Oferujemy kompleksową obsługę - od znalezienia
@@ -30,20 +30,20 @@ const Banner2 = () => {
           przejrzysty. Wybierz klasę i komfort, jakiego szukasz, a my zadbamy o
           resztę.
         </p>
-        <Link href="/import" className="peer py-5 w-full z-10">
-          <div className="peer text-white xs:text-[12px] md:text-[24px] lg:text-[32px] w-full flex items-center justify-center xs:gap-4 md:gap-10 font-bold uppercase">
+        <Link href="/import" className="peer z-10 w-full py-5">
+          <div className="peer flex w-full items-center justify-center font-bold uppercase text-white xs:gap-4 xs:text-[12px] md:gap-10 md:text-[24px] lg:text-[32px]">
             Sprawdź jak to działa
             <KeyboardDoubleArrowRight className="xs:text-base md:text-[40px] lg:text-[60px]" />
           </div>
         </Link>
-        <div className="absolute bottom-0 gradient-gold xs:h-[5px] md:h-[10px] w-full -translate-x-full peer-hover:translate-x-0 transition-translate duration-500" />
+        <div className="gradient-gold transition-translate absolute bottom-0 w-full -translate-x-full duration-500 peer-hover:translate-x-0 xs:h-[5px] md:h-[10px]" />
       </motion.div>
       <motion.div
         variants={fadeIn("left", 0.7, 0.5, 1.2)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="flex-1 bg-six bg-center bg-no-repeat bg-cover"
+        className="flex-1 bg-six bg-cover bg-center bg-no-repeat"
       ></motion.div>
     </section>
   );

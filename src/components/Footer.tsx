@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="flex bg-black p-10 items-center">
+    <footer className="flex items-center bg-black p-10">
       <div className="flex-1">
         <Image
           src="/logo-200x200.png"
@@ -17,13 +17,13 @@ const Footer = () => {
       </div>
       <div className="flex-1"></div>
       <div className="flex-1"></div>
-      <div className="flex-1 flex flex-col gap-4">
-        <div className="flex-1 flex gap-4">
+      <div className="flex flex-1 flex-col gap-4">
+        <div className="flex flex-1 gap-4">
           <Link
             aria-label="Like our Facebook page"
             href="https://www.facebook.com/ClassCars.LLC/"
             target="_blank"
-            className="text-white cursor-pointer hover:text-gold transition-all duration-200"
+            className="cursor-pointer text-white transition-all duration-200 hover:text-gold"
           >
             <Facebook className="text-[40px]" />
           </Link>
@@ -31,14 +31,14 @@ const Footer = () => {
             aria-label="Follow us on Instagram"
             href="https://www.instagram.com/classcars.lifestyle/"
             target="_blank"
-            className="text-white cursor-pointer hover:text-gold transition-all duration-200"
+            className="cursor-pointer text-white transition-all duration-200 hover:text-gold"
           >
             <Instagram className="text-[40px]" />
           </Link>
           <Link
             aria-label="Contact on WhatsApp"
             href="tel:+971509021467"
-            className="text-white cursor-pointer hover:text-gold transition-all duration-200"
+            className="cursor-pointer text-white transition-all duration-200 hover:text-gold"
           >
             <WhatsApp className="text-[40px]" />
           </Link>
@@ -51,7 +51,7 @@ const Footer = () => {
               aria-labelledby="credits"
               href="https://github.com/BBualdo"
               target="_blank"
-              className="hover:text-gold transition-all duration-200"
+              className="transition-all duration-200 hover:text-gold"
             >
               BBualdo
             </Link>

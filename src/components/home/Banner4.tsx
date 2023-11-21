@@ -15,63 +15,63 @@ const Banner4 = () => {
   ));
 
   return (
-    <section className="w-full bg-black flex md:max-lg:flex-col md:max-lg:h-screen xs:py-10 md:py-20">
-      <div className="flex-1 xs:p-4 lg:p-10 grid xs:grid-rows-1 md:grid-rows-2 xs:grid-cols-2 lg:grid-cols-4 gap-2 xs:max-md:hidden">
+    <section className="flex w-full bg-black xs:py-10 md:py-20 md:max-lg:h-screen md:max-lg:flex-col">
+      <div className="grid flex-1 gap-2 xs:grid-cols-2 xs:grid-rows-1 xs:p-4 xs:max-md:hidden md:grid-rows-2 lg:grid-cols-4 lg:p-10">
         <motion.div
           variants={fadeIn("right", 0.3, 1, 0.3)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="bg-nine bg-no-repeat bg-center bg-fixed h-full w-full"
+          className="h-full w-full bg-nine bg-fixed bg-center bg-no-repeat"
         />
         <motion.div
           variants={fadeIn("right", 0.4, 1, 0.3)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="bg-nine bg-no-repeat bg-center bg-fixed h-full w-full xs:max-md:hidden"
+          className="h-full w-full bg-nine bg-fixed bg-center bg-no-repeat xs:max-md:hidden"
         />
         <motion.div
           variants={fadeIn("right", 0.5, 1, 0.3)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="bg-nine bg-no-repeat bg-center bg-fixed h-full w-full xs:max-lg:hidden"
+          className="h-full w-full bg-nine bg-fixed bg-center bg-no-repeat xs:max-lg:hidden"
         />
         <motion.div
           variants={fadeIn("right", 0.6, 1, 0.3)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="bg-nine bg-no-repeat bg-center bg-fixed h-full w-full xs:max-lg:hidden"
+          className="h-full w-full bg-nine bg-fixed bg-center bg-no-repeat xs:max-lg:hidden"
         />
         <motion.div
           variants={fadeIn("left", 0.6, 1, 0.3)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="bg-nine bg-no-repeat bg-center bg-fixed h-full w-full xs:max-lg:hidden"
+          className="h-full w-full bg-nine bg-fixed bg-center bg-no-repeat xs:max-lg:hidden"
         />
         <motion.div
           variants={fadeIn("left", 0.5, 1, 0.3)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="bg-nine bg-no-repeat bg-center bg-fixed h-full w-full xs:max-lg:hidden"
+          className="h-full w-full bg-nine bg-fixed bg-center bg-no-repeat xs:max-lg:hidden"
         />
         <motion.div
           variants={fadeIn("left", 0.4, 1, 0.3)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="bg-nine bg-no-repeat bg-center bg-fixed h-full w-full xs:max-md:hidden"
+          className="h-full w-full bg-nine bg-fixed bg-center bg-no-repeat xs:max-md:hidden"
         />
         <motion.div
           variants={fadeIn("left", 0.3, 1, 0.3)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="bg-nine bg-no-repeat bg-center bg-fixed h-full w-full"
+          className="h-full w-full bg-nine bg-fixed bg-center bg-no-repeat"
         />
       </div>
       <div className="flex-1 p-4">
@@ -80,7 +80,7 @@ const Banner4 = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className={`${alpha.className} text-transparent bg-clip-text gradient-sand-beam md:text-[40px] lg:text-[52px] text-center uppercase leading-[60px]`}
+          className={`${alpha.className} gradient-sand-beam bg-clip-text text-center uppercase leading-[60px] text-transparent md:text-[40px] lg:text-[52px]`}
         >
           Dlaczego ClassCars?
         </motion.h2>
@@ -89,7 +89,7 @@ const Banner4 = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="w-full flex flex-col gap-4 mt-4 px-5"
+          className="mt-4 flex w-full flex-col gap-4 px-5"
         >
           {whyUsElements}
         </motion.ul>

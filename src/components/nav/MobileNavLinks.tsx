@@ -23,7 +23,7 @@ export const MobileNavLinks = ({ toggle }: { toggle: () => void }) => {
   return (
     <motion.div
       variants={variants}
-      className="flex flex-col translate-y-[89px] uppercase"
+      className="flex translate-y-[89px] flex-col uppercase"
     >
       {links1.concat(links2).map((link) => (
         <Link
@@ -31,25 +31,25 @@ export const MobileNavLinks = ({ toggle }: { toggle: () => void }) => {
           href={link.href}
           key={link.key}
           className={clsx(
-            "w-full px-7 py-2 transition-all font-bold duration-300",
+            "w-full px-7 py-2 font-bold transition-all duration-300",
             {
               "gradient-gold text-black": pathname === link.href,
-              "bg-transparent hover:gradient-gold_hover":
+              "hover:gradient-gold_hover bg-transparent":
                 pathname !== link.href,
-            }
+            },
           )}
         >
           {link.name}
         </Link>
       ))}
-      <div className="flex flex-col ml-6 gap-4 mt-6">
-        <button className="text-gold hover:text-white transition-all duration-200 flex items-center gap-1">
+      <div className="ml-6 mt-6 flex flex-col gap-4">
+        <button className="flex items-center gap-1 text-gold transition-all duration-200 hover:text-white">
           <Place />
           Znajdź nas
         </button>
         <Link
           href="tel:+971509021467"
-          className="text-gold hover:text-white transition-all duration-200 normal-case flex items-center gap-1"
+          className="flex items-center gap-1 normal-case text-gold transition-all duration-200 hover:text-white"
         >
           <WhatsApp />
           WhatsApp

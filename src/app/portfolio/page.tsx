@@ -10,7 +10,7 @@ export default function Page() {
     </Slider>
   ));
   return (
-    <main className="min-h-screen items-center justify-between p-24 text-white bg-black">
+    <main className="min-h-screen items-center justify-between bg-black p-24 text-white">
       {carElement}
     </main>
   );

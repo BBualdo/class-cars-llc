@@ -22,15 +22,15 @@ export default function Page() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center p-24 gap-10">
+    <main className="flex min-h-screen flex-col items-center gap-10 p-24">
       <h1 className={merriweather.className}>FAQ</h1>
-      <div className="flex flex-col gap-1 w-1/2">
+      <div className="flex w-1/2 flex-col gap-1">
         <Accordion
           expanded={expanded === "question-1"}
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-1")
           }
-          className="group py-4 bg-darkGrey"
+          className="group bg-darkGrey py-4"
         >
           <AccordionSummary
             id="question-1"
@@ -38,20 +38,20 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
+                  "transition-all duration-200 group-hover:text-gold",
                   {
                     "text-gold": expanded === "question-1",
                     "text-white": expanded !== "question-1",
-                  }
+                  },
                 )}
               />
             }
             className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              "text-lg font-bold transition-all duration-200 group-hover:text-gold",
               {
                 "text-gold": expanded === "question-1",
                 "text-white": expanded !== "question-1",
-              }
+              },
             )}
           >
             Czy wymagana jest moja wiedza na temat licytacji w domach
@@ -82,20 +82,20 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
+                  "transition-all duration-200 group-hover:text-gold",
                   {
                     "text-gold": expanded === "question-2",
                     "text-white": expanded !== "question-2",
-                  }
+                  },
                 )}
               />
             }
             className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              "text-lg font-bold transition-all duration-200 group-hover:text-gold",
               {
                 "text-gold": expanded === "question-2",
                 "text-white": expanded !== "question-2",
-              }
+              },
             )}
           >
             Jak mogę oszacować całkowity koszt sprowadzenia pojazdu do Polski?
@@ -152,20 +152,20 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
+                  "transition-all duration-200 group-hover:text-gold",
                   {
                     "text-gold": expanded === "question-3",
                     "text-white": expanded !== "question-3",
-                  }
+                  },
                 )}
               />
             }
             className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              "text-lg font-bold transition-all duration-200 group-hover:text-gold",
               {
                 "text-gold": expanded === "question-3",
                 "text-white": expanded !== "question-3",
-              }
+              },
             )}
           >
             Jaki jest termin na finalizację płatności po wygranej aukcji?
@@ -194,20 +194,20 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
+                  "transition-all duration-200 group-hover:text-gold",
                   {
                     "text-gold": expanded === "question-4",
                     "text-white": expanded !== "question-4",
-                  }
+                  },
                 )}
               />
             }
             className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              "text-lg font-bold transition-all duration-200 group-hover:text-gold",
               {
                 "text-gold": expanded === "question-4",
                 "text-white": expanded !== "question-4",
-              }
+              },
             )}
           >
             Czy jest możliwość śledzenia lokalizacji zakupionego pojazdu?
@@ -264,20 +264,20 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
+                  "transition-all duration-200 group-hover:text-gold",
                   {
                     "text-gold": expanded === "question-5",
                     "text-white": expanded !== "question-5",
-                  }
+                  },
                 )}
               />
             }
             className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              "text-lg font-bold transition-all duration-200 group-hover:text-gold",
               {
                 "text-gold": expanded === "question-5",
                 "text-white": expanded !== "question-5",
-              }
+              },
             )}
           >
             Czy import samochodów z Dubaju jest opłacalny?
@@ -327,20 +327,20 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
+                  "transition-all duration-200 group-hover:text-gold",
                   {
                     "text-gold": expanded === "question-6",
                     "text-white": expanded !== "question-6",
-                  }
+                  },
                 )}
               />
             }
             className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              "text-lg font-bold transition-all duration-200 group-hover:text-gold",
               {
                 "text-gold": expanded === "question-6",
                 "text-white": expanded !== "question-6",
-              }
+              },
             )}
           >
             Jakie opłaty celne i podatkowe mnie obowiązują przy imporcie?
@@ -411,20 +411,20 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
+                  "transition-all duration-200 group-hover:text-gold",
                   {
                     "text-gold": expanded === "question-7",
                     "text-white": expanded !== "question-7",
-                  }
+                  },
                 )}
               />
             }
             className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              "text-lg font-bold transition-all duration-200 group-hover:text-gold",
               {
                 "text-gold": expanded === "question-7",
                 "text-white": expanded !== "question-7",
-              }
+              },
             )}
           >
             Jakie dokumenty są potrzebne do rejestracji auta przywiezionego z
@@ -491,20 +491,20 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
+                  "transition-all duration-200 group-hover:text-gold",
                   {
                     "text-gold": expanded === "question-8",
                     "text-white": expanded !== "question-8",
-                  }
+                  },
                 )}
               />
             }
             className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              "text-lg font-bold transition-all duration-200 group-hover:text-gold",
               {
                 "text-gold": expanded === "question-8",
                 "text-white": expanded !== "question-8",
-              }
+              },
             )}
           >
             Gdzie mogę znaleźć oferty samochodów na sprzedaż w Dubaju?
@@ -661,20 +661,20 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
+                  "transition-all duration-200 group-hover:text-gold",
                   {
                     "text-gold": expanded === "question-9",
                     "text-white": expanded !== "question-9",
-                  }
+                  },
                 )}
               />
             }
             className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              "text-lg font-bold transition-all duration-200 group-hover:text-gold",
               {
                 "text-gold": expanded === "question-9",
                 "text-white": expanded !== "question-9",
-              }
+              },
             )}
           >
             Czy możliwe jest dokładne oszacowanie ceny wylicytowanego samochodu?
@@ -704,20 +704,20 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
+                  "transition-all duration-200 group-hover:text-gold",
                   {
                     "text-gold": expanded === "question-10",
                     "text-white": expanded !== "question-10",
-                  }
+                  },
                 )}
               />
             }
             className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              "text-lg font-bold transition-all duration-200 group-hover:text-gold",
               {
                 "text-gold": expanded === "question-10",
                 "text-white": expanded !== "question-10",
-              }
+              },
             )}
           >
             Czy wymagane jest podpisanie umowy przed rozpoczęciem procesu
@@ -742,20 +742,20 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
+                  "transition-all duration-200 group-hover:text-gold",
                   {
                     "text-gold": expanded === "question-11",
                     "text-white": expanded !== "question-11",
-                  }
+                  },
                 )}
               />
             }
             className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              "text-lg font-bold transition-all duration-200 group-hover:text-gold",
               {
                 "text-gold": expanded === "question-11",
                 "text-white": expanded !== "question-11",
-              }
+              },
             )}
           >
             Czy konieczna jest wpłata kaucji przed licytacją?
@@ -778,20 +778,20 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
+                  "transition-all duration-200 group-hover:text-gold",
                   {
                     "text-gold": expanded === "question-12",
                     "text-white": expanded !== "question-12",
-                  }
+                  },
                 )}
               />
             }
             className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              "text-lg font-bold transition-all duration-200 group-hover:text-gold",
               {
                 "text-gold": expanded === "question-12",
                 "text-white": expanded !== "question-12",
-              }
+              },
             )}
           >
             W jakiej walucie dokonywane są transakcje?
@@ -817,20 +817,20 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
+                  "transition-all duration-200 group-hover:text-gold",
                   {
                     "text-gold": expanded === "question-13",
                     "text-white": expanded !== "question-13",
-                  }
+                  },
                 )}
               />
             }
             className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              "text-lg font-bold transition-all duration-200 group-hover:text-gold",
               {
                 "text-gold": expanded === "question-13",
                 "text-white": expanded !== "question-13",
-              }
+              },
             )}
           >
             Kiedy następuje zwrot kaucji, jeśli nie dochodzi do zakupu?
@@ -853,20 +853,20 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
+                  "transition-all duration-200 group-hover:text-gold",
                   {
                     "text-gold": expanded === "question-14",
                     "text-white": expanded !== "question-14",
-                  }
+                  },
                 )}
               />
             }
             className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              "text-lg font-bold transition-all duration-200 group-hover:text-gold",
               {
                 "text-gold": expanded === "question-14",
                 "text-white": expanded !== "question-14",
-              }
+              },
             )}
           >
             Czy samochód jest ubezpieczony podczas transportu?
@@ -893,20 +893,20 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
+                  "transition-all duration-200 group-hover:text-gold",
                   {
                     "text-gold": expanded === "question-15",
                     "text-white": expanded !== "question-15",
-                  }
+                  },
                 )}
               />
             }
             className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              "text-lg font-bold transition-all duration-200 group-hover:text-gold",
               {
                 "text-gold": expanded === "question-15",
                 "text-white": expanded !== "question-15",
-              }
+              },
             )}
           >
             Czym różnią się samochody z Zjednoczonych Emiratów Arabskich od
@@ -940,20 +940,20 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
+                  "transition-all duration-200 group-hover:text-gold",
                   {
                     "text-gold": expanded === "question-16",
                     "text-white": expanded !== "question-16",
-                  }
+                  },
                 )}
               />
             }
             className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              "text-lg font-bold transition-all duration-200 group-hover:text-gold",
               {
                 "text-gold": expanded === "question-16",
                 "text-white": expanded !== "question-16",
-              }
+              },
             )}
           >
             Jakie dokumenty otrzymam po zakupie pojazdu?
@@ -1009,20 +1009,20 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
+                  "transition-all duration-200 group-hover:text-gold",
                   {
                     "text-gold": expanded === "question-17",
                     "text-white": expanded !== "question-17",
-                  }
+                  },
                 )}
               />
             }
             className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              "text-lg font-bold transition-all duration-200 group-hover:text-gold",
               {
                 "text-gold": expanded === "question-17",
                 "text-white": expanded !== "question-17",
-              }
+              },
             )}
           >
             Jakie są dalsze kroki i dodatkowe koszty po przywiezieniu samochodu
@@ -1076,20 +1076,20 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
+                  "transition-all duration-200 group-hover:text-gold",
                   {
                     "text-gold": expanded === "question-18",
                     "text-white": expanded !== "question-18",
-                  }
+                  },
                 )}
               />
             }
             className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              "text-lg font-bold transition-all duration-200 group-hover:text-gold",
               {
                 "text-gold": expanded === "question-18",
                 "text-white": expanded !== "question-18",
-              }
+              },
             )}
           >
             Ile trwa cały proces importu auta z dubaju?
@@ -1103,7 +1103,7 @@ export default function Page() {
           onChange={(event, isExpanded) =>
             handleChange(isExpanded, "question-19")
           }
-          className="group bg-darkGrey text-white py-4"
+          className="group bg-darkGrey py-4 text-white"
         >
           <AccordionSummary
             id="question-19"
@@ -1111,20 +1111,20 @@ export default function Page() {
             expandIcon={
               <ExpandMoreIcon
                 className={clsx(
-                  "group-hover:text-gold transition-all duration-200",
+                  "transition-all duration-200 group-hover:text-gold",
                   {
                     "text-gold": expanded === "question-19",
                     "text-white": expanded !== "question-19",
-                  }
+                  },
                 )}
               />
             }
             className={clsx(
-              "font-bold text-lg group-hover:text-gold transition-all duration-200",
+              "text-lg font-bold transition-all duration-200 group-hover:text-gold",
               {
                 "text-gold": expanded === "question-19",
                 "text-white": expanded !== "question-19",
-              }
+              },
             )}
           >
             Jak przebiega proces importu samochodu z Dubaju?

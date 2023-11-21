@@ -12,14 +12,14 @@ const Banner5 = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="w-full flex flex-col items-center xs:py-10 xs:px-4 md:py-20 md:px-20 bg-gradient-gold"
+      className="bg-gradient-gold flex w-full flex-col items-center xs:px-4 xs:py-10 md:px-20 md:py-20"
     >
       <h2
-        className={`${alpha.className} md:text-[40px] lg:text-[52px] max-w-[1000px] font-bold text-center text-transparent bg-clip-text gradient-gotham_hover md:leading-[48px] lg:leading-[72px]`}
+        className={`${alpha.className} gradient-gotham_hover max-w-[1000px] bg-clip-text text-center font-bold text-transparent md:text-[40px] md:leading-[48px] lg:text-[52px] lg:leading-[72px]`}
       >
         Bezpieczeństwo Twojego samochodu to nasz priorytet.
       </h2>
-      <p className="xs:text-[14px] md:text-[24px] max-w-[1200px] font-bold text-center text-black mt-10">
+      <p className="mt-10 max-w-[1200px] text-center font-bold text-black xs:text-[14px] md:text-[24px]">
         Specjalizujemy się w imporcie aut z Dubaju, przykładając ogromną wagę do
         bezpieczeństwa i ochrony każdego pojazdu. Nasze samochody są
         transportowane w specjalnie przygotowanych kontenerach, które gwarantują
@@ -31,7 +31,7 @@ const Banner5 = () => {
       </p>
       <Link
         href="/portfolio"
-        className="xs:max-md:text-[14px] text-white text-center font-bold gradient-gotham xs:py-2 md:py-4 xs:px-4 md:px-12 rounded-full hover:gradient-gotham_hover transition-all duration-200 mt-12"
+        className="gradient-gotham hover:gradient-gotham_hover mt-12 rounded-full text-center font-bold text-white transition-all duration-200 xs:px-4 xs:py-2 xs:max-md:text-[14px] md:px-12 md:py-4"
       >
         Odkryj naszą wyjątkową kolekcję samochodów!
       </Link>

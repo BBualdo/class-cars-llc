@@ -46,12 +46,12 @@ const Navbar = () => {
       key={link.key}
       href={link.href}
       className={clsx(
-        "md:w-[120px] lg:w-[180px] text-center py-2 transition-all font-bold duration-300",
+        "py-2 text-center font-bold transition-all duration-300 md:w-[120px] lg:w-[180px]",
         {
           "gradient-gold text-black": pathname === link.href,
 
-          "bg-transparent hover:gradient-gold_hover": pathname !== link.href,
-        }
+          "hover:gradient-gold_hover bg-transparent": pathname !== link.href,
+        },
       )}
     >
       <p className="skew-x-12">{link.name}</p>
@@ -63,12 +63,12 @@ const Navbar = () => {
       key={link.key}
       href={link.href}
       className={clsx(
-        "md:w-[120px] lg:w-[180px] text-center py-2 transition-all font-bold duration-300",
+        "py-2 text-center font-bold transition-all duration-300 md:w-[120px] lg:w-[180px]",
         {
           "gradient-gold text-black": pathname === link.href,
 
-          "bg-transparent hover:gradient-gold_hover": pathname !== link.href,
-        }
+          "hover:gradient-gold_hover bg-transparent": pathname !== link.href,
+        },
       )}
     >
       <p className="skew-x-12">{link.name}</p>
@@ -77,7 +77,7 @@ const Navbar = () => {
 
   return (
     <nav className="relative flex flex-col items-center bg-black text-white">
-      <div className="flex-1 flex items-center justify-between w-full px-7 md:px-[10vw] py-4 md:py-5 border-b border-gold">
+      <div className="flex w-full flex-1 items-center justify-between border-b border-gold px-7 py-4 md:px-[10vw] md:py-5">
         {/* Mobile Navbar */}
         <div className="md:hidden">
           <motion.div
@@ -87,7 +87,7 @@ const Navbar = () => {
             ref={containerRef}
           >
             <motion.div
-              className="absolute top-0 left-0 h-[440px] rounded-b-lg w-[50vw] gradient-gotham_hover z-20"
+              className="gradient-gotham_hover absolute left-0 top-0 z-20 h-[440px] w-[50vw] rounded-b-lg"
               variants={sidebar}
             >
               <MobileNavLinks toggle={() => toggleOpen()} />
@@ -103,40 +103,40 @@ const Navbar = () => {
             alt="ClassCars Logo"
             width={90}
             height={90}
-            className="hover:scale-110 w-[60px] transition-all duration-300"
+            className="w-[60px] transition-all duration-300 hover:scale-110"
             priority
           />
         </Link>
-        <button className="xs:max-md:hidden flex-1 text-gold hover:text-white transition-all duration-200 flex items-center gap-1">
+        <button className="flex flex-1 items-center gap-1 text-gold transition-all duration-200 hover:text-white xs:max-md:hidden">
           <Place />
           Znajdź nas
         </button>
-        <div className="xs:max-md:hidden flex-1 relative top-8 border-b border-black"></div>
+        <div className="relative top-8 flex-1 border-b border-black xs:max-md:hidden"></div>
         <Link
           href="tel:+971509021467"
-          className="xs:max-md:hidden flex-1 text-gold hover:text-white transition-all duration-200 flex items-center gap-1 justify-end"
+          className="flex flex-1 items-center justify-end gap-1 text-gold transition-all duration-200 hover:text-white xs:max-md:hidden"
         >
           <WhatsApp />
           WhatsApp
         </Link>
       </div>
-      <div className="xs:max-md:hidden flex-1 flex -skew-x-12 items-center justify-between uppercase min-w-5/6">
+      <div className="min-w-5/6 flex flex-1 -skew-x-12 items-center justify-between uppercase xs:max-md:hidden">
         <div className="flex flex-1 items-center">
-          <div className="flex-1 flex items-center mr-14 border-b border-gold">
+          <div className="mr-14 flex flex-1 items-center border-b border-gold">
             {links1Elements}
           </div>
-          <div className="flex-1 flex items-center ml-14 border-b border-gold">
+          <div className="ml-14 flex flex-1 items-center border-b border-gold">
             {links2Elements}
           </div>
         </div>
       </div>
-      <Link href="/" className="absolute xs:max-md:hidden top-10 z-10">
+      <Link href="/" className="absolute top-10 z-10 xs:max-md:hidden">
         <Image
           src="/logo.png"
           alt="Link to Menu, ClassCars Logo"
           width={90}
           height={90}
-          className="hover:scale-110 transition-all duration-300 relative right-1"
+          className="relative right-1 transition-all duration-300 hover:scale-110"
           priority
         />
       </Link>

@@ -57,3 +57,6 @@
     @apply bg-gradient-to-t from-gray-700 via-gray-900 to-black;
   }
 }
+
+@layer utilities {
+}

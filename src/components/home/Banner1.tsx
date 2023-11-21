@@ -11,24 +11,24 @@ const Banner1 = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="absolute bg-ten bg-no-repeat bg-center bg-cover w-full h-[600px] z-0 border-b-2 border-gold"
+        className="absolute z-0 h-[600px] w-full border-b-2 border-gold bg-ten bg-cover bg-center bg-no-repeat"
       />
-      <div className="w-full px-10 h-[600px] flex flex-col gap-4 items-center justify-center bg-black">
+      <div className="flex h-[600px] w-full flex-col items-center justify-center gap-4 bg-black px-10">
         <motion.h1
           variants={fadeIn("down", 0.8, 1, 1.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className={`text-transparent xs:max-md:text-[40px] bg-clip-text text-center xs:max-md:leading-10 font-extrabold z-10 gradient-gold`}
+          className={`gradient-gold z-10 bg-clip-text text-center font-extrabold text-transparent xs:max-md:text-[40px] xs:max-md:leading-10`}
         >
-          Witamy w ClassCarsLLC
+          Witamy w ClassCars
         </motion.h1>
         <motion.p
           variants={fadeIn("up", 1.2, 1, 1.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className={`text-white text-[24px] xs:max-md:text-[14px] font-extrabold text-center z-10 md:w-5/6 lg:w-1/2`}
+          className={`z-10 text-center text-[24px] font-extrabold text-white xs:max-md:text-[14px] md:w-5/6 lg:w-1/2`}
         >
           W świecie importu samochodów, szczegóły są kluczem do sukcesu. Dzięki
           naszej obecności w Dubaju, oferujemy kompleksową usługę importu

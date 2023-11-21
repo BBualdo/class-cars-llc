@@ -3,13 +3,13 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <main className="flex flex-col gap-10 min-h-screen p-24">
+    <main className="flex min-h-screen flex-col gap-10 p-24">
       <div className="flex gap-20">
         <Image
           src=""
           alt="Jakieś zdjęcie"
           width={300}
-          className="border-2 shadow-[0_10px_300px_20px] shadow-gold border-gold w-[300px] h-[400px]"
+          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
         />
         <p className="flex-1 text-[24px] leading-10">
           Pasję do samochodów odziedziczyłem po ojcu, który był handlarzem.
@@ -36,7 +36,7 @@ export default function Page() {
           src=""
           alt="Jakieś zdjęcie"
           width={300}
-          className="border-2 shadow-[0_10px_300px_20px] shadow-gold border-gold w-[300px] h-[400px]"
+          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
         />
       </div>
       <div className="flex gap-20">
@@ -44,7 +44,7 @@ export default function Page() {
           src=""
           alt="Jakieś zdjęcie"
           width={300}
-          className="border-2 shadow-[0_10px_300px_20px] shadow-gold border-gold w-[300px] h-[400px]"
+          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
         />
         <p className="flex-1 text-[24px] leading-10">
           Po zdobyciu tytułu magistra filologii angielskiej, skupiłem się na
@@ -66,7 +66,7 @@ export default function Page() {
           src=""
           alt="Jakieś zdjęcie"
           width={300}
-          className="border-2 shadow-[0_10px_300px_20px] shadow-gold border-gold w-[300px] h-[400px]"
+          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
         />
       </div>
       <div className="flex gap-20">
@@ -74,7 +74,7 @@ export default function Page() {
           src=""
           alt="Jakieś zdjęcie"
           width={300}
-          className="border-2 shadow-[0_10px_300px_20px] shadow-gold border-gold w-[300px] h-[400px]"
+          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
         />
         <p className="flex-1 text-[24px] leading-10">
           Z czasem, moje zainteresowanie przeniosło się na rynek amerykański.
@@ -98,7 +98,7 @@ export default function Page() {
           src=""
           alt="Jakieś zdjęcie"
           width={300}
-          className="border-2 shadow-[0_10px_300px_20px] shadow-gold border-gold w-[300px] h-[400px]"
+          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
         />
       </div>
       <div className="flex gap-20">
@@ -106,7 +106,7 @@ export default function Page() {
           src=""
           alt="Jakieś zdjęcie"
           width={300}
-          className="border-2 shadow-[0_10px_300px_20px] shadow-gold border-gold w-[300px] h-[400px]"
+          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
         />
         <p className="flex-1 text-[24px] leading-10">
           Mój konik to samochody, takie jak: Nissan Patrol, Wrangler czy
@@ -131,7 +131,7 @@ export default function Page() {
           src=""
           alt="Jakieś zdjęcie"
           width={300}
-          className="border-2 shadow-[0_10px_300px_20px] shadow-gold border-gold w-[300px] h-[400px]"
+          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
         />
       </div>
       <div className="flex gap-20">
@@ -140,7 +140,7 @@ export default function Page() {
           src=""
           alt="Jakieś zdjęcie"
           width={300}
-          className="border-2 shadow-[0_10px_300px_20px] shadow-gold border-gold w-[300px] h-[400px]"
+          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
         />
         <p className="flex-1 text-[24px] leading-10">
           W mojej pracy, oprócz oczywiście pasji, ważny jest klient, dlatego też
@@ -166,7 +166,7 @@ export default function Page() {
           src=""
           alt="Jakieś zdjęcie"
           width={300}
-          className="border-2 shadow-[0_10px_300px_20px] shadow-gold border-gold w-[300px] h-[400px]"
+          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
         />
       </div>
       <div className="flex gap-20">
@@ -174,7 +174,7 @@ export default function Page() {
           src=""
           alt="Jakieś zdjęcie"
           width={300}
-          className="border-2 shadow-[0_10px_300px_20px] shadow-gold border-gold w-[300px] h-[400px]"
+          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
         />
         <p className="flex-1 text-[24px] leading-10">
           Mimo sukcesów i rozwoju biznesu, moje podejście pozostaje takie samo –

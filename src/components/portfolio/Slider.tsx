@@ -22,11 +22,11 @@ const Slider = ({
   };
 
   return (
-    <div className="w-full bg-darkGrey flex xs:max-md:flex-col xs:p-2 md:p-8 gap-10">
+    <div className="flex w-full gap-10 bg-darkGrey xs:p-2 xs:max-md:flex-col md:p-8">
       <div className="flex flex-col items-center gap-2">
         <div className="group relative flex items-center overflow-hidden">
           <ArrowBackIosNew
-            className="absolute left-0 bg-black/70 cursor-pointer text-[40px] p-1 -translate-x-full group-hover:translate-x-0 transition-all duration-300"
+            className="absolute left-0 -translate-x-full cursor-pointer bg-black/70 p-1 text-[40px] transition-all duration-300 group-hover:translate-x-0"
             onClick={prevImage}
           />
           <Image
@@ -34,10 +34,10 @@ const Slider = ({
             alt=""
             width={400}
             height={300}
-            className="w-[400px] h-[300px]"
+            className="h-[300px] w-[400px]"
           />
           <ArrowForwardIos
-            className="absolute right-0 bg-black/70 cursor-pointer text-[40px] p-1 translate-x-full group-hover:translate-x-0 transition-all duration-300"
+            className="absolute right-0 translate-x-full cursor-pointer bg-black/70 p-1 text-[40px] transition-all duration-300 group-hover:translate-x-0"
             onClick={nextImage}
           />
         </div>
@@ -50,7 +50,7 @@ const Slider = ({
               onClick={() => setCurrent(index)}
               className={`${
                 index === current ? "bg-gold" : "bg-transparent"
-              } w-[20px] h-[14px] -skew-x-12 border border-gold`}
+              } h-[14px] w-[20px] -skew-x-12 border border-gold`}
             />
           ))}
         </div>
