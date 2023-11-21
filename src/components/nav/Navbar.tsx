@@ -76,7 +76,7 @@ const Navbar = () => {
   ));
 
   return (
-    <nav className="fixed left-0 right-0 top-0 z-50 flex flex-col items-center bg-black text-white">
+    <nav className="relative flex flex-col items-center bg-black text-white">
       <div className="flex w-full flex-1 items-center justify-between border-b border-gold px-7 py-4 md:px-[10vw] md:py-5">
         {/* Mobile Navbar */}
         <div className="md:hidden">
@@ -107,18 +107,22 @@ const Navbar = () => {
             priority
           />
         </Link>
-        <button className="flex flex-1 items-center gap-1 text-gold transition-all duration-200 hover:text-white xs:max-md:hidden">
-          <Place />
-          Znajdź nas
-        </button>
+        <div className="flex flex-1 items-center gap-1 xs:max-md:hidden">
+          <button className="flex items-center gap-1 text-gold transition-all duration-200 hover:text-white">
+            <Place />
+            Znajdź nas
+          </button>
+        </div>
         <div className="relative top-8 flex-1 border-b border-black xs:max-md:hidden"></div>
-        <Link
-          href="tel:+971509021467"
-          className="flex flex-1 items-center justify-end gap-1 text-gold transition-all duration-200 hover:text-white xs:max-md:hidden"
-        >
-          <WhatsApp />
-          WhatsApp
-        </Link>
+        <div className="flex flex-1 items-center justify-end gap-1 xs:max-md:hidden">
+          <Link
+            href="tel:+971509021467"
+            className="flex items-center gap-1 text-gold transition-all duration-200 hover:text-white"
+          >
+            <WhatsApp />
+            WhatsApp
+          </Link>
+        </div>
       </div>
       <div className="min-w-5/6 flex flex-1 -skew-x-12 items-center justify-between uppercase xs:max-md:hidden">
         <div className="flex flex-1 items-center">

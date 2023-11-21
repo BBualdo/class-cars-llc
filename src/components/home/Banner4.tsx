@@ -5,7 +5,6 @@ import { fadeIn } from "@/utils/fadeIn";
 import { alpha } from "@/fonts/fonts";
 import whyUs from "@/data/whyUs";
 import { Check } from "@mui/icons-material";
-import Image from "next/image";
 
 const Banner4 = () => {
   const whyUsElements = whyUs.map((reason) => (

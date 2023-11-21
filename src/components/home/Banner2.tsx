@@ -15,7 +15,7 @@ const Banner2 = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="relative flex w-2/3 flex-col items-center justify-center bg-black xs:gap-4 md:gap-10"
+        className="relative flex w-2/3 flex-col items-center justify-center bg-black pt-4 xs:gap-4 md:gap-10"
       >
         <h2
           className={`${alpha.className} gradient-beam bg-clip-text text-center uppercase text-transparent md:text-[40px] lg:text-[52px]`}
