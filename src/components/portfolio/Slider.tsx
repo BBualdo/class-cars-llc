@@ -47,11 +47,13 @@ const Slider = ({
         <div className="flex items-center gap-1">
           {images.map((image, index) => (
             <button
+              key={index}
+              aria-label={`Choose image button: ${index}`}
               onClick={() => setCurrent(index)}
               className={`${
                 index === current ? "bg-gold" : "bg-transparent"
               } w-[20px] h-[14px] -skew-x-12 border border-gold`}
-            ></button>
+            />
           ))}
         </div>
       </div>
