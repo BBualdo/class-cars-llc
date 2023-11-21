@@ -17,7 +17,7 @@ const Banner2 = () => {
         className="relative w-2/3 bg-black flex flex-col xs:gap-4 md:gap-10 items-center justify-center"
       >
         <h2
-          className={`${alpha.className} md:text-[48px] lg:text-[64px] text-center text-transparent bg-clip-text gradient-beam uppercase`}
+          className={`${alpha.className} md:text-[40px] lg:text-[52px] text-center text-transparent bg-clip-text gradient-beam uppercase`}
         >
           Import Aut z Dubaju
         </h2>
@@ -31,9 +31,9 @@ const Banner2 = () => {
           resztę.
         </p>
         <Link href="/import" className="peer py-5 w-full z-10">
-          <div className="peer text-white xs:text-[12px]  md:text-[28px] lg:text-[40px] w-full flex items-center justify-center xs:gap-4 md:gap-10 font-bold uppercase">
+          <div className="peer text-white xs:text-[12px] md:text-[24px] lg:text-[32px] w-full flex items-center justify-center xs:gap-4 md:gap-10 font-bold uppercase">
             Sprawdź jak to działa
-            <KeyboardDoubleArrowRight className="xs:text-base md:text-[52px] lg:text-[72px]" />
+            <KeyboardDoubleArrowRight className="xs:text-base md:text-[40px] lg:text-[60px]" />
           </div>
         </Link>
         <div className="absolute bottom-0 gradient-gold xs:h-[5px] md:h-[10px] w-full -translate-x-full peer-hover:translate-x-0 transition-translate duration-500" />

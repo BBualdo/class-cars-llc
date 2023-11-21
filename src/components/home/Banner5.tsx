@@ -15,7 +15,7 @@ const Banner5 = () => {
       className="w-full flex flex-col items-center xs:py-10 xs:px-4 md:py-20 md:px-20 bg-gradient-gold"
     >
       <h2
-        className={`${alpha.className} md:text-[48px] lg:text-[64px] max-w-[1000px] font-bold text-center text-transparent bg-clip-text gradient-gotham_hover md:leading-[48px] lg:leading-[72px]`}
+        className={`${alpha.className} md:text-[40px] lg:text-[52px] max-w-[1000px] font-bold text-center text-transparent bg-clip-text gradient-gotham_hover md:leading-[48px] lg:leading-[72px]`}
       >
         Bezpieczeństwo Twojego samochodu to nasz priorytet.
       </h2>

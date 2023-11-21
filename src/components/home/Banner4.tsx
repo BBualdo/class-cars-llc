@@ -10,7 +10,7 @@ const Banner4 = () => {
   const whyUsElements = whyUs.map((reason) => (
     <li key={reason.key} className="flex items-center gap-10 text-white">
       <CheckCircle />
-      <p className="md:text-[24px] lg:text-[32px]">{reason.title}</p>
+      <p className="md:text-[20px] lg:text-[24px]">{reason.title}</p>
     </li>
   ));
 
@@ -80,7 +80,7 @@ const Banner4 = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className={`${alpha.className} text-transparent bg-clip-text gradient-sand-beam md:text-[48px] lg:text-[64px] text-center uppercase leading-[60px]`}
+          className={`${alpha.className} text-transparent bg-clip-text gradient-sand-beam md:text-[40px] lg:text-[52px] text-center uppercase leading-[60px]`}
         >
           Dlaczego ClassCars?
         </motion.h2>
@@ -89,7 +89,7 @@ const Banner4 = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="w-full flex flex-col gap-4 mt-4"
+          className="w-full flex flex-col gap-4 mt-4 px-5"
         >
           {whyUsElements}
         </motion.ul>
