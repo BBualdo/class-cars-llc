@@ -5,12 +5,21 @@ import Image from "next/image";
 
 export default function Page() {
   const carsElements = cars.map((car) => (
-    <div key={uuidv4()}>
-      <h2>{car.name}</h2>
-      <div>
-        {car.images.map((image) => (
-          <img src={image} />
-        ))}
+    <div key={uuidv4()} className="flex">
+      <div className="flex-1 flex flex-col gap-2 items-center">
+        <div>
+          {car.images.map((image) => (
+            <Image src={image} alt={car.name} width={1000} height={1000} />
+          ))}
+        </div>
+        <div>
+          {car.images.map((image) => (
+            <button className="w-[10px] h-[10px] rounded-full bg-gold"></button>
+          ))}
+        </div>
+      </div>
+      <div className="flex-1">
+        <h2>{car.name}</h2>
       </div>
     </div>
   ));
