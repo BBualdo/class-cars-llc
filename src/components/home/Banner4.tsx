@@ -22,56 +22,56 @@ const Banner4 = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="h-full w-full bg-nine bg-fixed bg-center bg-no-repeat"
+          className="bg-lamborghini h-full w-full bg-fixed bg-center bg-no-repeat"
         />
         <motion.div
           variants={fadeIn("right", 0.4, 1, 0.3)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="h-full w-full bg-nine bg-fixed bg-center bg-no-repeat xs:max-md:hidden"
+          className="bg-lamborghini h-full w-full bg-fixed bg-center bg-no-repeat xs:max-md:hidden"
         />
         <motion.div
           variants={fadeIn("right", 0.5, 1, 0.3)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="h-full w-full bg-nine bg-fixed bg-center bg-no-repeat xs:max-lg:hidden"
+          className="bg-lamborghini h-full w-full bg-fixed bg-center bg-no-repeat xs:max-lg:hidden"
         />
         <motion.div
           variants={fadeIn("right", 0.6, 1, 0.3)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="h-full w-full bg-nine bg-fixed bg-center bg-no-repeat xs:max-lg:hidden"
+          className="bg-lamborghini h-full w-full bg-fixed bg-center bg-no-repeat xs:max-lg:hidden"
         />
         <motion.div
           variants={fadeIn("left", 0.6, 1, 0.3)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="h-full w-full bg-nine bg-fixed bg-center bg-no-repeat xs:max-lg:hidden"
+          className="bg-lamborghini h-full w-full bg-fixed bg-center bg-no-repeat xs:max-lg:hidden"
         />
         <motion.div
           variants={fadeIn("left", 0.5, 1, 0.3)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="h-full w-full bg-nine bg-fixed bg-center bg-no-repeat xs:max-lg:hidden"
+          className="bg-lamborghini h-full w-full bg-fixed bg-center bg-no-repeat xs:max-lg:hidden"
         />
         <motion.div
           variants={fadeIn("left", 0.4, 1, 0.3)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="h-full w-full bg-nine bg-fixed bg-center bg-no-repeat xs:max-md:hidden"
+          className="bg-lamborghini h-full w-full bg-fixed bg-center bg-no-repeat xs:max-md:hidden"
         />
         <motion.div
           variants={fadeIn("left", 0.3, 1, 0.3)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="h-full w-full bg-nine bg-fixed bg-center bg-no-repeat"
+          className="bg-lamborghini h-full w-full bg-fixed bg-center bg-no-repeat"
         />
       </div>
       <div className="flex-1 p-4">

@@ -32,7 +32,7 @@ const Banner3 = () => {
           whileInView="show"
           viewport={{ once: true }}
           whileHover={{ scale: 1.05 }}
-          className="group h-full w-full overflow-hidden bg-two bg-left bg-no-repeat xs:max-lg:bg-auto"
+          className="bg-classic group h-full w-full overflow-hidden bg-left bg-no-repeat xs:max-lg:bg-auto"
         >
           <div className="flex h-full w-full translate-y-full items-center justify-center bg-black/70 text-white transition-all duration-300 group-hover:translate-y-0">
             <p className="gradient-sand-beam bg-clip-text px-4 font-bold text-transparent xs:max-md:text-[12px]">
@@ -51,7 +51,7 @@ const Banner3 = () => {
           whileInView="show"
           viewport={{ once: true }}
           whileHover={{ scale: 1.05 }}
-          className="group h-full w-full overflow-hidden bg-two bg-center bg-no-repeat xs:max-lg:bg-auto"
+          className="bg-classic group h-full w-full overflow-hidden bg-center bg-no-repeat xs:max-lg:bg-auto"
         >
           <div className="flex h-full w-full translate-y-full items-center justify-center bg-black/70 text-white transition-all duration-300 group-hover:translate-y-0">
             <p className="gradient-sand-beam bg-clip-text px-4 font-bold text-transparent xs:max-md:text-[12px]">
@@ -69,7 +69,7 @@ const Banner3 = () => {
           whileInView="show"
           viewport={{ once: true }}
           whileHover={{ scale: 1.05 }}
-          className="group h-full w-full overflow-hidden bg-two bg-right bg-no-repeat xs:max-lg:bg-auto"
+          className="bg-classic group h-full w-full overflow-hidden bg-right bg-no-repeat xs:max-lg:bg-auto"
         >
           <div className="flex h-full w-full translate-y-full items-center justify-center bg-black/70 text-white transition-all duration-300 group-hover:translate-y-0">
             <p className="gradient-sand-beam bg-clip-text px-4 font-bold text-transparent xs:max-md:text-[12px]">

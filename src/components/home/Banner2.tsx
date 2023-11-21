@@ -5,6 +5,7 @@ import { fadeIn } from "@/utils/fadeIn";
 import { alpha } from "@/fonts/fonts";
 import Link from "next/link";
 import { KeyboardDoubleArrowRight } from "@mui/icons-material";
+import Image from "next/image";
 
 const Banner2 = () => {
   return (
@@ -43,8 +44,15 @@ const Banner2 = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="flex-1 bg-six bg-cover bg-center bg-no-repeat"
-      ></motion.div>
+        className="relative flex-1"
+      >
+        <Image
+          alt="Man in the cabrio on the desert with Dubai buildings in the background"
+          src="/template-images/desert.avif"
+          fill
+          style={{ objectFit: "cover" }}
+        />
+      </motion.div>
     </section>
   );
 };

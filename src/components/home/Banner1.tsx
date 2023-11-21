@@ -15,11 +15,9 @@ const Banner1 = () => {
         className="absolute z-0 w-full border-b-2 border-gold xs:h-[400px] md:h-[600px]"
       >
         <Image
-          aria-hidden
-          alt=""
-          src="/template-images/viper.jpg"
+          alt="Dodge Viper on the red background"
+          src="/template-images/viper.avif"
           fill
-          sizes="100vw"
           style={{ objectFit: "cover" }}
         />
       </motion.div>
