@@ -19,6 +19,7 @@ const Banner1 = () => {
           src="/template-images/viper.avif"
           fill
           style={{ objectFit: "cover" }}
+          priority
         />
       </motion.div>
       <div className="flex w-full flex-col items-center justify-center gap-4 bg-black px-10 xs:h-[400px] md:h-[600px]">
