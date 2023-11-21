@@ -2,6 +2,7 @@
 
 import { fadeIn } from "@/utils/fadeIn";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Banner1 = () => {
   return (
@@ -11,9 +12,18 @@ const Banner1 = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="absolute z-0 h-[600px] w-full border-b-2 border-gold bg-ten bg-cover bg-center bg-no-repeat"
-      />
-      <div className="flex h-[600px] w-full flex-col items-center justify-center gap-4 bg-black px-10">
+        className="absolute z-0 w-full border-b-2 border-gold xs:h-[400px] md:h-[600px]"
+      >
+        <Image
+          aria-hidden
+          alt=""
+          src="/template-images/viper.jpg"
+          fill
+          sizes="100vw"
+          style={{ objectFit: "cover" }}
+        />
+      </motion.div>
+      <div className="flex w-full flex-col items-center justify-center gap-4 bg-black px-10 xs:h-[400px] md:h-[600px]">
         <motion.h1
           variants={fadeIn("down", 0.8, 1, 1.2)}
           initial="hidden"
