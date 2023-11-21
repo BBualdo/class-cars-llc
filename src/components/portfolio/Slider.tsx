@@ -22,14 +22,13 @@ const Slider = ({
   };
 
   return (
-    <div className="w-full bg-darkGrey flex p-8 gap-10">
+    <div className="w-full bg-darkGrey flex xs:max-md:flex-col xs:p-2 md:p-8 gap-10">
       <div className="flex flex-col items-center gap-2">
         <div className="group relative flex items-center overflow-hidden">
           <ArrowBackIosNew
             className="absolute left-0 bg-black/70 cursor-pointer text-[40px] p-1 -translate-x-full group-hover:translate-x-0 transition-all duration-300"
             onClick={prevImage}
           />
-
           <Image
             src={images[current]}
             alt=""
@@ -37,7 +36,6 @@ const Slider = ({
             height={300}
             className="w-[400px] h-[300px]"
           />
-
           <ArrowForwardIos
             className="absolute right-0 bg-black/70 cursor-pointer text-[40px] p-1 translate-x-full group-hover:translate-x-0 transition-all duration-300"
             onClick={nextImage}
