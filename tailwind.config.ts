@@ -41,6 +41,7 @@ const config: Config = {
         seven: "url('/template-images/7.jpg')",
         eight: "url('/template-images/8.png')",
         nine: "url('/template-images/9.jpg')",
+        ten: "url('/template-images/10.jpg')",
       },
     },
   },

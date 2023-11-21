@@ -11,7 +11,7 @@ const Banner1 = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="absolute bg-five bg-no-repeat bg-center bg-cover w-full h-[600px] z-0 border-b-2 border-gold"
+        className="absolute bg-ten bg-no-repeat bg-center bg-cover w-full h-[600px] z-0 border-b-2 border-gold"
       />
       <div className="w-full px-10 h-[600px] flex flex-col gap-4 items-center justify-center bg-black">
         <motion.h1
