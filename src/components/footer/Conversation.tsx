@@ -1,8 +1,8 @@
 const Conversation = () => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 xs:max-md:items-center">
       <p className="text-[14px] text-gold">Napisz Do Nas</p>
-      <div className="flex flex-col items-start gap-2 text-white">
+      <div className="flex flex-col items-start gap-2 text-white xs:max-md:items-center">
         <a
           href="mailto:inquiry@classcarsllc.com"
           className="inline text-white transition-all duration-200 hover:text-gold"

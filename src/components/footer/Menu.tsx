@@ -22,9 +22,9 @@ const Menu = () => {
   ));
 
   return (
-    <div className="flex flex-col justify-between">
+    <div className="flex flex-col gap-3 lg:gap-4">
       <p className="text-[14px] text-gold">Menu</p>
-      <div className="flex gap-2 font-bold text-white lg:flex-col">
+      <div className="flex gap-1 font-bold text-white xs:max-lg:flex-col lg:flex-col lg:gap-2">
         <Link
           href="/"
           className={clsx("transition-all duration-200 hover:text-gold", {
