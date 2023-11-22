@@ -1,16 +1,7 @@
-import { merriweather } from "@/fonts/fonts";
-import Image from "next/image";
-
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col gap-10 p-24">
-      <div className="flex gap-20">
-        <Image
-          src=""
-          alt="Jakieś zdjęcie"
-          width={300}
-          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
-        />
+    <main className="bg-gradient-gold flex min-h-screen flex-col gap-10 p-24">
+      <div className="flex flex-col items-center gap-10 border-8 border-gold bg-black p-10 text-center text-white">
         <p className="flex-1 text-[24px] leading-10">
           Pasję do samochodów odziedziczyłem po ojcu, który był handlarzem.
           Sprzedał i kupił około 500 pojazdów, a ja towarzyszyłem mu w tych
@@ -20,8 +11,7 @@ export default function Page() {
           udział w zawodach motocrossowych. Odnosiłem tam pewne sukcesy, min.
           <span className="text-gold"> [...]</span>.
         </p>
-      </div>
-      <div className="flex gap-20">
+
         <p className="flex-1 text-[24px] leading-10">
           Pierwsze kroki w świecie motoryzacji stawiałem jako młody chłopak.
           Początek mojej pasji motoryzacyjnej rozpocząłem od nabycia starego
@@ -32,28 +22,14 @@ export default function Page() {
           transakcja była moim pierwszym udanym deal’em samochodowym i otworzyła
           mi oczy na potencjał, jaki niesie ze sobą świat motoryzacji.
         </p>
-        <Image
-          src=""
-          alt="Jakieś zdjęcie"
-          width={300}
-          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
-        />
-      </div>
-      <div className="flex gap-20">
-        <Image
-          src=""
-          alt="Jakieś zdjęcie"
-          width={300}
-          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
-        />
+
         <p className="flex-1 text-[24px] leading-10">
           Po zdobyciu tytułu magistra filologii angielskiej, skupiłem się na
           temacie alternatywnych inwestycji, szczególnie unikatowych samochodów
           zabytkowych, co notabene, było tematem mojej pracy magisterskiej:
           <span className="text-gold"> [...]</span>.
         </p>
-      </div>
-      <div className="flex gap-20">
+
         <p className="flex-1 text-[24px] leading-10">
           Importem samochodów zajmuję się od{" "}
           <span className="text-gold"> [...]</span> roku. Wszystko zaczęło się
@@ -62,20 +38,7 @@ export default function Page() {
           działalność na import samochodów z Włoch i Francji, co pozwoliło mi na
           poznanie różnorodności europejskiego rynku.
         </p>
-        <Image
-          src=""
-          alt="Jakieś zdjęcie"
-          width={300}
-          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
-        />
-      </div>
-      <div className="flex gap-20">
-        <Image
-          src=""
-          alt="Jakieś zdjęcie"
-          width={300}
-          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
-        />
+
         <p className="flex-1 text-[24px] leading-10">
           Z czasem, moje zainteresowanie przeniosło się na rynek amerykański.
           Przeprowadzka do Kalifornii, w Stanach Zjednoczonych, otworzyła przede
@@ -83,8 +46,7 @@ export default function Page() {
           To doświadczenie było nieocenione i znacznie wzbogaciło moją wiedzę
           oraz umiejętności w dziedzinie handlu autami.
         </p>
-      </div>
-      <div className="flex gap-20">
+
         <p className="flex-1 text-[24px] leading-10">
           Następnie, podczas wizyty w Emiratach Arabskich, dostrzegłem potencjał
           rynku motoryzacyjnego w Dubaju. Tutejszy rynek oferuje atrakcyjne
@@ -94,20 +56,7 @@ export default function Page() {
           uzupełniając tym samym moje doświadczenie o kolejny ważny kierunek
           europejski.
         </p>
-        <Image
-          src=""
-          alt="Jakieś zdjęcie"
-          width={300}
-          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
-        />
-      </div>
-      <div className="flex gap-20">
-        <Image
-          src=""
-          alt="Jakieś zdjęcie"
-          width={300}
-          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
-        />
+
         <p className="flex-1 text-[24px] leading-10">
           Mój konik to samochody, takie jak: Nissan Patrol, Wrangler czy
           G-klasa, ze względu na ich zabezpieczenie przed korozją – to duży atut
@@ -117,8 +66,7 @@ export default function Page() {
           więcej nietypowych samochodów, takich jak: Bronco 1, Hummer H1, czy
           rzadkie modele Aston Martin.
         </p>
-      </div>
-      <div className="flex gap-20">
+
         <p className="flex-1 text-[24px] leading-10">
           W mojej opinii samochody terenowe to niezawodność i wytrzymałość.
           Widzę w nich nie tylko wartość użytkową, ale i inwestycyjną. Każdy
@@ -127,21 +75,7 @@ export default function Page() {
           i modyfikacji. Fascynuje mnie przywracanie dawnej świetności tym
           klasycznym maszynom.
         </p>
-        <Image
-          src=""
-          alt="Jakieś zdjęcie"
-          width={300}
-          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
-        />
-      </div>
-      <div className="flex gap-20">
-        {" "}
-        <Image
-          src=""
-          alt="Jakieś zdjęcie"
-          width={300}
-          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
-        />
+
         <p className="flex-1 text-[24px] leading-10">
           W mojej pracy, oprócz oczywiście pasji, ważny jest klient, dlatego też
           na bieżąco jestem z trendami rynkowymi i technologicznymi. Często
@@ -153,8 +87,7 @@ export default function Page() {
           marketing i prezentacja samochodów. Starannie fotografuję każdy
           pojazd, opisuję jego historię oraz unikalne cechy.
         </p>
-      </div>
-      <div className="flex gap-20">
+
         <p className="flex-1 text-[24px] leading-10">
           Oprócz handlu samochodami, zajmuję się ich renowacją. Mam kilka
           projektów, gdzie odrestaurowuję klasyczne modele do ich oryginalnego
@@ -162,20 +95,7 @@ export default function Page() {
           jako kolekcjonera. Uważam, że każdy samochód ma swoją duszę i
           historię, którą warto odkrywać i zachowywać dla przyszłych pokoleń.
         </p>
-        <Image
-          src=""
-          alt="Jakieś zdjęcie"
-          width={300}
-          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
-        />
-      </div>
-      <div className="flex gap-20">
-        <Image
-          src=""
-          alt="Jakieś zdjęcie"
-          width={300}
-          className="h-[400px] w-[300px] border-2 border-gold shadow-[0_10px_300px_20px] shadow-gold"
-        />
+
         <p className="flex-1 text-[24px] leading-10">
           Mimo sukcesów i rozwoju biznesu, moje podejście pozostaje takie samo –
           kieruję się pasją i intuicją, a satysfakcja moich klientów jest dla
