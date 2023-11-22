@@ -7,6 +7,7 @@ import { raleway } from "@/fonts/fonts";
 import { StyledEngineProvider } from "@mui/material";
 import Loading from "./loading";
 import Footer from "@/components/footer/Footer";
+import ScrollToTop from "@/components/interface/BackToTop";
 
 export const metadata: Metadata = {
   title:
@@ -27,6 +28,7 @@ export default function RootLayout({
           <Suspense fallback={<Loading />}>
             <Navbar />
             {children}
+            <ScrollToTop />
             <Footer />
           </Suspense>
         </body>

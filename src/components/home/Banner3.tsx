@@ -3,7 +3,7 @@
 import { alpha } from "@/fonts/fonts";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/fadeIn";
-import { Mouse, SwipeUp, TouchApp } from "@mui/icons-material";
+import { Mouse, TouchApp } from "@mui/icons-material";
 
 const Banner3 = () => {
   return (
@@ -37,8 +37,8 @@ const Banner3 = () => {
         >
           <div className="gradient-gotham absolute top-0 flex w-full translate-x-0 items-center justify-center gap-2 py-2 font-bold uppercase text-white transition-all duration-200 group-hover:-translate-x-full">
             Więcej informacji
-            <Mouse className="xs:max-md:hidden" />
-            <TouchApp className="md:hidden" />
+            <Mouse className="animate-[bounce_2s_ease-in-out_infinite] xs:max-md:hidden" />
+            <TouchApp className="animate-pulse md:hidden" />
           </div>
           <div className="flex h-full w-full translate-y-full items-center justify-center bg-black/70 text-white transition-all duration-300 group-hover:translate-y-0">
             <p className="gradient-sand-beam bg-clip-text px-4 font-bold text-transparent xs:max-md:text-[12px]">
@@ -61,8 +61,8 @@ const Banner3 = () => {
         >
           <div className="gradient-gotham absolute top-0 flex w-full translate-x-0 items-center justify-center gap-2 py-2 font-bold uppercase text-white transition-all duration-200 group-hover:-translate-x-full">
             Więcej informacji
-            <Mouse className="xs:max-md:hidden" />
-            <TouchApp className="md:hidden" />
+            <Mouse className="animate-[bounce_2s_ease-in-out_infinite] xs:max-md:hidden" />
+            <TouchApp className="animate-pulse md:hidden" />
           </div>
           <div className="flex h-full w-full translate-y-full items-center justify-center bg-black/70 text-white transition-all duration-300 group-hover:translate-y-0">
             <p className="gradient-sand-beam bg-clip-text px-4 font-bold text-transparent xs:max-md:text-[12px]">
@@ -84,8 +84,8 @@ const Banner3 = () => {
         >
           <div className="gradient-gotham absolute top-0 flex w-full translate-x-0 items-center justify-center gap-2 py-2 font-bold uppercase text-white transition-all duration-200 group-hover:-translate-x-full">
             Więcej informacji
-            <Mouse className="xs:max-md:hidden" />
-            <TouchApp className="md:hidden" />
+            <Mouse className="animate-[bounce_2s_ease-in-out_infinite] xs:max-md:hidden" />
+            <TouchApp className="animate-pulse md:hidden" />
           </div>
           <div className="flex h-full w-full translate-y-full items-center justify-center bg-black/70 text-white transition-all duration-300 group-hover:translate-y-0">
             <p className="gradient-sand-beam bg-clip-text px-4 font-bold text-transparent xs:max-md:text-[12px]">
