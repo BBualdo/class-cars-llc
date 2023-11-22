@@ -6,7 +6,7 @@ import { Suspense } from "react";
 import { raleway } from "@/fonts/fonts";
 import { StyledEngineProvider } from "@mui/material";
 import Loading from "./loading";
-import Footer from "@/components/Footer";
+import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title:
