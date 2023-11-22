@@ -6,7 +6,7 @@ import Banner5 from "@/components/home/Banner5";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col text-black">
+    <main className="flex min-h-screen flex-col overflow-hidden text-black">
       <Banner1 />
       <Banner2 />
       <Banner3 />
