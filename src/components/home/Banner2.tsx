@@ -40,14 +40,14 @@ const Banner2 = () => {
         <div className="gradient-gold transition-translate absolute bottom-0 w-full -translate-x-full duration-500 peer-hover:translate-x-0 xs:h-[5px] md:h-[10px]" />
       </motion.div>
       <motion.div
-        variants={fadeIn("left", 0.7, 0.5, 1.2)}
+        variants={fadeIn("left", 0.7, 0.7, 1.2)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
         className="relative flex-1"
       >
         <Image
-          alt="Man in the cabrio on the desert with Dubai buildings in the background"
+          alt="Offroad car riding in the desert"
           src="/template-images/desert.avif"
           fill
           style={{ objectFit: "cover" }}

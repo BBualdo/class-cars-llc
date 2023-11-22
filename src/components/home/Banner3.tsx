@@ -26,14 +26,14 @@ const Banner3 = () => {
         wymagań naszych klientów. Nasza firma to synonim ekspertyzy i
         profesjonalizmu, oferując usługi na najwyższym poziomie.
       </p>
-      <div className="grid w-full flex-1 xs:px-4 xs:max-lg:grid-rows-3 xs:max-md:gap-y-4 md:px-20 md:max-lg:gap-y-10 lg:grid-cols-3 lg:gap-x-10 lg:px-40">
+      <div className="grid w-full flex-1 xs:px-4 xs:max-lg:grid-rows-3 xs:max-lg:gap-y-2 md:px-20 lg:grid-cols-3 lg:gap-x-10 lg:px-40">
         <motion.div
           variants={fadeIn("right", 0.3, 1, 0.5)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
           whileHover={{ scale: 1.05 }}
-          className="group relative h-full w-full overflow-hidden bg-classic bg-left bg-no-repeat xs:max-lg:bg-auto"
+          className="group relative h-full w-full overflow-hidden bg-classic bg-no-repeat xs:max-lg:bg-auto xs:max-md:bg-[-250vw_-50vh] md:bg-[-50vw_-60vh] lg:bg-[-30vw]"
         >
           <div className="gradient-gotham absolute top-0 flex w-full translate-x-0 items-center justify-center gap-2 py-2 font-bold uppercase text-white transition-all duration-200 group-hover:-translate-x-full">
             Więcej informacji
@@ -57,7 +57,7 @@ const Banner3 = () => {
           whileInView="show"
           viewport={{ once: true }}
           whileHover={{ scale: 1.05 }}
-          className="group relative h-full w-full overflow-hidden bg-classic bg-center bg-no-repeat xs:max-lg:bg-auto"
+          className="group relative h-full w-full overflow-hidden bg-classic bg-no-repeat xs:max-lg:bg-auto xs:max-md:bg-[-250vw_-80vh] md:bg-[-50vw_-90vh] lg:bg-[-60vw]"
         >
           <div className="gradient-gotham absolute top-0 flex w-full translate-x-0 items-center justify-center gap-2 py-2 font-bold uppercase text-white transition-all duration-200 group-hover:-translate-x-full">
             Więcej informacji
@@ -80,7 +80,7 @@ const Banner3 = () => {
           whileInView="show"
           viewport={{ once: true }}
           whileHover={{ scale: 1.05 }}
-          className="group relative h-full w-full overflow-hidden bg-classic bg-right bg-no-repeat xs:max-lg:bg-auto"
+          className="group relative h-full w-full overflow-hidden bg-classic bg-no-repeat xs:max-lg:bg-auto xs:max-md:bg-[-250vw_-110vh] md:bg-[-50vw_-120vh] lg:bg-[-90vw]"
         >
           <div className="gradient-gotham absolute top-0 flex w-full translate-x-0 items-center justify-center gap-2 py-2 font-bold uppercase text-white transition-all duration-200 group-hover:-translate-x-full">
             Więcej informacji
