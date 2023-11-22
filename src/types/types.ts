@@ -6,5 +6,6 @@ export type Lists = {
 
 export type Car = {
   name: string;
+  year: string;
   images: string[];
 };

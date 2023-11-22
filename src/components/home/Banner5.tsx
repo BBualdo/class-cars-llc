@@ -12,7 +12,7 @@ const Banner5 = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="bg-gradient-gold flex w-full flex-col items-center xs:px-4 xs:py-10 md:px-20 md:py-20"
+      className="gradient-light-gold flex w-full flex-col items-center xs:px-4 xs:py-10 md:px-20 md:py-20"
     >
       <h2
         className={`${alpha.className} gradient-gotham_hover max-w-[1000px] bg-clip-text text-center font-bold text-transparent md:text-[40px] md:leading-[48px] lg:text-[52px] lg:leading-[72px]`}

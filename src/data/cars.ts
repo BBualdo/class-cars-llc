@@ -2,302 +2,671 @@ import { Car } from "@/types/types";
 
 const cars: Car[] = [
   {
-    name: "Buick Riviera",
+    name: "Volkswagen Garbus OVAL",
+    year: "1955-1996",
     images: [
-      "/car-photos/Buick Riviera/Buick Riviera.jpeg",
-      `/car-photos/Buick Riviera/Buick Riviera interior.jpeg`,
+      "/car-photos/1955-1996 Volkswagen Garbus OVAL/1995VGOVAL (1).avif",
+      "/car-photos/1955-1996 Volkswagen Garbus OVAL/1995VGOVAL (2).avif",
+      "/car-photos/1955-1996 Volkswagen Garbus OVAL/1995VGOVAL (3).avif",
+      "/car-photos/1955-1996 Volkswagen Garbus OVAL/1995VGOVAL (4).avif",
+      "/car-photos/1955-1996 Volkswagen Garbus OVAL/1995VGOVAL (5).avif",
+      "/car-photos/1955-1996 Volkswagen Garbus OVAL/1995VGOVAL (6).avif",
+      "/car-photos/1955-1996 Volkswagen Garbus OVAL/1995VGOVAL (7).avif",
+      "/car-photos/1955-1996 Volkswagen Garbus OVAL/1995VGOVAL (8).avif",
+      "/car-photos/1955-1996 Volkswagen Garbus OVAL/1995VGOVAL (9).avif",
+      "/car-photos/1955-1996 Volkswagen Garbus OVAL/1995VGOVAL (10).avif",
+      "/car-photos/1955-1996 Volkswagen Garbus OVAL/1995VGOVAL (11).avif",
+      "/car-photos/1955-1996 Volkswagen Garbus OVAL/1995VGOVAL (12).avif",
+      "/car-photos/1955-1996 Volkswagen Garbus OVAL/1995VGOVAL (13).avif",
+      "/car-photos/1955-1996 Volkswagen Garbus OVAL/1995VGOVAL (14).avif",
+      "/car-photos/1955-1996 Volkswagen Garbus OVAL/1995VGOVAL (15).avif",
+      "/car-photos/1955-1996 Volkswagen Garbus OVAL/1995VGOVAL (16).avif",
+      "/car-photos/1955-1996 Volkswagen Garbus OVAL/1995VGOVAL (17).avif",
     ],
   },
   {
-    name: "Cadillac Escalade",
+    name: "Buick Riviera - 7.0 V8 Wildcat - 360KM",
+    year: "1967",
     images: [
-      "/car-photos/Cadillac Escalade/Cadillac Escalade.jpeg",
-      "/car-photos/Cadillac Escalade/Cadillac Escalade interior.jpeg",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (1).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (2).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (3).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (4).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (5).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (6).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (7).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (8).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (9).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (10).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (11).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (12).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (13).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (14).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (15).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (16).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (17).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (18).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (19).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (20).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (21).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (22).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (23).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (24).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (25).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (26).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (27).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (28).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (29).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (30).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (31).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (32).avif",
+      "/car-photos/1967 Buick Riviera - 7.0 V8 Wildcat - 360 KM/1967BUICKRIVIERA1 (33).avif",
     ],
   },
-  {
-    name: "Chevrolet 1500",
-    images: [
-      "/car-photos/Chevrolet 1500/Chevrolet 1500.jpeg",
-      "/car-photos/Chevrolet 1500/Chevrolet 1500 interior.jpeg",
-    ],
-  },
-  {
-    name: "Corvette",
-    images: [
-      "/car-photos/Corvette/Corvette.jpeg",
-      "/car-photos/Corvette/Corvette interior.jpeg",
-    ],
-  },
-  {
-    name: "Dodge Viper",
-    images: [
-      "/car-photos/Dodge Viper/Dodge Viper.jpeg",
-      "/car-photos/Dodge Viper/Dodge Viper interior.jpeg",
-    ],
-  },
-  {
-    name: "Honda CB",
-    images: [
-      "/car-photos/Honda CB/Honda CB.jpeg",
-      "/car-photos/Honda CB/Honda CB dash.jpeg",
-    ],
-  },
-  {
-    name: "Hummer H2",
-    images: [
-      "/car-photos/Hummer H2/Hummer H2.jpeg",
-      "/car-photos/Hummer H2/Hummer H2 interior.jpeg",
-    ],
-  },
-  {
-    name: "Hummer H3",
-    images: [
-      "/car-photos/Hummer H3/Hummer H3.jpeg",
-      "/car-photos/Hummer H3/Hummer H3 interior.jpeg",
-    ],
-  },
-  {
-    name: "Jeep Grand Cherokee",
-    images: [
-      "/car-photos/Jeep Grand Cherokee/Jeep Grand Cherokee.jpeg",
-      "/car-photos/Jeep Grand Cherokee/Jeep Grand Cherokee interior.jpeg",
-    ],
-  },
-  {
-    name: "Jeep Renegade",
-    images: [
-      "/car-photos/Jeep Renegade/Jeep Renegade.jpeg",
-      "/car-photos/Jeep Renegade/Jeep Renegade interior.jpeg",
-    ],
-  },
-  {
-    name: "Jeep Renegade 2",
-    images: [
-      "/car-photos/Jeep Renegade 2/Jeep Renegade 2.jpeg",
-      "/car-photos/Jeep Renegade 2/Jeep Renegade 2 interior.jpeg",
-    ],
-  },
-  {
-    name: "Jeep Renegade 3",
-    images: [
-      "/car-photos/Jeep Renegade 3/Jeep Renegade 3.jpeg",
-      "/car-photos/Jeep Renegade 3/Jeep Renegade 3 interior.jpeg",
-    ],
-  },
-  {
-    name: "Jeep Renegade 4",
-    images: [
-      "/car-photos/Jeep Renegade 4/Jeep Renegade 4.jpeg",
-      "/car-photos/Jeep Renegade 4/Jeep Renegade 4 interior.jpeg",
-    ],
-  },
-  {
-    name: "Jeep Wrangler",
-    images: [
-      "/car-photos/Jeep Wrangler/Jeep Wrangler.jpeg",
-      "/car-photos/Jeep Wrangler/Jeep Wrangler interior.jpeg",
-    ],
-  },
-  {
-    name: "Jeep Wrangler 2",
-    images: [
-      "/car-photos/Jeep Wrangler 2/Jeep Wrangler 2.jpeg",
-      "/car-photos/Jeep Wrangler 2/Jeep Wrangler 2 interior.jpeg",
-    ],
-  },
-  {
-    name: "Land Rover",
-    images: [
-      "/car-photos/Land Rover/Land Rover.jpeg",
-      "/car-photos/Land Rover/Land Rover interior.jpeg",
-      "/car-photos/Land Rover/Land Rover engine.jpeg",
-    ],
-  },
-  {
-    name: "Lexus LS",
-    images: ["/car-photos/Lexus LS/Lexus LS.jpeg"],
-  },
-  {
-    name: "Lexus LX470",
-    images: [
-      "/car-photos/Lexus LX470/Lexus LX470.jpeg",
-      "/car-photos/Lexus LX470/Lexus LX470 interior.jpeg",
-    ],
-  },
-  {
-    name: "Mercedes",
-    images: ["/car-photos/Mercedes/Mercedes.jpeg"],
-  },
-  {
-    name: "Mercedes SE",
-    images: [
-      "/car-photos/Mercedes SE/Mercedes SE.jpeg",
-      "/car-photos/Mercedes SE/Mercedes SE interior.jpeg",
-    ],
-  },
-  {
-    name: "Mercedes SL",
-    images: [
-      "/car-photos/Mercedes SL/Mercedes SL.jpeg",
-      "/car-photos/Mercedes SL/Mercedes SL.jpeg",
-    ],
-  },
-  {
-    name: "Mercedes W124 Cabrio",
-    images: [
-      "/car-photos/Mercedes W124 Cabrio/Mercedes W124 Cabrio.jpeg",
-      "/car-photos/Mercedes W124 Cabrio/Mercedes W124 Cabrio interior.jpeg",
-    ],
-  },
-  {
-    name: "Nissan Patrol",
-    images: [
-      "/car-photos/Nissan Patrol/Nissan Patrol.jpeg",
-      "/car-photos/Nissan Patrol/Nissan Patrol interior.jpeg",
-      "/car-photos/Nissan Patrol/Nissan Patrol interior 2.jpeg",
-    ],
-  },
-  {
-    name: "Nissan Patrol 2",
-    images: [
-      "/car-photos/Nissan Patrol 2/Nissan Patrol 2.jpeg",
-      "/car-photos/Nissan Patrol 2/Nissan Patrol2.jpeg",
-      "/car-photos/Nissan Patrol 2/Nissan Patrol 2 interior.jpeg",
-      "/car-photos/Nissan Patrol 2/Nissan Patrol 2 interior 2.jpeg",
-    ],
-  },
-  {
-    name: "Nissan Patrol 3",
-    images: [
-      "/car-photos/Nissan Patrol 3/Nissan Patrol 3.jpeg",
-      "/car-photos/Nissan Patrol 3/Nissan Patrol 3 interior.jpeg",
-    ],
-  },
-  {
-    name: "Nissan Patrol 4",
-    images: [
-      "/car-photos/Nissan Patrol 4/Nissan Patrol 4.jpeg",
-      "/car-photos/Nissan Patrol 4/Nissan Patrol 4 interior.jpeg",
-    ],
-  },
-  {
-    name: "Nissan Patrol 5",
-    images: [
-      "/car-photos/Nissan Patrol 5/Nissan Patrol 5.jpeg",
-      "/car-photos/Nissan Patrol 5/Nissan Patrol 5 interior.jpeg",
-    ],
-  },
-  {
-    name: "Nissan Patrol Black",
-    images: [
-      "/car-photos/Nissan Patrol black/Nissan Patrol black.jpeg",
-      "/car-photos/Nissan Patrol black/Nissan Patrol black interior.jpeg",
-    ],
-  },
-  {
-    name: "Nissan Patrol Safari Red",
-    images: [
-      "/car-photos/Nissan Patrol Safari red/Nissan Patrol Safari red.jpeg",
-      "/car-photos/Nissan Patrol Safari red/Nissan Patrol Safari red interior.jpeg",
-    ],
-  },
-  {
-    name: "Nissan Patrol Sahara",
-    images: [
-      "/car-photos/Nissan Patrol Sahara/Nissan Patrol.jpeg",
-      "/car-photos/Nissan Patrol Sahara/Nissan Patrol interior.jpeg",
-    ],
-  },
-  {
-    name: "Nissan Patrol White",
-    images: [
-      "/car-photos/Nissan Patrol white/Nissan Patrol white.jpeg",
-      "/car-photos/Nissan Patrol white/Nissan Patrol white interior.jpeg",
-    ],
-  },
-  {
-    name: "Plymouth",
-    images: [
-      "/car-photos/Plymouth/Plymouth.jpeg",
-      "/car-photos/Plymouth/Plymouth interior.jpeg",
-    ],
-  },
-  {
-    name: "Porsche Boxter",
-    images: [
-      "/car-photos/Porsche Boxter/Porsche Boxter.jpeg",
-      "/car-photos/Porsche Boxter/Porsche Boxter interior.jpeg",
-    ],
-  },
-  {
-    name: "Porsche Carrera",
-    images: [
-      "/car-photos/Porsche Carrera/Porsche Carrera.jpeg",
-      "/car-photos/Porsche Carrera/Porsche Carrera interior.jpeg",
-    ],
-  },
-  {
-    name: "Porsche Cayenne",
-    images: [
-      "/car-photos/Porsche Cayenne/Porsche Cayenne.jpeg",
-      "/car-photos/Porsche Cayenne/Porsche Cayenne interior.jpeg",
-    ],
-  },
-  {
-    name: "Toyota Land Cruiser",
-    images: [
-      "/car-photos/Toyota Land Cruiser/Toyota Land Cruiser.jpeg",
-      "/car-photos/Toyota Land Cruiser/Toyota Land Cruiser interior.jpeg",
-      "/car-photos/Toyota Land Cruiser/Toyota Land Cruiser engine.jpeg",
-    ],
-  },
-  {
-    name: "Toyota Land Cruiser RED",
-    images: [
-      "/car-photos/Toyota Land Cruiser RED/Toyota Land Cruiser RED.jpeg",
 
-      "/car-photos/Toyota Land Cruiser RED/Toyota Land Cruiser RED interior.jpeg",
+  {
+    name: "Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM",
+    year: "1985",
+    images: [
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (1).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (2).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (3).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (4).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (5).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (6).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (7).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (8).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (9).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (10).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (11).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (12).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (13).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (14).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (15).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (16).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (17).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (18).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (19).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (20).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (21).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (22).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (23).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (24).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (25).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (26).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (27).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (28).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (29).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (30).avif",
+      "/car-photos/1985 Toyota Land Cruiser (FJ75) - 3F 4.0 135 KM/1985TLCFJ75 (31).avif",
     ],
   },
   {
-    name: "Toyota Land Cruiser 2",
+    name: "Hummer H3 - 3.5 VORTEC 220 KM - Europa",
+    year: "2006",
     images: [
-      "/car-photos/Toyota Land Cruiser 2/Toyota Land Cruiser 2.jpeg",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (1).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (2).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (3).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (4).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (5).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (6).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (7).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (8).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (9).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (10).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (11).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (12).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (13).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (14).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (15).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (16).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (17).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (18).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (19).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (20).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (21).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (22).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (23).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (24).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (25).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (26).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (27).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (28).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (29).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (30).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (31).avif",
+      "/car-photos/2006 Hummer H3 - 3.5 VORTEC 220 KM - Europa/2006HH3 (32).avif",
+    ],
+  },
+  {
+    name: "Toyota Land Cruiser PRADO",
+    year: "2006",
+    images: [
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (1).avif",
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (2).avif",
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (3).avif",
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (4).avif",
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (5).avif",
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (6).avif",
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (7).avif",
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (8).avif",
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (9).avif",
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (10).avif",
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (11).avif",
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (12).avif",
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (13).avif",
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (14).avif",
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (15).avif",
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (16).avif",
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (17).avif",
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (18).avif",
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (19).avif",
+      "/car-photos/2006 Toyota Land Cruiser PRADO/2006TLCPRADO (20).avif",
+    ],
+  },
+  {
+    name: "Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST",
+    year: "2007",
+    images: [
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (1).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (2).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (3).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (4).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (5).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (6).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (7).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (8).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (9).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (10).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (11).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (12).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (13).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (14).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (15).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (16).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (17).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (18).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (19).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (20).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (21).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (22).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (23).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (24).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (25).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (26).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (27).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (28).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (29).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (30).avif",
+      "/car-photos/2007 Jeep Wrangler 3.8 V6 - 240 KM - Beach BEAST/2007JWBEACHBEAST (31).avif",
+    ],
+  },
+  {
+    name: "Jaguar XJR (X358) 4.2 400 KM V8- GCC",
+    year: "2008",
+    images: [
+      "/car-photos/2008 Jaguar XJR (X358) 4.2 400 KM V8- GCC/2008JXJRX358 (1).avif",
+      "/car-photos/2008 Jaguar XJR (X358) 4.2 400 KM V8- GCC/2008JXJRX358 (2).avif",
+      "/car-photos/2008 Jaguar XJR (X358) 4.2 400 KM V8- GCC/2008JXJRX358 (3).avif",
+      "/car-photos/2008 Jaguar XJR (X358) 4.2 400 KM V8- GCC/2008JXJRX358 (4).avif",
+      "/car-photos/2008 Jaguar XJR (X358) 4.2 400 KM V8- GCC/2008JXJRX358 (5).avif",
+      "/car-photos/2008 Jaguar XJR (X358) 4.2 400 KM V8- GCC/2008JXJRX358 (6).avif",
+      "/car-photos/2008 Jaguar XJR (X358) 4.2 400 KM V8- GCC/2008JXJRX358 (7).avif",
+      "/car-photos/2008 Jaguar XJR (X358) 4.2 400 KM V8- GCC/2008JXJRX358 (8).avif",
+      "/car-photos/2008 Jaguar XJR (X358) 4.2 400 KM V8- GCC/2008JXJRX358 (9).avif",
+      "/car-photos/2008 Jaguar XJR (X358) 4.2 400 KM V8- GCC/2008JXJRX358 (10).avif",
+    ],
+  },
+  {
+    name: "Dodge Challenger SRT8 - 6.4 HEMI (GCC SPEC)",
+    year: "2012",
+    images: [
+      "/car-photos/2012 Dodge Challenger SRT8 - 6.4 HEMI (GCC SPEC)/2012DCSRT8 (1).avif",
+      "/car-photos/2012 Dodge Challenger SRT8 - 6.4 HEMI (GCC SPEC)/2012DCSRT8 (2).avif",
+      "/car-photos/2012 Dodge Challenger SRT8 - 6.4 HEMI (GCC SPEC)/2012DCSRT8 (3).avif",
+      "/car-photos/2012 Dodge Challenger SRT8 - 6.4 HEMI (GCC SPEC)/2012DCSRT8 (4).avif",
+      "/car-photos/2012 Dodge Challenger SRT8 - 6.4 HEMI (GCC SPEC)/2012DCSRT8 (5).avif",
+      "/car-photos/2012 Dodge Challenger SRT8 - 6.4 HEMI (GCC SPEC)/2012DCSRT8 (6).avif",
+      "/car-photos/2012 Dodge Challenger SRT8 - 6.4 HEMI (GCC SPEC)/2012DCSRT8 (7).avif",
+      "/car-photos/2012 Dodge Challenger SRT8 - 6.4 HEMI (GCC SPEC)/2012DCSRT8 (8).avif",
+      "/car-photos/2012 Dodge Challenger SRT8 - 6.4 HEMI (GCC SPEC)/2012DCSRT8 (9).avif",
+      "/car-photos/2012 Dodge Challenger SRT8 - 6.4 HEMI (GCC SPEC)/2012DCSRT8 (10).avif",
+      "/car-photos/2012 Dodge Challenger SRT8 - 6.4 HEMI (GCC SPEC)/2012DCSRT8 (11).avif",
+    ],
+  },
+  {
+    name: "Ford Raptor SVT - GCC - V8 (98tkm)",
+    year: "2013",
+    images: [
+      "/car-photos/2013 Ford Raptor SVT - GCC - V8 (98tkm)/2013FORDRAPTORSVTGCC (1).avif",
+      "/car-photos/2013 Ford Raptor SVT - GCC - V8 (98tkm)/2013FORDRAPTORSVTGCC (2).avif",
+      "/car-photos/2013 Ford Raptor SVT - GCC - V8 (98tkm)/2013FORDRAPTORSVTGCC (3).avif",
+      "/car-photos/2013 Ford Raptor SVT - GCC - V8 (98tkm)/2013FORDRAPTORSVTGCC (4).avif",
+      "/car-photos/2013 Ford Raptor SVT - GCC - V8 (98tkm)/2013FORDRAPTORSVTGCC (5).avif",
+      "/car-photos/2013 Ford Raptor SVT - GCC - V8 (98tkm)/2013FORDRAPTORSVTGCC (6).avif",
+      "/car-photos/2013 Ford Raptor SVT - GCC - V8 (98tkm)/2013FORDRAPTORSVTGCC (7).avif",
+      "/car-photos/2013 Ford Raptor SVT - GCC - V8 (98tkm)/2013FORDRAPTORSVTGCC (8).avif",
+      "/car-photos/2013 Ford Raptor SVT - GCC - V8 (98tkm)/2013FORDRAPTORSVTGCC (9).avif",
+      "/car-photos/2013 Ford Raptor SVT - GCC - V8 (98tkm)/2013FORDRAPTORSVTGCC (10).avif",
+    ],
+  },
+  {
+    name: "Cadillac Escalade 6.2 V8 LIFT (US SPEC)",
+    year: "2017",
+    images: [
+      "/car-photos/2017 Cadillac Escalade 6.2 V8 LIFT (US SPEC)/2017CADESCLIFTUS (1).avif",
+      "/car-photos/2017 Cadillac Escalade 6.2 V8 LIFT (US SPEC)/2017CADESCLIFTUS (2).avif",
+      "/car-photos/2017 Cadillac Escalade 6.2 V8 LIFT (US SPEC)/2017CADESCLIFTUS (3).avif",
+      "/car-photos/2017 Cadillac Escalade 6.2 V8 LIFT (US SPEC)/2017CADESCLIFTUS (4).avif",
+      "/car-photos/2017 Cadillac Escalade 6.2 V8 LIFT (US SPEC)/2017CADESCLIFTUS (5).avif",
+      "/car-photos/2017 Cadillac Escalade 6.2 V8 LIFT (US SPEC)/2017CADESCLIFTUS (6).avif",
+      "/car-photos/2017 Cadillac Escalade 6.2 V8 LIFT (US SPEC)/2017CADESCLIFTUS (7).avif",
+      "/car-photos/2017 Cadillac Escalade 6.2 V8 LIFT (US SPEC)/2017CADESCLIFTUS (8).avif",
+      "/car-photos/2017 Cadillac Escalade 6.2 V8 LIFT (US SPEC)/2017CADESCLIFTUS (9).avif",
+    ],
+  },
+  {
+    name: "Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa",
+    year: "2017",
+    images: [
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (1).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (2).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (3).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (4).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (5).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (6).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (7).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (8).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (9).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (10).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (11).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (12).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (13).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (14).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (15).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (16).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (17).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (18).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (19).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (20).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (21).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (22).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (23).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (24).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (25).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (26).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (27).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (28).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (29).avif",
+      "/car-photos/2017 Jeep Wrangler WILLYS - 3.6 V6 284 KM - Europa/2017JWWILLYS (30).avif",
+    ],
+  },
+  {
+    name: "Lexus LS460 AWD - F SPORT",
+    year: "2017",
+    images: [
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (1).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (2).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (3).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (4).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (5).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (6).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (7).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (8).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (9).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (10).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (11).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (12).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (13).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (14).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (15).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (16).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (17).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (18).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (19).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (20).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (21).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (22).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (23).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (24).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (25).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (26).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (27).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (28).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (29).avif",
+      "/car-photos/2017 Lexus LS460 AWD - F SPORT/2017LEXLS460 (30).avif",
+    ],
+  },
+  {
+    name: "Kia Sportage SX GT AWD 265KM (45tkm)",
+    year: "2018",
+    images: [
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (1).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (2).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (3).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (4).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (5).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (6).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (7).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (8).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (9).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (10).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (11).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (12).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (13).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (14).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (15).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (16).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (17).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (18).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (19).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (20).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (21).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (22).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (23).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (24).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (25).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (26).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (27).avif",
+      "/car-photos/2018 Kia Sportage SX GT AWD 265KM (45tkm)/2018KSSXGT (28).avif",
+    ],
+  },
 
-      "/car-photos/Toyota Land Cruiser 2/Toyota Land Cruiser 2 interior.jpeg",
-    ],
-  },
-  {
-    name: "Toyota Land Cruiser 3",
-    images: [
-      "/car-photos/Toyota Land Cruiser 3/Toyota Land Cruiser 3.jpeg",
-
-      "/car-photos/Toyota Land Cruiser 3/Toyota Land Cruiser 3 interior.jpeg",
-    ],
-  },
-  {
-    name: "VW T5 White",
-    images: [
-      "/car-photos/VW T5 white/VW T5 white.jpeg",
-      "/car-photos/VW T5 white/VW T5 white interior.jpeg",
-    ],
-  },
-  {
-    name: "Wrangler Sahara Unlimited",
-    images: [
-      "/car-photos/Wrangler Sahara Unlimited/Wrangler 3.jpeg",
-      "/car-photos/Wrangler Sahara Unlimited/Wrangler 4.jpeg",
-      "/car-photos/Wrangler Sahara Unlimited/Wrangler 3 interior.jpeg",
-    ],
-  },
-  {
-    name: "Yamaha Quad",
-    images: [
-      "/car-photos/Yamaha Quad/Yamaha.jpeg",
-      "/car-photos/Yamaha Quad/Yamaha dash.jpeg",
-    ],
-  },
+  // {
+  //   name: "Buick Riviera",
+  //   images: [
+  //     "/car-photos/Buick Riviera/Buick Riviera.jpeg",
+  //     `/car-photos/Buick Riviera/Buick Riviera interior.jpeg`,
+  //   ],
+  // },
+  // {
+  //   name: "Cadillac Escalade",
+  //   images: [
+  //     "/car-photos/Cadillac Escalade/Cadillac Escalade.jpeg",
+  //     "/car-photos/Cadillac Escalade/Cadillac Escalade interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Chevrolet 1500",
+  //   images: [
+  //     "/car-photos/Chevrolet 1500/Chevrolet 1500.jpeg",
+  //     "/car-photos/Chevrolet 1500/Chevrolet 1500 interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Corvette",
+  //   images: [
+  //     "/car-photos/Corvette/Corvette.jpeg",
+  //     "/car-photos/Corvette/Corvette interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Dodge Viper",
+  //   images: [
+  //     "/car-photos/Dodge Viper/Dodge Viper.jpeg",
+  //     "/car-photos/Dodge Viper/Dodge Viper interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Honda CB",
+  //   images: [
+  //     "/car-photos/Honda CB/Honda CB.jpeg",
+  //     "/car-photos/Honda CB/Honda CB dash.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Hummer H2",
+  //   images: [
+  //     "/car-photos/Hummer H2/Hummer H2.jpeg",
+  //     "/car-photos/Hummer H2/Hummer H2 interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Hummer H3",
+  //   images: [
+  //     "/car-photos/Hummer H3/Hummer H3.jpeg",
+  //     "/car-photos/Hummer H3/Hummer H3 interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Jeep Grand Cherokee",
+  //   images: [
+  //     "/car-photos/Jeep Grand Cherokee/Jeep Grand Cherokee.jpeg",
+  //     "/car-photos/Jeep Grand Cherokee/Jeep Grand Cherokee interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Jeep Renegade",
+  //   images: [
+  //     "/car-photos/Jeep Renegade/Jeep Renegade.jpeg",
+  //     "/car-photos/Jeep Renegade/Jeep Renegade interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Jeep Renegade 2",
+  //   images: [
+  //     "/car-photos/Jeep Renegade 2/Jeep Renegade 2.jpeg",
+  //     "/car-photos/Jeep Renegade 2/Jeep Renegade 2 interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Jeep Renegade 3",
+  //   images: [
+  //     "/car-photos/Jeep Renegade 3/Jeep Renegade 3.jpeg",
+  //     "/car-photos/Jeep Renegade 3/Jeep Renegade 3 interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Jeep Renegade 4",
+  //   images: [
+  //     "/car-photos/Jeep Renegade 4/Jeep Renegade 4.jpeg",
+  //     "/car-photos/Jeep Renegade 4/Jeep Renegade 4 interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Jeep Wrangler",
+  //   images: [
+  //     "/car-photos/Jeep Wrangler/Jeep Wrangler.jpeg",
+  //     "/car-photos/Jeep Wrangler/Jeep Wrangler interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Jeep Wrangler 2",
+  //   images: [
+  //     "/car-photos/Jeep Wrangler 2/Jeep Wrangler 2.jpeg",
+  //     "/car-photos/Jeep Wrangler 2/Jeep Wrangler 2 interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Land Rover",
+  //   images: [
+  //     "/car-photos/Land Rover/Land Rover.jpeg",
+  //     "/car-photos/Land Rover/Land Rover interior.jpeg",
+  //     "/car-photos/Land Rover/Land Rover engine.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Lexus LS",
+  //   images: ["/car-photos/Lexus LS/Lexus LS.jpeg"],
+  // },
+  // {
+  //   name: "Lexus LX470",
+  //   images: [
+  //     "/car-photos/Lexus LX470/Lexus LX470.jpeg",
+  //     "/car-photos/Lexus LX470/Lexus LX470 interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Mercedes",
+  //   images: ["/car-photos/Mercedes/Mercedes.jpeg"],
+  // },
+  // {
+  //   name: "Mercedes SE",
+  //   images: [
+  //     "/car-photos/Mercedes SE/Mercedes SE.jpeg",
+  //     "/car-photos/Mercedes SE/Mercedes SE interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Mercedes SL",
+  //   images: [
+  //     "/car-photos/Mercedes SL/Mercedes SL.jpeg",
+  //     "/car-photos/Mercedes SL/Mercedes SL.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Mercedes W124 Cabrio",
+  //   images: [
+  //     "/car-photos/Mercedes W124 Cabrio/Mercedes W124 Cabrio.jpeg",
+  //     "/car-photos/Mercedes W124 Cabrio/Mercedes W124 Cabrio interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Nissan Patrol",
+  //   images: [
+  //     "/car-photos/Nissan Patrol/Nissan Patrol.jpeg",
+  //     "/car-photos/Nissan Patrol/Nissan Patrol interior.jpeg",
+  //     "/car-photos/Nissan Patrol/Nissan Patrol interior 2.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Nissan Patrol 2",
+  //   images: [
+  //     "/car-photos/Nissan Patrol 2/Nissan Patrol 2.jpeg",
+  //     "/car-photos/Nissan Patrol 2/Nissan Patrol2.jpeg",
+  //     "/car-photos/Nissan Patrol 2/Nissan Patrol 2 interior.jpeg",
+  //     "/car-photos/Nissan Patrol 2/Nissan Patrol 2 interior 2.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Nissan Patrol 3",
+  //   images: [
+  //     "/car-photos/Nissan Patrol 3/Nissan Patrol 3.jpeg",
+  //     "/car-photos/Nissan Patrol 3/Nissan Patrol 3 interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Nissan Patrol 4",
+  //   images: [
+  //     "/car-photos/Nissan Patrol 4/Nissan Patrol 4.jpeg",
+  //     "/car-photos/Nissan Patrol 4/Nissan Patrol 4 interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Nissan Patrol 5",
+  //   images: [
+  //     "/car-photos/Nissan Patrol 5/Nissan Patrol 5.jpeg",
+  //     "/car-photos/Nissan Patrol 5/Nissan Patrol 5 interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Nissan Patrol Black",
+  //   images: [
+  //     "/car-photos/Nissan Patrol black/Nissan Patrol black.jpeg",
+  //     "/car-photos/Nissan Patrol black/Nissan Patrol black interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Nissan Patrol Safari Red",
+  //   images: [
+  //     "/car-photos/Nissan Patrol Safari red/Nissan Patrol Safari red.jpeg",
+  //     "/car-photos/Nissan Patrol Safari red/Nissan Patrol Safari red interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Nissan Patrol Sahara",
+  //   images: [
+  //     "/car-photos/Nissan Patrol Sahara/Nissan Patrol.jpeg",
+  //     "/car-photos/Nissan Patrol Sahara/Nissan Patrol interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Nissan Patrol White",
+  //   images: [
+  //     "/car-photos/Nissan Patrol white/Nissan Patrol white.jpeg",
+  //     "/car-photos/Nissan Patrol white/Nissan Patrol white interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Plymouth",
+  //   images: [
+  //     "/car-photos/Plymouth/Plymouth.jpeg",
+  //     "/car-photos/Plymouth/Plymouth interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Porsche Boxter",
+  //   images: [
+  //     "/car-photos/Porsche Boxter/Porsche Boxter.jpeg",
+  //     "/car-photos/Porsche Boxter/Porsche Boxter interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Porsche Carrera",
+  //   images: [
+  //     "/car-photos/Porsche Carrera/Porsche Carrera.jpeg",
+  //     "/car-photos/Porsche Carrera/Porsche Carrera interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Porsche Cayenne",
+  //   images: [
+  //     "/car-photos/Porsche Cayenne/Porsche Cayenne.jpeg",
+  //     "/car-photos/Porsche Cayenne/Porsche Cayenne interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Toyota Land Cruiser",
+  //   images: [
+  //     "/car-photos/Toyota Land Cruiser/Toyota Land Cruiser.jpeg",
+  //     "/car-photos/Toyota Land Cruiser/Toyota Land Cruiser interior.jpeg",
+  //     "/car-photos/Toyota Land Cruiser/Toyota Land Cruiser engine.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Toyota Land Cruiser RED",
+  //   images: [
+  //     "/car-photos/Toyota Land Cruiser RED/Toyota Land Cruiser RED.jpeg",
+  //     "/car-photos/Toyota Land Cruiser RED/Toyota Land Cruiser RED interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Toyota Land Cruiser 2",
+  //   images: [
+  //     "/car-photos/Toyota Land Cruiser 2/Toyota Land Cruiser 2.jpeg",
+  //     "/car-photos/Toyota Land Cruiser 2/Toyota Land Cruiser 2 interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Toyota Land Cruiser 3",
+  //   images: [
+  //     "/car-photos/Toyota Land Cruiser 3/Toyota Land Cruiser 3.jpeg",
+  //     "/car-photos/Toyota Land Cruiser 3/Toyota Land Cruiser 3 interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "VW T5 White",
+  //   images: [
+  //     "/car-photos/VW T5 white/VW T5 white.jpeg",
+  //     "/car-photos/VW T5 white/VW T5 white interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Wrangler Sahara Unlimited",
+  //   images: [
+  //     "/car-photos/Wrangler Sahara Unlimited/Wrangler 3.jpeg",
+  //     "/car-photos/Wrangler Sahara Unlimited/Wrangler 4.jpeg",
+  //     "/car-photos/Wrangler Sahara Unlimited/Wrangler 3 interior.jpeg",
+  //   ],
+  // },
+  // {
+  //   name: "Yamaha Quad",
+  //   images: [
+  //     "/car-photos/Yamaha Quad/Yamaha.jpeg",
+  //     "/car-photos/Yamaha Quad/Yamaha dash.jpeg",
+  //   ],
+  // },
 ];
 
 export default cars;

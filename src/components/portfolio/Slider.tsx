@@ -22,27 +22,26 @@ const Slider = ({
   };
 
   return (
-    <div className="flex w-full gap-10 bg-darkGrey xs:p-2 xs:max-md:flex-col md:p-8">
-      <div className="flex flex-col items-center gap-2">
-        <div className="group relative flex items-center overflow-hidden">
+    <div className="flex w-full gap-10 xs:p-2 xs:max-md:flex-col md:p-8">
+      <div className="flex h-auto w-[400px] flex-col gap-4">
+        <div className="group relative flex h-[300px] w-full items-center overflow-hidden">
           <ArrowBackIosNew
-            className="absolute left-0 -translate-x-full cursor-pointer bg-black/70 p-1 text-[40px] transition-all duration-300 group-hover:translate-x-0"
+            className="absolute left-0 z-40 -translate-x-full cursor-pointer bg-black/70 p-1 text-[40px] transition-all duration-300 group-hover:translate-x-0"
             onClick={prevImage}
           />
           <Image
             src={images[current]}
             alt=""
-            width={400}
-            height={300}
-            className="h-[300px] w-[400px]"
+            fill
+            style={{ objectFit: "cover" }}
           />
           <ArrowForwardIos
-            className="absolute right-0 translate-x-full cursor-pointer bg-black/70 p-1 text-[40px] transition-all duration-300 group-hover:translate-x-0"
+            className="absolute right-0 z-40 translate-x-full cursor-pointer bg-black/70 p-1 text-[40px] transition-all duration-300 group-hover:translate-x-0"
             onClick={nextImage}
           />
         </div>
 
-        <div className="flex items-center gap-1">
+        <div className="flex w-full flex-wrap items-center justify-center gap-1">
           {images.map((image, index) => (
             <button
               key={index}
