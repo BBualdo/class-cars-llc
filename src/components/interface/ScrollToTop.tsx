@@ -1,7 +1,7 @@
 "use client";
 
 import { KeyboardArrowUp } from "@mui/icons-material";
-import { Fab } from "@mui/material";
+import { Fab, Tooltip } from "@mui/material";
 import clsx from "clsx";
 import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
@@ -30,19 +30,23 @@ const ScrollToTop = () => {
 
   return (
     <Link to="nav" smooth>
-      <Fab
-        disabled={!isVisible}
-        size="medium"
-        className={clsx(
-          "gradient-gold hover:animate-nonexs:max-md:right-5 fixed bottom-10 right-10 animate-[bounce_2s_linear_infinite] border-black transition-all duration-200",
-          {
-            "opacity-50 hover:opacity-100": isVisible,
-            "opacity-0": !isVisible,
-          },
-        )}
-      >
-        <KeyboardArrowUp className="text-3xl text-white" />
-      </Fab>
+      <Tooltip title="Przejdź na górę">
+        <Fab
+          aria-label="Scroll to top"
+          disabled={!isVisible}
+          sx={{ border: 1, borderColor: "gold" }}
+          size="medium"
+          className={clsx(
+            "gradient-gotham fixed bottom-10 right-10 animate-[bounce_2s_linear_infinite] transition-all duration-200 hover:animate-[bounce_4s_linear_infinite] xs:max-md:right-5",
+            {
+              "opacity-50 hover:opacity-100": isVisible,
+              "opacity-0": !isVisible,
+            },
+          )}
+        >
+          <KeyboardArrowUp className="text-3xl text-white" />
+        </Fab>
+      </Tooltip>
     </Link>
   );
 };
