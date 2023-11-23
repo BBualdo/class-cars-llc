@@ -31,12 +31,22 @@ const Slider = ({
           >
             <ArrowBackIosNew className="text-[32px]" onClick={prevImage} />
           </button>
-          <Image
-            src={images[current]}
-            alt=""
-            fill
-            style={{ objectFit: "cover" }}
-          />
+          {images.map((image, index) => (
+            <Image
+              key={index}
+              src={image}
+              alt=""
+              width={400}
+              height={300}
+              style={{
+                translate: `${-100 * current}%`,
+                aspectRatio: 4 / 3,
+                objectFit: "cover",
+              }}
+              className="transition-translate duration-300"
+            />
+          ))}
+
           <button
             aria-label="Next Image"
             className="absolute right-0 z-40 translate-x-full bg-black/70 p-1 transition-all duration-300 focus:translate-x-0 group-hover:translate-x-0"
