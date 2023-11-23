@@ -8,6 +8,16 @@ import { usePathname } from "next/navigation";
 const Menu = () => {
   const pathname = usePathname();
 
+  const fullName = (linkName: string) => {
+    if (linkName === "Import") {
+      return "Proces Importu";
+    } else if (linkName === "Cena") {
+      return "Cena Importu";
+    } else {
+      return linkName;
+    }
+  };
+
   const linksElements = links1.concat(links2).map((link) => (
     <Link
       key={link.key}
@@ -17,7 +27,7 @@ const Menu = () => {
         "text-white": link.href !== pathname,
       })}
     >
-      {link.name}
+      {fullName(link.name)}
     </Link>
   ));
 
