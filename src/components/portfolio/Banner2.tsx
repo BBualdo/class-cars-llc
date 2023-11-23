@@ -10,7 +10,9 @@ import { fadeIn } from "@/utils/fadeIn";
 const Banner2 = () => {
   const carElement = cars.map((car) => (
     <Slider images={car.images} key={uuidv4()}>
-      <h2 className="text-[32px] text-white">{car.name}</h2>
+      <h2 className="text-white xs:text-[24px] md:text-[32px]">
+        {car.name} <span className="text-[16px] font-normal">({car.year})</span>
+      </h2>
     </Slider>
   ));
 
