@@ -22,7 +22,7 @@ const Banner2 = () => {
       viewport={{ once: true }}
       className="gradient-gotham-mix"
     >
-      {carElement}
+      <div className="flex flex-col gap-10">{carElement}</div>
     </motion.section>
   );
 };

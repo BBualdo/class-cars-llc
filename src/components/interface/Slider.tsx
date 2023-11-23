@@ -29,13 +29,13 @@ const Slider = ({
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="flex w-full gap-10 xs:p-2 xs:max-md:flex-col md:p-8"
+      className="flex w-full xs:gap-4 xs:p-2 xs:max-md:flex-col md:gap-10 md:p-8"
     >
       <div
         aria-label="Image Slider"
-        className="flex h-auto w-[500px] flex-col gap-4"
+        className="flex h-auto flex-col gap-4 md:w-[400px] lg:w-[500px]"
       >
-        <div className="group relative flex h-[400px] w-full items-center overflow-hidden rounded-md border-4 border-white bg-black text-white">
+        <div className="group relative flex w-full items-center overflow-hidden rounded-md border-4 border-white bg-black text-white md:h-[300px] lg:h-[400px]">
           <button
             aria-label="Previous Image"
             className="absolute left-0 z-40 -translate-x-full bg-black/70 p-1 transition-all duration-300 hover:text-gold focus-visible:translate-x-0 group-hover:translate-x-0"
@@ -58,7 +58,7 @@ const Slider = ({
                 objectFit: "cover",
               }}
               priority={current === index}
-              className="transition-translate duration-300"
+              className="transition-translate duration-300 xs:max-md:w-full"
             />
           ))}
 
@@ -70,7 +70,7 @@ const Slider = ({
           </button>
         </div>
 
-        <div className="flex w-full flex-wrap items-center justify-center gap-1">
+        <div className="flex w-full flex-wrap items-center justify-center xs:gap-2 md:gap-1">
           {images.map((_, index) => (
             <button
               key={index}
@@ -78,12 +78,14 @@ const Slider = ({
               onClick={() => setCurrent(index)}
               className={`${
                 index === current ? "bg-gold" : "bg-transparent"
-              } h-[14px] w-[20px] -skew-x-12 border border-gold hover:border-white`}
+              } h-[16px] w-[24px] -skew-x-12 border border-gold hover:border-white md:h-[14px] md:w-[20px]`}
             />
           ))}
         </div>
       </div>
-      <div>{children}</div>
+      <div className="flex-1 xs:max-md:order-[-1] xs:max-md:text-center">
+        {children}
+      </div>
     </motion.div>
   );
 };
