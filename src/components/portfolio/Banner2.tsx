@@ -10,8 +10,8 @@ import { fadeIn } from "@/utils/fadeIn";
 const Banner2 = () => {
   const carElement = cars.map((car) => (
     <Slider images={car.images} key={uuidv4()}>
-      <h2 className="text-white xs:text-[24px] md:text-[32px]">
-        {car.name} <span className="text-[16px] font-normal">({car.year})</span>
+      <h2 className="text-center text-gold xs:text-[16px] md:text-[14px] lg:text-[20px]">
+        {car.name} <span className="font-normal">({car.year})</span>
       </h2>
     </Slider>
   ));
@@ -24,7 +24,9 @@ const Banner2 = () => {
       viewport={{ once: true }}
       className="gradient-gotham-mix"
     >
-      <div className="flex flex-col gap-10">{carElement}</div>
+      <div className="grid gap-10 xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {carElement}
+      </div>
     </motion.section>
   );
 };

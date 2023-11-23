@@ -90,7 +90,7 @@ const Navbar = () => {
             ref={containerRef}
           >
             <motion.div
-              className="gradient-gotham_hover absolute left-0 top-0 z-20 h-[440px] w-[50vw] rounded-b-lg"
+              className="gradient-gotham_hover absolute left-0 top-0 z-50 h-[440px] w-[50vw] rounded-b-lg"
               variants={sidebar}
             >
               <MobileNavLinks toggle={() => toggleOpen()} />

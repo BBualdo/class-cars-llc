@@ -36,6 +36,9 @@ const Slider = ({
         className="flex h-auto flex-col gap-4 md:w-[400px] lg:w-[500px]"
       >
         <div className="group relative flex w-full items-center overflow-hidden rounded-md border-4 border-white bg-black text-white md:h-[300px] lg:h-[400px]">
+          <div className="absolute top-0 z-30 flex w-full items-center justify-center bg-black py-2">
+            {children}
+          </div>
           <button
             aria-label="Previous Image"
             className="absolute left-0 z-40 -translate-x-full bg-black/70 p-1 transition-all duration-300 hover:text-gold focus-visible:translate-x-0 group-hover:translate-x-0"
@@ -82,9 +85,6 @@ const Slider = ({
             />
           ))}
         </div>
-      </div>
-      <div className="flex-1 xs:max-md:order-[-1] xs:max-md:text-center">
-        {children}
       </div>
     </motion.div>
   );
