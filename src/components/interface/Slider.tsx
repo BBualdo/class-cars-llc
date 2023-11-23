@@ -25,12 +25,12 @@ const Slider = ({
     <div className="flex w-full gap-10 xs:p-2 xs:max-md:flex-col md:p-8">
       <div
         aria-label="Image Slider"
-        className="flex h-auto w-[400px] flex-col gap-4"
+        className="flex h-auto w-[500px] flex-col gap-4"
       >
-        <div className="group relative flex h-[300px] w-full items-center overflow-hidden">
+        <div className="group relative flex h-[400px] w-full items-center overflow-hidden rounded-md border-4 border-white bg-black text-white">
           <button
             aria-label="Previous Image"
-            className="absolute left-0 z-40 -translate-x-full bg-black/70 p-1 transition-all duration-300 focus-visible:translate-x-0 group-hover:translate-x-0"
+            className="absolute left-0 z-40 -translate-x-full bg-black/70 p-1 transition-all duration-300 hover:text-gold focus-visible:translate-x-0 group-hover:translate-x-0"
           >
             <ArrowBackIosNew className="text-[32px]" onClick={prevImage} />
           </button>
@@ -42,8 +42,8 @@ const Slider = ({
               key={index}
               src={image}
               alt=""
-              width={400}
-              height={300}
+              width={500}
+              height={400}
               style={{
                 translate: `${-100 * current}%`,
                 aspectRatio: 3 / 2,
@@ -56,7 +56,7 @@ const Slider = ({
 
           <button
             aria-label="Next Image"
-            className="absolute right-0 z-40 translate-x-full bg-black/70 p-1 transition-all duration-300 group-hover:translate-x-0 group-focus-visible:translate-x-0"
+            className="absolute right-0 z-40 translate-x-full bg-black/70 p-1 transition-all duration-300 hover:text-gold group-hover:translate-x-0 group-focus-visible:translate-x-0"
           >
             <ArrowForwardIos className="text-[32px]" onClick={nextImage} />
           </button>
@@ -70,7 +70,7 @@ const Slider = ({
               onClick={() => setCurrent(index)}
               className={`${
                 index === current ? "bg-gold" : "bg-transparent"
-              } h-[14px] w-[20px] -skew-x-12 border border-gold`}
+              } h-[14px] w-[20px] -skew-x-12 border border-gold hover:border-white`}
             />
           ))}
         </div>
