@@ -17,7 +17,7 @@ const Banner1 = () => {
       >
         <Image
           alt="Bunch of black cars in a row"
-          src="/template-images/car-queue.avif"
+          src="/template-images/import.avif"
           fill
           style={{ objectFit: "cover" }}
           priority
