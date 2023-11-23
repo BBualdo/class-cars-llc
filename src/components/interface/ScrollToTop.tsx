@@ -29,7 +29,7 @@ const ScrollToTop = () => {
   }, []);
 
   return (
-    <Link to="nav" smooth>
+    <Link href="#nav" to="nav" smooth>
       <Tooltip title="Przejdź na górę">
         <Fab
           aria-label="Scroll to top"
