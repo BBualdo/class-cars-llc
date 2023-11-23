@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useState } from "react";
 import { ArrowBackIosNew, ArrowForwardIos } from "@mui/icons-material";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/utils/fadeIn";
 
 const Slider = ({
   images,
@@ -22,7 +24,13 @@ const Slider = ({
   };
 
   return (
-    <div className="flex w-full gap-10 xs:p-2 xs:max-md:flex-col md:p-8">
+    <motion.div
+      variants={fadeIn("right", 0.4, 1, 0.8)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className="flex w-full gap-10 xs:p-2 xs:max-md:flex-col md:p-8"
+    >
       <div
         aria-label="Image Slider"
         className="flex h-auto w-[500px] flex-col gap-4"
@@ -76,7 +84,7 @@ const Slider = ({
         </div>
       </div>
       <div>{children}</div>
-    </div>
+    </motion.div>
   );
 };
 

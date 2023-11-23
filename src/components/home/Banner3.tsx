@@ -12,7 +12,7 @@ const Banner3 = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="flex min-h-[1200px] w-full flex-col items-center py-10 xs:gap-4 md:gap-10"
+      className="flex min-h-[1200px] w-full flex-col items-center bg-white py-10 xs:gap-4 md:gap-10"
     >
       <h2
         className={`${alpha.className} text-center uppercase md:text-[32px] lg:text-[40px]`}
