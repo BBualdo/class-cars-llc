@@ -1,13 +1,6 @@
 "use client";
 
-import {
-  dancing,
-  ibarra,
-  lobster,
-  merriweather,
-  neuton,
-  raleway,
-} from "@/fonts/fonts";
+import { ibarra } from "@/fonts/fonts";
 import { fadeIn } from "@/utils/fadeIn";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -36,7 +29,7 @@ const Banner1 = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className={`${ibarra.className} gradient-sand-beam upper z-10 bg-clip-text text-center font-extrabold uppercase text-transparent xs:max-md:text-[40px] xs:max-md:leading-10`}
+          className={`${ibarra.className} gradient-sand-beam upper z-10 bg-clip-text text-center font-extrabold text-transparent xs:max-md:text-[40px] xs:max-md:leading-10`}
         >
           Portfolio
         </motion.h1>
