@@ -24,7 +24,7 @@ const Banner2 = () => {
       viewport={{ once: true }}
       className="gradient-gotham-mix"
     >
-      <div className="grid gap-10 xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid xs:grid-cols-1 xs:max-md:gap-10 md:grid-cols-2 lg:grid-cols-3">
         {carElement}
       </div>
     </motion.section>
