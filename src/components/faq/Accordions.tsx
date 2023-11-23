@@ -26,7 +26,7 @@ const Accordions = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="flex w-full items-center justify-center"
+      className="flex w-full items-center justify-center py-8"
     >
       <div className="flex flex-col justify-center gap-1 md:w-3/4">
         <Accordion

@@ -1,15 +1,9 @@
-import { ClipLoader } from "react-spinners";
+import { HourglassBottom } from "@mui/icons-material";
 
 export default function Loading() {
   return (
-    <div className="flex min-h-screen items-center justify-center">
-      <ClipLoader
-        color="#efd69d"
-        size={100}
-        aria-label="Loading Spinner"
-        data-testid="loader"
-        loading
-      />
-    </div>
+    <main className="flex min-h-screen items-center justify-center">
+      <HourglassBottom className="animate-spin text-[72px] text-gold" />
+    </main>
   );
 }
