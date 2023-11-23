@@ -37,6 +37,7 @@ const Slider = ({
 
           {images.map((image, index) => (
             <Image
+              loading={`${current === index ? "eager" : "lazy"}`}
               aria-hidden={current !== index}
               key={index}
               src={image}
