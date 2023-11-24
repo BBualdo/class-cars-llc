@@ -47,7 +47,7 @@ const Banner2 = () => {
         className="relative flex-1"
       >
         <Image
-          alt="Offroad car riding in the desert"
+          alt=""
           src="/template-images/desert.avif"
           fill
           style={{ objectFit: "cover" }}

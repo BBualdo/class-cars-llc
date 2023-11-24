@@ -16,7 +16,7 @@ const Banner1 = () => {
         className="absolute z-0 w-full border-b-2 border-gold xs:h-[400px] md:h-[600px]"
       >
         <Image
-          alt="Dodge Viper on the red background"
+          alt=""
           src="/template-images/viper.avif"
           fill
           style={{ objectFit: "cover" }}

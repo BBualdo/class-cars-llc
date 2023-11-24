@@ -17,9 +17,9 @@ const Banner1 = () => {
       >
         <Image
           alt=""
-          src="/template-images/car-queue.avif"
+          src="/template-images/cross.avif"
           fill
-          style={{ objectFit: "cover", objectPosition: "50% 10%" }}
+          style={{ objectFit: "cover", objectPosition: "50% 20%" }}
           priority
         />
       </motion.div>
@@ -31,7 +31,7 @@ const Banner1 = () => {
           viewport={{ once: true }}
           className={`${ibarra.className} gradient-sand-beam upper z-10 bg-clip-text text-center font-extrabold text-transparent xs:max-md:text-[40px] xs:max-md:leading-10`}
         >
-          Portfolio
+          O Mnie
         </motion.h1>
       </div>
     </section>

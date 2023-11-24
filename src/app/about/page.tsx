@@ -1,7 +1,10 @@
+import Banner1 from "@/components/about/Banner1";
+
 export default function Page() {
   return (
-    <main className="bg-gradient-gold flex min-h-screen flex-col gap-10 p-24">
-      <div className="flex flex-col items-center gap-10 border-8 border-gold bg-black p-10 text-center text-white">
+    <main className="flex min-h-screen flex-col overflow-hidden">
+      <Banner1 />
+      {/* <div className="flex flex-col items-center gap-10 border-8 border-gold bg-black p-10 text-center text-white">
         <p className="flex-1 text-[24px] leading-10">
           Pasję do samochodów odziedziczyłem po ojcu, który był handlarzem.
           Sprzedał i kupił około 500 pojazdów, a ja towarzyszyłem mu w tych
@@ -104,7 +107,7 @@ export default function Page() {
           możliwości. Moim celem jest stać się uznawany nie tylko jako handlarz,
           ale jako ekspert i ambasador kultury motoryzacyjnej.
         </p>
-      </div>
+      </div> */}
     </main>
   );
 }

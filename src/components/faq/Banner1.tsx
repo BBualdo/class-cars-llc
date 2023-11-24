@@ -16,10 +16,10 @@ const Banner1 = () => {
         className="absolute z-0 w-full border-b-2 border-gold xs:h-[200px] md:h-[300px]"
       >
         <Image
-          alt="Bunch of black cars in a row"
+          alt=""
           src="/template-images/faq-header.avif"
           fill
-          style={{ objectFit: "cover" }}
+          style={{ objectFit: "cover", objectPosition: "50% 20%" }}
           priority
         />
       </motion.div>
