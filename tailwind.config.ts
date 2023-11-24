@@ -33,6 +33,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         classic: "url('/template-images/classic.avif')",
         lamborghini: "url('/template-images/lamborghini.avif')",
+        offroad: "url('/template-images/g-class.avif')",
       },
     },
   },

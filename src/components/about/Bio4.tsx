@@ -20,8 +20,9 @@ const Bio4 = () => {
           src="/template-images/map.avif"
           fill
           style={{ objectFit: "cover" }}
+          className="blur-[2px]"
         />
-        <div className="absolute flex h-full w-full flex-col justify-around">
+        <div className="absolute flex h-full w-full flex-col justify-around  px-4">
           <motion.div
             variants={fadeIn("left", 0.5, 1, 1.2)}
             initial="hidden"

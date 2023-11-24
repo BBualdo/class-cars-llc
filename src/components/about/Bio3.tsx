@@ -32,7 +32,6 @@ const Bio3 = () => {
           alt=""
           src="/template-images/degree.webp"
           fill
-          priority
           style={{ objectFit: "cover" }}
           className="rounded-lg"
         />

@@ -3,6 +3,15 @@ import Image from "next/image";
 const Bio7 = () => {
   return (
     <section className="flex gap-10">
+      <div className="flex-1">
+        <p className="max-w-[800px] text-[26px] font-bold text-white">
+          Oprócz handlu samochodami, zajmuję się ich renowacją. Mam kilka
+          projektów, gdzie odrestaurowuję klasyczne modele do ich oryginalnego
+          stanu, co jest nie tylko wyzwaniem, ale i spełnieniem moich marzeń
+          jako kolekcjonera. Uważam, że każdy samochód ma swoją duszę i
+          historię, którą warto odkrywać i zachowywać dla przyszłych pokoleń.
+        </p>
+      </div>
       <div className="relative h-[400px] w-[400px] rounded-lg border-4 border-gold shadow-[0_0_40px] shadow-gold/50">
         <Image
           alt="Picture of ClassCars Owner"
@@ -12,19 +21,6 @@ const Bio7 = () => {
           style={{ objectFit: "cover" }}
           className="rounded-lg"
         />
-      </div>
-      <div className="flex-1">
-        <p className="max-w-[800px] text-[26px] font-bold text-white">
-          W mojej pracy, oprócz oczywiście pasji, ważny jest klient, dlatego też
-          na bieżąco jestem z trendami rynkowymi i technologicznymi. Często
-          uczęszczam na targi motoryzacyjne, aukcje i spotkania branżowe, aby
-          poszerzać swoją wiedzę i sieć kontaktów. Interakcje z innymi
-          entuzjastami samochodów, kolekcjonerami i specjalistami są dla mnie
-          niezwykle cenne – każda rozmowa to okazja do nauki i wymiany
-          doświadczeń. Bardzo ważnym aspektem mojej działalności jest również
-          marketing i prezentacja samochodów. Starannie fotografuję każdy
-          pojazd, opisuję jego historię oraz unikalne cechy.
-        </p>
       </div>
     </section>
   );

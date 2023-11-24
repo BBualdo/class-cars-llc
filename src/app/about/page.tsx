@@ -8,10 +8,6 @@ import Bio2 from "@/components/about/Bio2";
 import Bio3 from "@/components/about/Bio3";
 import Bio4 from "@/components/about/Bio4";
 import Bio5 from "@/components/about/Bio5";
-import Bio6 from "@/components/about/Bio6";
-import Bio7 from "@/components/about/Bio5";
-import Bio8 from "@/components/about/Bio6";
-import Bio9 from "@/components/about/Bio7";
 
 import { allison } from "@/fonts/fonts";
 import { fadeIn } from "@/utils/fadeIn";
@@ -34,6 +30,7 @@ export default function Page() {
         <Bio2 />
         <Bio3 />
         <Bio4 />
+        <Bio5 />
       </div>
     </main>
   );

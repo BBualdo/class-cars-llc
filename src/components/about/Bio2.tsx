@@ -18,7 +18,6 @@ const Bio2 = () => {
           alt=""
           src="/template-images/mechanics.avif"
           fill
-          priority
           style={{ objectFit: "cover" }}
           className="blur-[2px]"
         />
