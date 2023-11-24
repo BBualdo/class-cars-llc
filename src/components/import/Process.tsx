@@ -4,11 +4,17 @@ import importProcess from "@/data/import-process";
 import { merriweather } from "@/fonts/fonts";
 import clsx from "clsx";
 import { useState } from "react";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/utils/fadeIn";
 
 const Process = () => {
   const [selectedStep, setSelectedStep] = useState(0);
   const stepButtons = importProcess.map((step) => (
-    <button
+    <motion.button
+      variants={fadeIn("right", 0.4 * (Number(step.id) * 0.3), 1, 1.2)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
       onClick={() => setSelectedStep(Number(step.id) - 1)}
       className={clsx(
         "relative border border-gold py-2 font-bold hover:bg-gold/50 md:px-5 lg:px-10",
@@ -20,8 +26,9 @@ const Process = () => {
       )}
     >
       Krok {step.id}
-    </button>
+    </motion.button>
   ));
+
   const steps = importProcess.map((step) => (
     <div className="flex flex-col items-center p-8 text-white xs:gap-4 md:gap-10">
       <h2 className="gradient-gold bg-clip-text font-bold text-transparent xs:text-[24px] md:text-[40px]">
@@ -35,21 +42,31 @@ const Process = () => {
 
   return (
     <section className="gradient-gotham-mix flex flex-col items-center xs:p-2 md:p-8">
-      <h2
+      <motion.h2
+        variants={fadeIn("right", 1.2, 1, 1.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
         className={`${merriweather.className} text-center text-[28px] text-white lg:text-[40px]`}
       >
         Proces Zakupu Pojazdu z Dubaju:{" "}
         <span className="gradient-gold bg-clip-text text-transparent">
           Krok po Kroku
         </span>
-      </h2>
+      </motion.h2>
       <div className="flex-col items-center justify-center md:w-3/4 md:min-w-[750px] lg:min-w-[1055px]">
         <div className="mt-12 flex items-center justify-center xs:max-md:grid xs:max-md:grid-cols-4">
           {stepButtons}
         </div>
-        <div className="border border-gold bg-black text-center xs:max-md:rounded-b-lg md:rounded-lg">
+        <motion.div
+          variants={fadeIn("right", 1.2, 1, 1.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="border border-gold bg-black text-center xs:max-md:rounded-b-lg md:rounded-lg"
+        >
           {steps[selectedStep]}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
