@@ -11,38 +11,43 @@ const Process = () => {
     <button
       onClick={() => setSelectedStep(Number(step.id) - 1)}
       className={clsx(
-        "relative border border-gold px-10 py-2 font-bold text-white hover:bg-gold/50",
+        "relative border border-gold py-2 font-bold hover:bg-gold/50 md:px-5 lg:px-10",
         {
-          "gradient-gold top-[2px] border-b-black":
+          "gradient-gold top-[2px] border-b-black text-white":
             Number(step.id) - 1 === selectedStep,
+          "text-white/50": Number(step.id) - 1 !== selectedStep,
         },
       )}
     >
       Krok {step.id}
     </button>
   ));
-  const steps = importProcess.map((step, index) => (
-    <div className="flex flex-col items-center gap-10 p-8 text-white">
-      <h3 className="gradient-gold bg-clip-text text-[40px] font-bold text-transparent">
+  const steps = importProcess.map((step) => (
+    <div className="flex flex-col items-center p-8 text-white xs:gap-4 md:gap-10">
+      <h2 className="gradient-gold bg-clip-text font-bold text-transparent xs:text-[24px] md:text-[40px]">
         {step.title}
-      </h3>
-      <p className="w-1/2 text-2xl font-bold">{step.description}</p>
+      </h2>
+      <p className="font-bold xs:text-base md:w-1/2 md:text-2xl">
+        {step.description}
+      </p>
     </div>
   ));
 
   return (
-    <section className="flex flex-col items-center p-8">
-      <h2 className={`${merriweather.className} text-[40px] text-white`}>
+    <section className="gradient-gotham-mix flex flex-col items-center xs:p-2 md:p-8">
+      <h2
+        className={`${merriweather.className} text-center text-[28px] text-white lg:text-[40px]`}
+      >
         Proces Zakupu Pojazdu z Dubaju:{" "}
         <span className="gradient-gold bg-clip-text text-transparent">
           Krok po Kroku
         </span>
       </h2>
-      <div className="w-3/4 flex-col items-center justify-center">
-        <div className="mt-12 flex items-center justify-center">
+      <div className="flex-col items-center justify-center md:w-3/4 md:min-w-[750px] lg:min-w-[1055px]">
+        <div className="mt-12 flex items-center justify-center xs:max-md:grid xs:max-md:grid-cols-4">
           {stepButtons}
         </div>
-        <div className="border border-gold text-center">
+        <div className="border border-gold bg-black text-center xs:max-md:rounded-b-lg md:rounded-lg">
           {steps[selectedStep]}
         </div>
       </div>

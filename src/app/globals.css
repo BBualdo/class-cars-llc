@@ -68,4 +68,8 @@ body {
   .gradient-light-gold {
     @apply bg-gradient-to-t from-black via-yellow-100 to-white;
   }
+
+  .gradient-light-gold-mix {
+    @apply bg-gradient-to-t from-black via-yellow-100 to-black;
+  }
 }

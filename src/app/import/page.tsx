@@ -3,7 +3,7 @@ import Process from "@/components/import/Process";
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col overflow-hidden text-black">
+    <main className="flex min-h-screen flex-col overflow-hidden">
       <Banner1 />
       <Process />
     </main>
