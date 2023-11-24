@@ -25,12 +25,10 @@ export default function RootLayout({
     <StyledEngineProvider injectFirst>
       <html lang="en">
         <body className={`${raleway.className} antialiased`}>
-          <Suspense fallback={<Loading />}>
-            <Navbar />
-            {children}
-            <ScrollToTop />
-            <Footer />
-          </Suspense>
+          <Navbar />
+          {children}
+          <ScrollToTop />
+          <Footer />
         </body>
       </html>
     </StyledEngineProvider>
