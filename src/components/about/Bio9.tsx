@@ -15,15 +15,12 @@ const Bio9 = () => {
       </div>
       <div className="flex-1">
         <p className="max-w-[800px] text-[26px] font-bold text-white">
-          W mojej pracy, oprócz oczywiście pasji, ważny jest klient, dlatego też
-          na bieżąco jestem z trendami rynkowymi i technologicznymi. Często
-          uczęszczam na targi motoryzacyjne, aukcje i spotkania branżowe, aby
-          poszerzać swoją wiedzę i sieć kontaktów. Interakcje z innymi
-          entuzjastami samochodów, kolekcjonerami i specjalistami są dla mnie
-          niezwykle cenne – każda rozmowa to okazja do nauki i wymiany
-          doświadczeń. Bardzo ważnym aspektem mojej działalności jest również
-          marketing i prezentacja samochodów. Starannie fotografuję każdy
-          pojazd, opisuję jego historię oraz unikalne cechy.
+          Mimo sukcesów i rozwoju biznesu, moje podejście pozostaje takie samo –
+          kieruję się pasją i intuicją, a satysfakcja moich klientów jest dla
+          mnie najważniejsza. W przyszłości planuję rozszerzyć moją działalność
+          o bardziej zróżnicowane modele i marki, eksplorując nowe rynki i
+          możliwości. Moim celem jest stać się uznawany nie tylko jako handlarz,
+          ale jako ekspert i ambasador kultury motoryzacyjnej.
         </p>
       </div>
     </section>

@@ -29,7 +29,7 @@ const Bio3 = () => {
         className="relative flex-1 rounded-lg"
       >
         <Image
-          alt="Picture of ClassCars Owner"
+          alt=""
           src="/template-images/degree.webp"
           fill
           priority

@@ -15,13 +15,15 @@ const Bio7 = () => {
       </div>
       <div className="flex-1">
         <p className="max-w-[800px] text-[26px] font-bold text-white">
-          Mój konik to samochody, takie jak: Nissan Patrol, Wrangler czy
-          G-klasa, ze względu na ich zabezpieczenie przed korozją – to duży atut
-          na rynku europejskim. Szczególnie cenię sobie samochody klasyczne,
-          które są proste w budowie i pozwalają na łatwą ocenę oraz naprawę
-          ewentualnych uszkodzeń. W przyszłości chciałbym wprowadzić na rynek
-          więcej nietypowych samochodów, takich jak: Bronco 1, Hummer H1, czy
-          rzadkie modele Aston Martin.
+          W mojej pracy, oprócz oczywiście pasji, ważny jest klient, dlatego też
+          na bieżąco jestem z trendami rynkowymi i technologicznymi. Często
+          uczęszczam na targi motoryzacyjne, aukcje i spotkania branżowe, aby
+          poszerzać swoją wiedzę i sieć kontaktów. Interakcje z innymi
+          entuzjastami samochodów, kolekcjonerami i specjalistami są dla mnie
+          niezwykle cenne – każda rozmowa to okazja do nauki i wymiany
+          doświadczeń. Bardzo ważnym aspektem mojej działalności jest również
+          marketing i prezentacja samochodów. Starannie fotografuję każdy
+          pojazd, opisuję jego historię oraz unikalne cechy.
         </p>
       </div>
     </section>

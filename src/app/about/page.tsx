@@ -6,14 +6,12 @@ import Banner1 from "@/components/about/Banner1";
 import Bio1 from "@/components/about/Bio1";
 import Bio2 from "@/components/about/Bio2";
 import Bio3 from "@/components/about/Bio3";
-// import Bio4 from "@/components/about/Bio4";
-// import Bio5 from "@/components/about/Bio5";
-// import Bio6 from "@/components/about/Bio6";
-// import Bio7 from "@/components/about/Bio7";
-// import Bio8 from "@/components/about/Bio8";
-// import Bio9 from "@/components/about/bio9";
-// import Bio10 from "@/components/about/Bio10";
-// import Bio11 from "@/components/about/Bio11";
+import Bio4 from "@/components/about/Bio4";
+import Bio5 from "@/components/about/Bio5";
+import Bio6 from "@/components/about/Bio6";
+import Bio7 from "@/components/about/Bio5";
+import Bio8 from "@/components/about/Bio6";
+import Bio9 from "@/components/about/Bio7";
 
 import { allison } from "@/fonts/fonts";
 import { fadeIn } from "@/utils/fadeIn";
@@ -35,14 +33,7 @@ export default function Page() {
         <Bio1 />
         <Bio2 />
         <Bio3 />
-        {/* <Bio4 />
-        <Bio5 />
-        <Bio6 />
-        <Bio7 />
-        <Bio8 />
-        <Bio9 />
-        <Bio10 />
-        <Bio11 /> */}
+        <Bio4 />
       </div>
     </main>
   );

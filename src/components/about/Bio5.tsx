@@ -15,11 +15,13 @@ const Bio5 = () => {
       </div>
       <div className="flex-1">
         <p className="max-w-[800px] text-[26px] font-bold text-white">
-          Z czasem, moje zainteresowanie przeniosło się na rynek amerykański.
-          Przeprowadzka do Kalifornii, w Stanach Zjednoczonych, otworzyła przede
-          mną nowe możliwości i pozwoliła zgłębić tamtejszy rynek samochodowy.
-          To doświadczenie było nieocenione i znacznie wzbogaciło moją wiedzę
-          oraz umiejętności w dziedzinie handlu autami.
+          Mój konik to samochody, takie jak: Nissan Patrol, Wrangler czy
+          G-klasa, ze względu na ich zabezpieczenie przed korozją – to duży atut
+          na rynku europejskim. Szczególnie cenię sobie samochody klasyczne,
+          które są proste w budowie i pozwalają na łatwą ocenę oraz naprawę
+          ewentualnych uszkodzeń. W przyszłości chciałbym wprowadzić na rynek
+          więcej nietypowych samochodów, takich jak: Bronco 1, Hummer H1, czy
+          rzadkie modele Aston Martin.
         </p>
       </div>
     </section>
