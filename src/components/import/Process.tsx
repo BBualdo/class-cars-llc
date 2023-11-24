@@ -11,7 +11,7 @@ const Process = () => {
   const [selectedStep, setSelectedStep] = useState(0);
   const stepButtons = importProcess.map((step) => (
     <motion.button
-      variants={fadeIn("right", 0.4 * (Number(step.id) * 0.3), 1, 1.2)}
+      variants={fadeIn("right", 0.5 * Number(step.id), 1, 0.5)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
@@ -34,7 +34,7 @@ const Process = () => {
       <h2 className="gradient-gold bg-clip-text font-bold text-transparent xs:text-[24px] md:text-[40px]">
         {step.title}
       </h2>
-      <p className="font-bold xs:text-base md:w-1/2 md:text-2xl">
+      <p className="w-full font-bold xs:text-base md:text-2xl lg:w-1/2">
         {step.description}
       </p>
     </div>
@@ -43,7 +43,7 @@ const Process = () => {
   return (
     <section className="gradient-gotham-mix flex flex-col items-center xs:p-2 md:p-8">
       <motion.h2
-        variants={fadeIn("right", 1.2, 1, 1.2)}
+        variants={fadeIn("right", 0.5, 1, 1.2)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
@@ -59,11 +59,11 @@ const Process = () => {
           {stepButtons}
         </div>
         <motion.div
-          variants={fadeIn("right", 1.2, 1, 1.2)}
+          variants={fadeIn("right", 0.5, 1, 0.5)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="border border-gold bg-black text-center xs:max-md:rounded-b-lg md:rounded-lg"
+          className="border border-gold bg-black text-center xs:max-md:rounded-b-lg md:h-[324px] md:rounded-lg"
         >
           {steps[selectedStep]}
         </motion.div>
