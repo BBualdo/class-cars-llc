@@ -11,6 +11,7 @@ const Process = () => {
   const [selectedStep, setSelectedStep] = useState(0);
   const stepButtons = importProcess.map((step) => (
     <motion.button
+      key={step.id}
       variants={fadeIn("right", 0.5 * Number(step.id), 1, 0.5)}
       initial="hidden"
       whileInView="show"
@@ -30,7 +31,10 @@ const Process = () => {
   ));
 
   const steps = importProcess.map((step) => (
-    <div className="flex flex-col items-center p-8 text-white xs:gap-4 md:gap-10">
+    <div
+      key={step.id}
+      className="flex flex-col items-center p-8 text-white xs:gap-4 md:gap-10"
+    >
       <h2 className="gradient-gold bg-clip-text font-bold text-transparent xs:text-[24px] md:text-[40px]">
         {step.title}
       </h2>
