@@ -1,8 +1,18 @@
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/utils/fadeIn";
 
 const Bio1 = () => {
   return (
-    <section className="flex gap-10">
+    <motion.section
+      variants={fadeIn("right", 1.3, 1, 1.2)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className="flex gap-10"
+    >
       <div className="relative h-[400px] w-[400px] rounded-lg border-4 border-gold shadow-[0_0_40px] shadow-gold/50">
         <Image
           alt="Picture of ClassCars Owner"
@@ -24,7 +34,7 @@ const Bio1 = () => {
           <span className="text-gold"> [...]</span>.
         </p>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
