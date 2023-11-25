@@ -103,20 +103,22 @@ const Accordions = () => {
           <AccordionDetails className="pr-20 text-white">
             Całkowity koszt sprowadzenia samochodu z Dubaju do Polski zależy od
             wielu czynników. Średnie koszty frachtu morskiego oscylują wokół
-            <span className="font-bold"> XXX</span>. Jednak to tylko jedna z
-            wielu składowych całkowitego kosztu. Warto rozważyć skorzystanie z
-            dodatkowych usług, które mogą znacząco ułatwić cały proces.
+            <span className="font-bold text-gold"> 1300USD</span>. Jednak to
+            tylko jedna z wielu składowych całkowitego kosztu. Warto rozważyć
+            skorzystanie z dodatkowych usług, które mogą znacząco ułatwić cały
+            proces.
             <br />
             <br />
-            Za około<span className="font-bold"> XXX</span> oferujemy
-            kompleksową konsultację ze specjalistą, który pomoże w dokładnej
-            selekcji ofert, sprawdzeniu wiarygodności, negocjacji ceny oraz w
-            uzyskaniu informacji o historii serwisowej pojazdu. Dodatkowo, za
-            <span className="font-bold"> XXX</span>, oferujemy usługę
-            weryfikacji pojazdu. W ramach tej usługi sprawdzamy numer VIN, bazę
-            szkód, zastawy komornicze, legalność pochodzenia i wiele innych
-            aspektów. Dostarczamy także szczegółowe zdjęcia, filmy i raport z
-            inspekcji.
+            Za około<span className="font-bold text-gold"> 100USD</span>{" "}
+            oferujemy kompleksową konsultację ze specjalistą, który pomoże w
+            dokładnej selekcji ofert, sprawdzeniu wiarygodności, negocjacji ceny
+            oraz w uzyskaniu informacji o historii serwisowej pojazdu.
+            Dodatkowo, za
+            <span className="font-bold text-gold"> 200USD</span>, oferujemy
+            usługę weryfikacji pojazdu. W ramach tej usługi sprawdzamy numer
+            VIN, bazę szkód, zastawy komornicze, legalność pochodzenia i wiele
+            innych aspektów. Dostarczamy także szczegółowe zdjęcia, filmy i
+            raport z inspekcji.
             <br />
             <br />
             Jeśli pojazd zostanie pozytywnie zweryfikowany, możemy zająć się
@@ -125,12 +127,11 @@ const Accordions = () => {
             od marki pojazdu, dlatego zalecamy konsultację z naszymi ekspertami.
             <br />
             <br />
-            <span className="font-bold">
-              Ostatecznie, cena importu auta z Dubaju wynosi około XXX.{" "}
-            </span>
-            Wlicza się w to nie tylko odprawę i transport, ale również
+            Dodatkowo, należy doliczyć koszt opłat aukcyjnych, które wynoszą
+            około <span className="font-bold text-gold">500 USD</span>, a także
             tłumaczenie przysięgłe dokumentów na język polski oraz opłaty celne
-            i akcyzę, które wynoszą odpowiednio 10% wartości samochodu.
+            i akcyzę, które wynoszą odpowiednio{" "}
+            <span className="font-bold text-gold">10%</span> wartości samochodu.
             <br />
             <br />
             Podsumowując, ostateczny koszt importu samochodu z Dubaju jest
@@ -280,8 +281,11 @@ const Accordions = () => {
             Importowanie aut z Dubaju na zamówienie jest zdecydowanie opłacalnym
             rozwiązaniem, szczególnie w przypadku rzadkich lub luksusowych
             pojazdów. Nasza współpraca z klientami umożliwia oszczędności
-            sięgające kalkadzięsiąt a nawet kilkaset tysięcy złotych na pojazd
-            sprowadzony ze Zjednoczonych Emiratów Arabskich.
+            sięgające{" "}
+            <span className="text-bold text-gold">
+              kalkadzięsiąt, a nawet kilkaset tysięcy złotych
+            </span>{" "}
+            na pojazd sprowadzony ze Zjednoczonych Emiratów Arabskich.
             <br />
             <br />
             Rynek samochodowy w Zjednoczonych Emiratach Arabskich, uznawany za
@@ -294,8 +298,8 @@ const Accordions = () => {
             <br />
             <br />
             Dodatkowo, importowanie auta z Dubaju może przynieść oszczędności
-            sięgające 20%-25% w porównaniu do cen na lokalnym rynku. Główne
-            zalety to:
+            sięgające <span className="text-bold text-gold">20%-25%</span> w
+            porównaniu do cen na lokalnym rynku. Główne zalety to:
             <br />
             <br />
             <ul>
@@ -342,8 +346,8 @@ const Accordions = () => {
               <li>
                 <span className="font-bold text-gold">Opłaty Aukcyjne: </span>
                 Ustalane przez domy aukcyjne, zależą od wartości pojazdu.
-                Średnia opłata wynosi określoną kwotę w dolarach{" "}
-                <span className="font-bold">XXX</span>.
+                Średnia opłata wynosi{" "}
+                <span className="font-bold text-gold">500USD</span>.
               </li>
               <li>
                 <span className="font-bold text-gold">
@@ -351,9 +355,9 @@ const Accordions = () => {
                 </span>
                 Dla standardowego samochodu osobowego, opłata za fracht morski
                 rozpoczyna się od określonej kwoty w dolarach{" "}
-                <span className="font-bold">XXX</span>. Transport lądowy z
-                miejsca aukcji do portu wynosi dodatkowo{" "}
-                <span className="font-bold">XXX</span>.
+                <span className="font-bold text-gold">1300USD</span>. Transport
+                lądowy z miejsca aukcji do portu wynosi dodatkowo{" "}
+                <span className="font-bold text-gold">od 100USD</span>.
               </li>
               <li>
                 <span className="font-bold text-gold">Cło Importowe: </span>W
@@ -421,14 +425,10 @@ const Accordions = () => {
             Dubaju?
           </AccordionSummary>
           <AccordionDetails className="pr-20 text-white">
-            Odpowiadając na pytanie dotyczące dokumentów potrzebnych do
-            rejestracji auta przywiezionego z Dubaju, kluczowe jest zrozumienie,
-            że wymagane dokumenty mogą się różnić w zależności od pochodzenia
-            pojazdu – czy jest to samochód ze strefy wolnocłowej czy
-            bezpośrednio z Dubaju.
-            <br />
-            Generalnie, do procesu rejestracji niezbędny jest pełny komplet
-            dokumentów, który obejmuje:
+            Wymagane dokumenty mogą się różnić w zależności od pochodzenia
+            pojazdu – czy jest to samochód ze strefy wolnocłowej, czy
+            bezpośrednio z Dubaju. Do procesu rejestracji niezbędny jest pełny
+            komplet dokumentów, który obejmuje:
             <br />
             <br />
             <div className="flex flex-col">
@@ -438,10 +438,10 @@ const Accordions = () => {
               </span>
               <br />
               <span className="font-bold">
-                <span className="text-gold">2.</span> Świadectwo zgodności (COC
-                - Certificate of Conformity) / Certyfikat eksportowy (Export
-                Certificate) lub odpowiedni dokument potwierdzający spełnienie
-                norm i standardów technicznych obowiązujących w danym kraju.
+                <span className="text-gold">2.</span> Certyfikat eksportowy
+                (Export Certificate) lub odpowiedni dokument potwierdzający
+                spełnienie norm i standardów technicznych obowiązujących w danym
+                kraju lub dowód własności z uwzględnionym numerem VIN pojazdu;
               </span>
               <br />
               <span className="font-bold">
@@ -461,11 +461,9 @@ const Accordions = () => {
             </div>
             <br />
             <br />
-            Zajmuję się kompleksowym przygotowaniem wszystkich wymaganych
-            dokumentów, co znacząco ułatwia proces rejestracji i minimalizuje
-            zaangażowanie klienta w te formalności. Moje doświadczenie w tej
-            dziedzinie zapewnia sprawną i bezproblemową rejestrację pojazdu
-            przywiezionego z Dubaju.
+            Kompleksowo zajmiemy się przygotowaniem wszystkich wymaganych
+            dokumentów, co znacząco ułatwi proces rejestracji i zminimalizuje
+            zaangażowanie klienta w te formalności.
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -569,62 +567,6 @@ const Accordions = () => {
                 </span>{" "}
                 – szeroko znany serwis z ogłoszeniami, oferujący różnorodne
                 pojazdy w Dubaju.
-              </li>
-              <li>
-                <span className="font-bold text-gold">
-                  Yalla Deals:{" "}
-                  <Link
-                    variant="button"
-                    href="https://yalla.deals"
-                    target="_blank"
-                  >
-                    yalla.deals
-                  </Link>
-                </span>{" "}
-                – portal z ogłoszeniami lokalnymi, w tym szerokim wyborem
-                samochodów.
-              </li>
-              <li>
-                <span className="font-bold text-gold">
-                  YallaMotor UAE:{" "}
-                  <Link
-                    variant="button"
-                    href="https://uae.yallamotor.com"
-                    target="_blank"
-                  >
-                    uae.yallamotor.com
-                  </Link>
-                </span>{" "}
-                – platforma z ogłoszeniami, która specjalizuje się w sprzedaży
-                samochodów w regionie ZEA.
-              </li>
-              <li>
-                <span className="font-bold text-gold">
-                  OpenSooq UAE:{" "}
-                  <Link
-                    variant="button"
-                    href="https://ae.opensooq.com/ar"
-                    target="_blank"
-                  >
-                    ae.opensooq.com
-                  </Link>
-                </span>{" "}
-                – dynamicznie rozwijająca się platforma ogłoszeniowa z ofertami
-                samochodów.
-              </li>
-              <li>
-                <span className="font-bold text-gold">
-                  Auto Traders:{" "}
-                  <Link
-                    variant="button"
-                    href="https://www.autotraders.ae"
-                    target="_blank"
-                  >
-                    autotraders.ae
-                  </Link>
-                </span>{" "}
-                – serwis skupiający szeroki wybór pojazdów z różnych segmentów
-                rynku.
               </li>
             </ul>
             <br />
