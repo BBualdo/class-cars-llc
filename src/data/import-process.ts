@@ -20,7 +20,7 @@ const importProcess: Array<ImportProcess> = [
     id: "3",
     title: "Podpisanie Umowy i Wpłata Zadatku",
     description:
-      "Po podjęciu decyzji, formalizujemy proces poprzez zawarcie umowy i wpłacenie zaliczki, zapewniając tym samym zabezpieczenie transakcji.",
+      "Po podjęciu decyzji, formalizujemy proces poprzez zawarcie umowy i wpłacenie zadatku, zapewniając tym samym zabezpieczenie transakcji.",
   },
   {
     id: "4",
@@ -38,19 +38,19 @@ const importProcess: Array<ImportProcess> = [
     id: "6",
     title: "Zarządzanie Transportem",
     description:
-      "Po zakupie zajmiemy się organizacją i koordynacją transportu pojazdu do wybranego miejsca docelowego.",
+      "Po zakupie zajmiemy się organizacją i koordynacją transportu pojazdu do wybranego miejsca docelowego w Europie.",
   },
   {
     id: "7",
     title: "Procedury Celne i Opłaty",
     description:
-      "Przeprowadzimy wszystkie niezbędne procedury celne i zajmiemy się obliczeniem oraz uregulowaniem wszelkich opłat związanych z importem pojazdu.",
+      "Przeprowadzimy wszystkie niezbędne procedury celne i zajmiemy się obliczeniem wszelkich opłat związanych z importem pojazdu w jak najkorzystniejszy dla klienta sposób.",
   },
   {
     id: "8",
     title: "Dostawa i Dokumentacja",
     description:
-      "Na zakończenie, pojazd zostanie dostarczony wraz z pełnym zestawem dokumentów, co zapewni Ci bezproblemowe przejęcie własności.",
+      "Na zakończenie, pojazd zostanie dostarczony wraz z pełnym zestawem dokumentów, co zapewni Ci bezproblemową rejestrację pojazdu w kraju.",
   },
 ];
 
