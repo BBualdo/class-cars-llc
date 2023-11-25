@@ -76,7 +76,12 @@ body {
   .gradient-red {
     @apply bg-gradient-to-b from-black via-red-800 to-slate-500;
   }
+
   .gradient-gray {
     @apply bg-gradient-to-b from-slate-500 to-white;
+  }
+
+  .gradient-black_white {
+    @apply bg-gradient-to-b from-white to-black;
   }
 }

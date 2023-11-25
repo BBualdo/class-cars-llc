@@ -12,7 +12,6 @@ import Bio6 from "@/components/about/Bio6";
 import { allison } from "@/fonts/fonts";
 import { fadeIn } from "@/utils/fadeIn";
 import Bio7 from "@/components/about/Bio7";
-import Bio8 from "@/components/about/Bio8";
 
 export default function Page() {
   return (
@@ -35,7 +34,6 @@ export default function Page() {
         <Bio5 />
         <Bio6 />
         <Bio7 />
-        <Bio8 />
       </div>
     </main>
   );
