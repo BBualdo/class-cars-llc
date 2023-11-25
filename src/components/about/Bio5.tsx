@@ -5,13 +5,13 @@ import { fadeIn } from "@/utils/fadeIn";
 
 const Bio5 = () => {
   return (
-    <section className="gradient-red flex flex-col gap-10 px-10 py-20">
+    <section className="gradient-red flex flex-col gap-10 md:px-10 md:py-20">
       <motion.p
         variants={fadeIn("down", 0.7, 1, 1.2)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="text-center text-[26px] font-bold text-white"
+        className="text-center font-bold text-white xs:max-md:px-4 md:text-[20px] lg:text-[26px]"
       >
         Mój konik to samochody, takie jak: Nissan Patrol, Wrangler czy G-klasa,
         ze względu na ich zabezpieczenie przed korozją – to duży atut na rynku
@@ -27,7 +27,7 @@ const Bio5 = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="bg-offroad h-[400px] w-full bg-cover bg-fixed bg-center bg-no-repeat opacity-70 shadow-[0_0_40px] shadow-red-700"
+        className="w-full bg-offroad bg-cover bg-fixed bg-no-repeat opacity-70 shadow-[0_0_40px] shadow-red-700 xs:h-[300px] xs:bg-left md:h-[400px] md:bg-center"
       />
 
       <motion.p
@@ -35,7 +35,7 @@ const Bio5 = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="text-center text-[26px] font-bold text-white"
+        className="text-center font-bold text-white xs:max-md:px-4 md:text-[20px] lg:text-[26px]"
       >
         W mojej opinii samochody terenowe to niezawodność i wytrzymałość. Widzę
         w nich nie tylko wartość użytkową, ale i inwestycyjną. Każdy samochód,

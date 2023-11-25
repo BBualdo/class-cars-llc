@@ -6,7 +6,7 @@ import { fadeIn } from "@/utils/fadeIn";
 
 const Bio6 = () => {
   return (
-    <section className="gradient-gray flex w-full flex-col gap-10 p-20">
+    <section className="gradient-gray flex w-full flex-col gap-10 xs:max-md:py-10 md:p-20">
       <motion.div
         variants={fadeIn("right", 0.7, 1, 1.2)}
         initial="hidden"
@@ -26,7 +26,7 @@ const Bio6 = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="text-center text-[26px] font-bold text-black"
+        className="text-center font-bold text-black xs:max-md:px-4 md:text-[20px] lg:text-[26px]"
       >
         W mojej pracy, oprócz oczywiście pasji, ważny jest klient, dlatego też
         na bieżąco jestem z trendami rynkowymi i technologicznymi. Często

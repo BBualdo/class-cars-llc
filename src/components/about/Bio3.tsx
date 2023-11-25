@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Bio3 = () => {
   return (
-    <section className="flex h-[300px] gap-10 py-20">
+    <section className="flex h-[300px] gap-10 xs:max-lg:flex-col lg:py-20">
       <motion.div
         variants={fadeIn("right", 0.5, 1, 1.2)}
         initial="hidden"
@@ -14,7 +14,7 @@ const Bio3 = () => {
         viewport={{ once: true }}
         className="flex-1"
       >
-        <p className="px-10 text-center text-[26px] font-bold text-white">
+        <p className="px-10 text-center font-bold text-white md:text-[20px] lg:text-[26px]">
           Po zdobyciu tytułu magistra filologii angielskiej, skupiłem się na
           temacie alternatywnych inwestycji, szczególnie unikatowych samochodów
           zabytkowych, co notabene, było tematem mojej pracy magisterskiej:

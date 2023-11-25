@@ -21,8 +21,8 @@ const Bio2 = () => {
           style={{ objectFit: "cover" }}
           className="blur-[2px]"
         />
-        <div className="absolute">
-          <p className="max-w-[800px] text-center text-[26px] font-bold text-white/70">
+        <div className="absolute flex h-[600px] items-center justify-center">
+          <p className="text-center font-bold text-white/70 md:max-w-[800px] md:text-[20px] lg:text-[26px]">
             Pierwsze kroki w świecie motoryzacji stawiałem jako młody chłopak.
             Początek mojej pasji motoryzacyjnej rozpocząłem od nabycia starego
             Volkswagena Polo. Był to niewielki wydatek, zaledwie 200 zł.

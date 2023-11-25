@@ -23,7 +23,7 @@ export default function Page() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className={`${allison.className} gradient-gold bg-clip-text text-[100px] text-transparent`}
+          className={`${allison.className} gradient-gold bg-clip-text text-[100px] text-transparent xs:max-md:text-[64px]`}
         >
           Martin Adam
         </motion.h2>
