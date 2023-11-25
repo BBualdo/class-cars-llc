@@ -33,7 +33,7 @@ const Bio4 = () => {
             <div className="bg-gray-700/70 p-4 md:w-3/4">
               <p className="text-white/80 xs:text-[15px] md:text-[18px] lg:text-[24px]">
                 Importem samochodów zajmuję się od{" "}
-                <span className="text-gold"> [...]</span> roku. Wszystko zaczęło
+                <span className="text-gold">2017</span> roku. Wszystko zaczęło
                 się od importu aut z Niemiec, co dało mi solidne podstawy do
                 zrozumienia europejskiego rynku motoryzacyjnego. Wkrótce potem
                 rozszerzyłem działalność na import samochodów z Włoch i Francji,

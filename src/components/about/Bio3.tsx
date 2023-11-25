@@ -18,7 +18,10 @@ const Bio3 = () => {
           Po zdobyciu tytułu magistra filologii angielskiej, skupiłem się na
           temacie alternatywnych inwestycji, szczególnie unikatowych samochodów
           zabytkowych, co notabene, było tematem mojej pracy magisterskiej:
-          <span className="text-gold"> [...]</span>.
+          <span className="text-gold">
+            {" "}
+            „Alternative Investing: Investing in classic and unique vehicles”.
+          </span>
         </p>
       </motion.div>
       <motion.div

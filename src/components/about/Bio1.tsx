@@ -25,13 +25,20 @@ const Bio1 = () => {
       </div>
       <div className="flex-1">
         <p className="font-bold text-white xs:max-md:text-center md:max-w-[800px] md:text-[20px] lg:text-[26px]">
-          Pasję do samochodów odziedziczyłem po ojcu, który był handlarzem.
-          Sprzedał i kupił około 500 pojazdów, a ja towarzyszyłem mu w tych
-          przedsięwzięciach jako młody chłopak. Już w wieku 8 lat, w tajemnicy
-          przed mamą, otrzymałem pierwszego quada, którym jeździłem z ojcem po
-          torach motocrossowych. W młodości, między 13 a 16 rokiem życia, brałem
-          udział w zawodach motocrossowych. Odnosiłem tam pewne sukcesy, min.
-          <span className="text-gold"> [...]</span>.
+          Zamiłowanie do samochodów odziedziczyłem po swoim ojcu oraz dziadku,
+          którzy to zajmowali się międzynarodowym handlem oraz serwisem pojazdów
+          specjalistycznych, obejmującym nie tylko Polskę, ale całą Europę. Jako
+          młody chłopiec często towarzyszyłem im w tej pracy. Już w wieku 8 lat,
+          w tajemnicy przed mamą, otrzymałem pierwszego quada, którym jeździłem
+          z ojcem po torach motocrossowych. W młodości, między 13 a 16 rokiem
+          życia, brałem udział w zawodach motocrossowych. Odnosiłem tam pewne
+          sukcesy, min.
+          <span className="text-gold">
+            {" "}
+            2 miejsce w Yamaha Junior Cup w Gdańsku, 3 miejsce w zawodach
+            Quadmania w Gdyni, 4 miejsce w zawodach MP HighSpeed QuadCross w
+            Borkowie.
+          </span>
         </p>
       </div>
     </motion.section>

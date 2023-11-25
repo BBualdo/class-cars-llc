@@ -13,8 +13,9 @@ const Bio5 = () => {
         viewport={{ once: true }}
         className="text-center font-bold text-white xs:max-md:px-4 md:text-[20px] lg:text-[26px]"
       >
-        Mój konik to samochody, takie jak: Nissan Patrol, Wrangler czy G-klasa,
-        ze względu na ich zabezpieczenie przed korozją – to duży atut na rynku
+        Doceniam samochody takie jak: Jeep Wrangler, Mercedes-Benz G-Class i
+        Toyota Land Cruiser za ich prostotę i wielozadaniowość, a także ze
+        względu na ich zabezpieczenie przed korozją – to duży atut na rynku
         europejskim. Szczególnie cenię sobie samochody klasyczne, które są
         proste w budowie i pozwalają na łatwą ocenę oraz naprawę ewentualnych
         uszkodzeń. W przyszłości chciałbym wprowadzić na rynek więcej
@@ -37,12 +38,13 @@ const Bio5 = () => {
         viewport={{ once: true }}
         className="text-center font-bold text-white xs:max-md:px-4 md:text-[20px] lg:text-[26px]"
       >
-        W mojej opinii samochody terenowe to niezawodność i wytrzymałość. Widzę
-        w nich nie tylko wartość użytkową, ale i inwestycyjną. Każdy samochód,
-        który kupuję i sprzedaję, traktuję jak projekt – starannie analizuję
-        jego stan, historię, by następnie dokonać niezbędnych napraw i
-        modyfikacji. Fascynuje mnie przywracanie dawnej świetności tym
-        klasycznym maszynom.
+        W mojej opinii samochody terenowe, znane ze swojej wytrzymałości i
+        zdolności do radzenia sobie w trudnych warunkach terenowych, stanowią
+        ikony motoryzacyjnego rzemiosła. Widzę w nich nie tylko wartość
+        użytkową, ale i inwestycyjną. Każdy samochód, który kupuję i sprzedaję,
+        traktuję jak projekt – starannie analizuję jego stan, historię, by
+        następnie dokonać niezbędnych napraw i modyfikacji. Fascynuje mnie
+        przywracanie dawnej świetności tym klasycznym maszynom.
       </motion.p>
     </section>
   );
