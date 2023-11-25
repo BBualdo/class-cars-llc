@@ -8,15 +8,17 @@ import Bio2 from "@/components/about/Bio2";
 import Bio3 from "@/components/about/Bio3";
 import Bio4 from "@/components/about/Bio4";
 import Bio5 from "@/components/about/Bio5";
-
+import Bio6 from "@/components/about/Bio6";
 import { allison } from "@/fonts/fonts";
 import { fadeIn } from "@/utils/fadeIn";
+import Bio7 from "@/components/about/Bio7";
+import Bio8 from "@/components/about/Bio8";
 
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col overflow-hidden">
       <Banner1 />
-      <div className="flex flex-col items-center gap-20">
+      <div className="flex flex-col items-center">
         <motion.h2
           variants={fadeIn("down", 1.2, 1, 1.2)}
           initial="hidden"
@@ -31,6 +33,9 @@ export default function Page() {
         <Bio3 />
         <Bio4 />
         <Bio5 />
+        <Bio6 />
+        <Bio7 />
+        <Bio8 />
       </div>
     </main>
   );

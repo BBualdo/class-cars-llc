@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Bio3 = () => {
   return (
-    <section className="flex h-[300px] gap-10">
+    <section className="flex h-[300px] gap-10 py-20">
       <motion.div
         variants={fadeIn("right", 0.5, 1, 1.2)}
         initial="hidden"

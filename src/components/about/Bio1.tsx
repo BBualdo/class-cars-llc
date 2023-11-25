@@ -11,7 +11,7 @@ const Bio1 = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="flex gap-10"
+      className="flex gap-10 py-20"
     >
       <div className="relative h-[400px] w-[400px] rounded-lg border-4 border-gold shadow-[0_0_40px] shadow-gold/50">
         <Image

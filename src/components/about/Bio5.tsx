@@ -5,7 +5,7 @@ import { fadeIn } from "@/utils/fadeIn";
 
 const Bio5 = () => {
   return (
-    <section className="flex flex-col gap-10 px-10">
+    <section className="gradient-red flex flex-col gap-10 px-10 py-20">
       <motion.p
         variants={fadeIn("down", 0.7, 1, 1.2)}
         initial="hidden"

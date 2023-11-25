@@ -6,7 +6,7 @@ import { fadeIn } from "@/utils/fadeIn";
 
 const Bio2 = () => {
   return (
-    <section className="flex h-[600px] w-full gap-10">
+    <section className="flex h-[600px] w-full gap-10 py-20">
       <motion.div
         variants={fadeIn("right", 0.5, 1, 1.2)}
         initial="hidden"

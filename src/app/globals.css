@@ -72,4 +72,11 @@ body {
   .gradient-light-gold-mix {
     @apply bg-gradient-to-t from-black via-yellow-100 to-black;
   }
+
+  .gradient-red {
+    @apply bg-gradient-to-b from-black via-red-800 to-slate-500;
+  }
+  .gradient-gray {
+    @apply bg-gradient-to-b from-slate-500 to-white;
+  }
 }
