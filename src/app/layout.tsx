@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/nav/Navbar";
-import { Suspense } from "react";
-
 import { raleway } from "@/fonts/fonts";
 import { StyledEngineProvider } from "@mui/material";
-import Loading from "./loading";
 import Footer from "@/components/footer/Footer";
 import ScrollToTop from "@/components/interface/ScrollToTop";
 

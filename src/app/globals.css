@@ -84,4 +84,8 @@ body {
   .gradient-black_white {
     @apply bg-gradient-to-b from-white to-black;
   }
+
+  .gradient-uae {
+    @apply bg-gradient-to-b from-emerald-600 to-white;
+  }
 }

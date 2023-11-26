@@ -15,13 +15,13 @@ const importPrice: Array<ImportPrice> = [
     id: "2",
     title: "Opłaty Aukcyjne",
     description:
-      "Są ustalane przez domy aukcyjne i zależą od wartości pojazdu, średnia opłata wynosi XXX dolarów.",
+      "Są ustalane przez domy aukcyjne i zależą od wartości pojazdu, średnia opłata wynosi 500 dolarów.",
   },
   {
     id: "3",
     title: "Koszty Transportu Morskiego",
     description:
-      "Dla standardowego samochodu osobowego opłata za fracht morski zaczyna się od XXX dolarów. Dodatkowo, transport lądowy z miejsca aukcji do portu wynosi od XXX dolarów.",
+      "Dla standardowego samochodu osobowego opłata za fracht morski zaczyna się od 1300 dolarów. Dodatkowo, transport lądowy z miejsca aukcji do portu wynosi od 100 dolarów.",
   },
   {
     id: "4",
@@ -39,13 +39,13 @@ const importPrice: Array<ImportPrice> = [
     id: "6",
     title: "Podatek Akcyzowy",
     description:
-      "Stawka akcyzy wynosi 3,1% dla pojazdów z silnikiem do 2,0 litrów, a 18,6% dla silników o większej pojemności. Pojazdy zabytkowe, kolekcjonerskie oraz samochody elektryczne są zwolnione z tego podatku. Dla samochodów hybrydowych obowiązują specjalne stawki akcyzy, które są niższe w porównaniu do tradycyjnych pojazdów spalinowych. Dla pojazdów hybrydowych stawki akcyzowe wynoszą 1,55% dla silników do 2000 cm3 i 9,3% dla silników o pojemności od 2001 do 3500 cm3.",
+      "Stawka akcyzy wynosi 3,1% dla pojazdów z silnikiem do 2,0 litrów, a 18,6% dla silników o większej pojemności. Pojazdy zabytkowe, kolekcjonerskie oraz samochody elektryczne są zwolnione z tego podatku. Dla samochodów hybrydowych obowiązują specjalne stawki akcyzy, które są niższe w porównaniu do tradycyjnych pojazdów spalinowych. Dla pojazdów hybrydowych stawki akcyzowe wynoszą 1,55% dla silników do 2000 cm3 i 9,3% dla silników o pojemności od 2001 w górę.",
   },
   {
     id: "7",
     title: "Opłata za Usługi Firma ClassCars",
     description:
-      "Firma pobiera opłatę w wysokości XXX dolarów za kompleksową obsługę procesu importu i załatwienie wszystkich formalności.",
+      "Firma pobiera opłatę w wysokości 1350 dolarów za kompleksową obsługę procesu importu i załatwienie wszystkich formalności.",
   },
 ];
 
