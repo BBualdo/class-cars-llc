@@ -41,7 +41,8 @@ const ContactForm = () => {
   }
 
   return (
-    <section className="p-20 text-black">
+    <section className="flex flex-1 flex-col gap-10 text-black">
+      <h2 className="text-center uppercase text-black">Napisz do Nas</h2>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
           <FormField
