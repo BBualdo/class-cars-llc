@@ -30,7 +30,7 @@ const Conditions = () => {
   ));
 
   return (
-    <section className="flex flex-col items-center py-10 xs:px-4 md:px-20">
+    <section className="gradient-gotham-mix flex flex-col items-center py-10 xs:px-4 md:px-20">
       <motion.h2
         variants={fadeIn("right", 0.5, 1, 1.2)}
         initial="hidden"
