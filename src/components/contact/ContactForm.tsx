@@ -41,7 +41,7 @@ const ContactForm = () => {
   }
 
   return (
-    <section className="gradient-light-gold p-20 text-black">
+    <section className="p-20 text-black">
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
           <FormField
