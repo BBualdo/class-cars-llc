@@ -1,17 +1,33 @@
+"use client";
+
+import { fadeIn } from "@/utils/fadeIn";
 import { MailOutline, Place, WhatsApp } from "@mui/icons-material";
+import { motion } from "framer-motion";
 
 const Banner2 = () => {
   return (
     <section className="flex gap-2 py-10 xs:px-4 xs:max-lg:flex-col md:px-20">
-      <div className="gradient-gotham flex flex-1 items-center justify-center gap-4 p-2 text-white shadow-2xl shadow-black">
+      <motion.div
+        variants={fadeIn("right", 0.5, 1, 1.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="gradient-gotham flex flex-1 items-center justify-center gap-4 p-2 text-white shadow-2xl shadow-black"
+      >
         <Place className="text-[40px]" />
         <div className="font-bold">
           <p>Office 1F15, Dawood Building,</p>
           <p>Hor Al Anz Deira,</p>
           <p>Dubai United Arab Emirates</p>
         </div>
-      </div>
-      <div className="gradient-gotham flex flex-1 items-center justify-center gap-4 p-2 text-white shadow-2xl shadow-black">
+      </motion.div>
+      <motion.div
+        variants={fadeIn("right", 1, 1, 1.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="gradient-gotham flex flex-1 items-center justify-center gap-4 p-2 text-white shadow-2xl shadow-black"
+      >
         <MailOutline className="text-[40px]" />
         <div className="flex flex-col gap-2">
           <a
@@ -27,8 +43,14 @@ const Banner2 = () => {
             classcars.uae@gmail.com
           </a>
         </div>
-      </div>
-      <div className="gradient-gotham flex flex-1 items-center justify-center gap-4 p-2 text-white shadow-2xl shadow-black">
+      </motion.div>
+      <motion.div
+        variants={fadeIn("right", 1.5, 1, 1.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="gradient-gotham flex flex-1 items-center justify-center gap-4 p-2 text-white shadow-2xl shadow-black"
+      >
         <WhatsApp className="text-[40px]" />
         <a
           href="tel:+971509021467"
@@ -36,7 +58,7 @@ const Banner2 = () => {
         >
           +971.50.902.1467
         </a>
-      </div>
+      </motion.div>
     </section>
   );
 };

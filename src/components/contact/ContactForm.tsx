@@ -14,6 +14,8 @@ import {
 import { Input } from "@/shadcomponents/ui/input";
 import { Button } from "@/shadcomponents/ui/button";
 import { Textarea } from "@/shadcomponents/ui/textarea";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/utils/fadeIn";
 
 const formSchema = z.object({
   name: z
@@ -41,7 +43,13 @@ const ContactForm = () => {
   }
 
   return (
-    <section className="flex flex-1 flex-col gap-10 text-black">
+    <motion.section
+      variants={fadeIn("right", 0.3, 1, 1.2)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className="flex flex-1 flex-col gap-10 text-black"
+    >
       <h2 className="text-center uppercase text-black">Napisz do Nas</h2>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
@@ -94,7 +102,7 @@ const ContactForm = () => {
           <Button type="submit">Wyślij</Button>
         </form>
       </Form>
-    </section>
+    </motion.section>
   );
 };
 
