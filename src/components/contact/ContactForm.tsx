@@ -31,8 +31,6 @@ const formSchema = z.object({
     .max(2000, { message: "Wiadomość jest za długa." }),
 });
 
-console.log(config);
-
 const ContactForm = () => {
   const formRef = useRef<any>();
   const form = useForm<z.infer<typeof formSchema>>({
@@ -69,7 +67,7 @@ const ContactForm = () => {
         <form
           ref={formRef}
           onSubmit={form.handleSubmit(onSubmit)}
-          className="space-y-4"
+          className="space-y-4 font-bold"
         >
           <FormField
             control={form.control}
@@ -117,7 +115,12 @@ const ContactForm = () => {
               </FormItem>
             )}
           />
-          <Button type="submit">Wyślij</Button>
+          <Button
+            type="submit"
+            className="w-full font-bold uppercase tracking-widest"
+          >
+            Wyślij
+          </Button>
         </form>
       </Form>
     </motion.section>
