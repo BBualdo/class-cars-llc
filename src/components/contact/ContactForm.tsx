@@ -19,6 +19,7 @@ import { fadeIn } from "@/utils/fadeIn";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { config } from "@/lib/config";
+import { enqueueSnackbar } from "notistack";
 
 const formSchema = z.object({
   name: z
@@ -50,8 +51,18 @@ const ContactForm = () => {
         formRef.current,
         config.publicKey,
       )
-      .then((result) => console.log(result))
-      .catch((error) => console.log(error));
+      .then((result) => {
+        if (result.status === 200) {
+          enqueueSnackbar("Wiadomość wysłana!", { variant: "success" });
+        }
+      })
+      .catch((error) => {
+        if (error) {
+          enqueueSnackbar("Nie udało się wysłać wiadomości.", {
+            variant: "error",
+          });
+        }
+      });
   }
 
   return (
