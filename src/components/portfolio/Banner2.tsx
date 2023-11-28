@@ -6,7 +6,6 @@ import Slider from "../interface/Slider";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/fadeIn";
-import { useState } from "react";
 
 const Banner2 = () => {
   const carElement = cars.map((car) => (
