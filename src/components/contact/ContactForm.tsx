@@ -16,6 +16,9 @@ import { Button } from "@/shadcomponents/ui/button";
 import { Textarea } from "@/shadcomponents/ui/textarea";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/fadeIn";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import { config } from "@/lib/config";
 
 const formSchema = z.object({
   name: z
@@ -28,7 +31,10 @@ const formSchema = z.object({
     .max(2000, { message: "Wiadomość jest za długa." }),
 });
 
+console.log(config);
+
 const ContactForm = () => {
+  const formRef = useRef<any>();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -39,7 +45,15 @@ const ContactForm = () => {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+    emailjs
+      .sendForm(
+        config.serviceId,
+        config.templateId,
+        formRef.current,
+        config.publicKey,
+      )
+      .then((result) => console.log(result))
+      .catch((error) => console.log(error));
   }
 
   return (
@@ -52,7 +66,11 @@ const ContactForm = () => {
     >
       <h2 className="text-center uppercase text-black">Napisz do Nas</h2>
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+        <form
+          ref={formRef}
+          onSubmit={form.handleSubmit(onSubmit)}
+          className="space-y-4"
+        >
           <FormField
             control={form.control}
             name="name"
