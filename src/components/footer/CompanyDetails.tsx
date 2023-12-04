@@ -15,9 +15,9 @@ const CompanyDetails = () => {
         <br />
         Office 1F15, Dawood Building,
         <br />
-        Hor Al Anz Deira,
+        Hor Al Anz - Deira,
         <br />
-        Dubai United Arab Emirates
+        Dubai - United Arab Emirates
       </p>
     </div>
   );

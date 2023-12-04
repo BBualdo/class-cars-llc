@@ -19,7 +19,7 @@ const Conversation = () => {
           href="tel:+971509021467"
           className="inline text-white transition-all duration-200 hover:text-gold"
         >
-          +971.50.902.1467
+          +971-50-902-1467
         </a>
       </div>
     </div>

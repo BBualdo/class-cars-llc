@@ -23,7 +23,7 @@ const Banner1 = () => {
           priority
         />
       </motion.div>
-      <div className="flex w-full flex-col items-center justify-center gap-4 bg-black px-10 xs:h-[400px] md:h-[600px]">
+      <div className="flex w-full flex-col items-center gap-4 bg-black px-10 xs:h-[400px] xs:pt-10 md:h-[600px] md:pt-20">
         <motion.h1
           variants={fadeIn("down", 0.8, 1, 1.2)}
           initial="hidden"
@@ -38,7 +38,7 @@ const Banner1 = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className={`z-10 text-center text-[24px] font-extrabold text-white xs:max-md:text-[14px] md:w-5/6 lg:w-1/2`}
+          className={`z-10 text-center text-[20px] font-extrabold text-white xs:max-md:text-[12px] md:w-5/6 lg:w-1/2`}
         >
           W świecie importu samochodów, szczegóły są kluczem do sukcesu. Dzięki
           naszej obecności w Dubaju, oferujemy kompleksową usługę importu

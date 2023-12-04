@@ -16,9 +16,8 @@ const Banner2 = () => {
       >
         <Place className="text-[40px]" />
         <div className="font-bold">
-          <p>Office 1F15, Dawood Building,</p>
-          <p>Hor Al Anz Deira,</p>
-          <p>Dubai United Arab Emirates</p>
+          <p>Hor Al Anz - Deira</p>
+          <p>Dubai - United Arab Emirates</p>
         </div>
       </motion.div>
       <motion.div
@@ -56,7 +55,7 @@ const Banner2 = () => {
           href="tel:+971509021467"
           className="inline text-white transition-all duration-200 hover:text-gold"
         >
-          +971.50.902.1467
+          +971-50-902-1467
         </a>
       </motion.div>
     </section>

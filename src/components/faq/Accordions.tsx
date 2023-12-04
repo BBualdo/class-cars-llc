@@ -32,7 +32,7 @@ const Accordions = () => {
         <Accordion
           expanded={expanded === "question-1"}
           onChange={(_, isExpanded) => handleChange(isExpanded, "question-1")}
-          className="gradient-gotham-mix group py-4"
+          className="gradient-gotham-mix group border-2 border-gold/50 py-4"
         >
           <AccordionSummary
             id="question-1"
@@ -74,7 +74,7 @@ const Accordions = () => {
         <Accordion
           expanded={expanded === "question-2"}
           onChange={(_, isExpanded) => handleChange(isExpanded, "question-2")}
-          className="gradient-gotham-mix group py-4"
+          className="gradient-gotham-mix group border-2 border-gold/50 py-4"
         >
           <AccordionSummary
             id="question-2"
@@ -143,7 +143,7 @@ const Accordions = () => {
         <Accordion
           expanded={expanded === "question-3"}
           onChange={(_, isExpanded) => handleChange(isExpanded, "question-3")}
-          className="gradient-gotham-mix group py-4"
+          className="gradient-gotham-mix group border-2 border-gold/50 py-4"
         >
           <AccordionSummary
             id="question-3"
@@ -183,7 +183,7 @@ const Accordions = () => {
         <Accordion
           expanded={expanded === "question-4"}
           onChange={(_, isExpanded) => handleChange(isExpanded, "question-4")}
-          className="gradient-gotham-mix group py-4"
+          className="gradient-gotham-mix group border-2 border-gold/50 py-4"
         >
           <AccordionSummary
             id="question-4"
@@ -251,7 +251,7 @@ const Accordions = () => {
         <Accordion
           expanded={expanded === "question-5"}
           onChange={(_, isExpanded) => handleChange(isExpanded, "question-5")}
-          className="gradient-gotham-mix group  py-4"
+          className="gradient-gotham-mix group  border-2 border-gold/50 py-4"
         >
           <AccordionSummary
             id="question-5"
@@ -315,7 +315,7 @@ const Accordions = () => {
         <Accordion
           expanded={expanded === "question-6"}
           onChange={(_, isExpanded) => handleChange(isExpanded, "question-6")}
-          className="gradient-gotham-mix group py-4"
+          className="gradient-gotham-mix group border-2 border-gold/50 py-4"
         >
           <AccordionSummary
             id="question-6"
@@ -397,7 +397,7 @@ const Accordions = () => {
         <Accordion
           expanded={expanded === "question-7"}
           onChange={(_, isExpanded) => handleChange(isExpanded, "question-7")}
-          className="gradient-gotham-mix group py-4"
+          className="gradient-gotham-mix group border-2 border-gold/50 py-4"
         >
           <AccordionSummary
             id="question-7"
@@ -469,7 +469,7 @@ const Accordions = () => {
         <Accordion
           expanded={expanded === "question-8"}
           onChange={(_, isExpanded) => handleChange(isExpanded, "question-8")}
-          className="gradient-gotham-mix group py-4"
+          className="gradient-gotham-mix group border-2 border-gold/50 py-4"
         >
           <AccordionSummary
             id="question-8"
@@ -581,7 +581,7 @@ const Accordions = () => {
         <Accordion
           expanded={expanded === "question-9"}
           onChange={(_, isExpanded) => handleChange(isExpanded, "question-9")}
-          className="gradient-gotham-mix group py-4"
+          className="gradient-gotham-mix group border-2 border-gold/50 py-4"
         >
           <AccordionSummary
             id="question-9"
@@ -622,7 +622,7 @@ const Accordions = () => {
         <Accordion
           expanded={expanded === "question-10"}
           onChange={(_, isExpanded) => handleChange(isExpanded, "question-10")}
-          className="gradient-gotham-mix group py-4"
+          className="gradient-gotham-mix group border-2 border-gold/50 py-4"
         >
           <AccordionSummary
             id="question-10"
@@ -658,7 +658,7 @@ const Accordions = () => {
         <Accordion
           expanded={expanded === "question-11"}
           onChange={(_, isExpanded) => handleChange(isExpanded, "question-11")}
-          className="gradient-gotham-mix group py-4"
+          className="gradient-gotham-mix group border-2 border-gold/50 py-4"
         >
           <AccordionSummary
             id="question-11"
@@ -692,7 +692,7 @@ const Accordions = () => {
         <Accordion
           expanded={expanded === "question-12"}
           onChange={(_, isExpanded) => handleChange(isExpanded, "question-12")}
-          className="gradient-gotham-mix group py-4"
+          className="gradient-gotham-mix group border-2 border-gold/50 py-4"
         >
           <AccordionSummary
             id="question-12"
@@ -729,7 +729,7 @@ const Accordions = () => {
         <Accordion
           expanded={expanded === "question-13"}
           onChange={(_, isExpanded) => handleChange(isExpanded, "question-13")}
-          className="gradient-gotham-mix group py-4"
+          className="gradient-gotham-mix group border-2 border-gold/50 py-4"
         >
           <AccordionSummary
             id="question-13"
@@ -763,7 +763,7 @@ const Accordions = () => {
         <Accordion
           expanded={expanded === "question-14"}
           onChange={(_, isExpanded) => handleChange(isExpanded, "question-14")}
-          className="gradient-gotham-mix group py-4"
+          className="gradient-gotham-mix group border-2 border-gold/50 py-4"
         >
           <AccordionSummary
             id="question-14"
@@ -801,7 +801,7 @@ const Accordions = () => {
         <Accordion
           expanded={expanded === "question-15"}
           onChange={(_, isExpanded) => handleChange(isExpanded, "question-15")}
-          className="gradient-gotham-mix group py-4"
+          className="gradient-gotham-mix group border-2 border-gold/50 py-4"
         >
           <AccordionSummary
             id="question-15"
@@ -846,7 +846,7 @@ const Accordions = () => {
         <Accordion
           expanded={expanded === "question-16"}
           onChange={(_, isExpanded) => handleChange(isExpanded, "question-16")}
-          className="gradient-gotham-mix group py-4"
+          className="gradient-gotham-mix group border-2 border-gold/50 py-4"
         >
           <AccordionSummary
             id="question-16"
@@ -913,7 +913,7 @@ const Accordions = () => {
         <Accordion
           expanded={expanded === "question-17"}
           onChange={(_, isExpanded) => handleChange(isExpanded, "question-17")}
-          className="gradient-gotham-mix group py-4"
+          className="gradient-gotham-mix group border-2 border-gold/50 py-4"
         >
           <AccordionSummary
             id="question-17"
@@ -978,7 +978,7 @@ const Accordions = () => {
         <Accordion
           expanded={expanded === "question-18"}
           onChange={(_, isExpanded) => handleChange(isExpanded, "question-18")}
-          className="gradient-gotham-mix group py-4"
+          className="gradient-gotham-mix group border-2 border-gold/50 py-4"
         >
           <AccordionSummary
             id="question-18"
@@ -1011,7 +1011,7 @@ const Accordions = () => {
         <Accordion
           expanded={expanded === "question-19"}
           onChange={(_, isExpanded) => handleChange(isExpanded, "question-19")}
-          className="gradient-gotham-mix group py-4 text-white"
+          className="gradient-gotham-mix group border-2 border-gold/50 py-4 text-white"
         >
           <AccordionSummary
             id="question-19"

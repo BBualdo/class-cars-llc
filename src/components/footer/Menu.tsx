@@ -11,8 +11,8 @@ const Menu = () => {
   const fullName = (linkName: string) => {
     if (linkName === "Import") {
       return "Proces Importu";
-    } else if (linkName === "Cena") {
-      return "Cena Importu";
+    } else if (linkName === "Koszty") {
+      return "Koszty Importu";
     } else {
       return linkName;
     }
