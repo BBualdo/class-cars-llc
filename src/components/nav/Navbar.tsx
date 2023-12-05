@@ -7,7 +7,7 @@ import { links1, links2 } from "@/data/navbar-links";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
 
-import { Place, WhatsApp } from "@mui/icons-material";
+import { Facebook, Instagram, Place, WhatsApp } from "@mui/icons-material";
 
 import { motion, useCycle } from "framer-motion";
 import { useRef } from "react";
@@ -90,7 +90,7 @@ const Navbar = () => {
             ref={containerRef}
           >
             <motion.div
-              className="gradient-gotham_hover absolute left-0 top-0 z-50 h-[440px] w-[50vw] rounded-b-lg"
+              className="gradient-gotham_hover absolute left-0 top-0 z-50 h-[520px] w-[50vw] rounded-b-lg"
               variants={sidebar}
             >
               <MobileNavLinks toggle={() => toggleOpen()} />
@@ -110,25 +110,49 @@ const Navbar = () => {
             priority
           />
         </Link>
-        <div className="flex flex-1 items-center gap-1 xs:max-md:hidden">
-          <a
-            href="https://www.google.com/maps/place/Dawood+1+Building/@25.1856739,55.4077182,19.25z/data=!4m6!3m5!1s0x3e5f612bff6895ef:0x3437adf8fd6ccad2!8m2!3d25.1855853!4d55.4081599!16s%2Fg%2F11c5_vrlvw?entry=ttu"
-            target="_blank"
-            className="flex items-center gap-1 text-gold transition-all duration-200 hover:text-white"
-          >
-            <Place />
-            Znajdź nas
-          </a>
+        <div className="flex flex-1 gap-10 xs:max-md:hidden">
+          <div className="flex items-center gap-1">
+            <a
+              href="https://www.google.com/maps/place/Dawood+1+Building/@25.1856739,55.4077182,19.25z/data=!4m6!3m5!1s0x3e5f612bff6895ef:0x3437adf8fd6ccad2!8m2!3d25.1855853!4d55.4081599!16s%2Fg%2F11c5_vrlvw?entry=ttu"
+              target="_blank"
+              className="flex items-center gap-1 text-gold transition-all duration-200 hover:text-white"
+            >
+              <Place />
+              Znajdź nas
+            </a>
+          </div>
+          <div className="flex items-center gap-1">
+            <a
+              href="tel:+971509021467"
+              className="flex items-center gap-1 text-gold transition-all duration-200 hover:text-white"
+            >
+              <WhatsApp />
+              WhatsApp
+            </a>
+          </div>
         </div>
+
         <div className="relative top-8 flex-1 border-b border-black xs:max-md:hidden"></div>
-        <div className="flex flex-1 items-center justify-end gap-1 xs:max-md:hidden">
-          <a
-            href="tel:+971509021467"
-            className="flex items-center gap-1 text-gold transition-all duration-200 hover:text-white"
-          >
-            <WhatsApp />
-            WhatsApp
-          </a>
+        <div className="flex flex-1 justify-end gap-10 xs:max-md:hidden">
+          <div className="flex items-center gap-1">
+            <a
+              href="https://www.facebook.com/ClassCars.LLC/"
+              className="flex items-center gap-1 text-gold transition-all duration-200 hover:text-white"
+            >
+              <Facebook />
+              Facebook
+            </a>
+          </div>
+
+          <div className="flex items-center gap-1">
+            <a
+              href="https://www.instagram.com/classcars.lifestyle/"
+              className="flex items-center gap-1 text-gold transition-all duration-200 hover:text-white"
+            >
+              <Instagram />
+              Instagram
+            </a>
+          </div>
         </div>
       </div>
       <div className="min-w-5/6 flex flex-1 -skew-x-12 items-center justify-between uppercase xs:max-md:hidden">

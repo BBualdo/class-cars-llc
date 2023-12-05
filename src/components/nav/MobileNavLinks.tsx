@@ -6,7 +6,7 @@ import { links1, links2 } from "@/data/navbar-links";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
-import { Place, WhatsApp } from "@mui/icons-material";
+import { Facebook, Instagram, Place, WhatsApp } from "@mui/icons-material";
 
 const variants = {
   open: {
@@ -46,7 +46,7 @@ export const MobileNavLinks = ({ toggle }: { toggle: () => void }) => {
         <a
           href="https://www.google.com/maps/place/Dawood+1+Building/@25.1856739,55.4077182,19.25z/data=!4m6!3m5!1s0x3e5f612bff6895ef:0x3437adf8fd6ccad2!8m2!3d25.1855853!4d55.4081599!16s%2Fg%2F11c5_vrlvw?entry=ttu"
           target="_blank"
-          className="flex items-center gap-1 text-gold transition-all duration-200 hover:text-white"
+          className="flex items-center gap-1 normal-case text-gold transition-all duration-200 hover:text-white"
         >
           <Place />
           Znajdź nas
@@ -57,6 +57,21 @@ export const MobileNavLinks = ({ toggle }: { toggle: () => void }) => {
         >
           <WhatsApp />
           WhatsApp
+        </a>
+        <a
+          href="https://www.facebook.com/ClassCars.LLC/"
+          target="_blank"
+          className="flex items-center gap-1 normal-case text-gold transition-all duration-200 hover:text-white"
+        >
+          <Facebook />
+          Facebook
+        </a>
+        <a
+          href="https://www.instagram.com/classcars.lifestyle/"
+          className="flex items-center gap-1 normal-case text-gold transition-all duration-200 hover:text-white"
+        >
+          <Instagram />
+          Instagram
         </a>
       </div>
     </motion.div>
