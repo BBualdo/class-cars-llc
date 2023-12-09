@@ -48,9 +48,10 @@ const Navbar = () => {
       className={clsx(
         "py-2 text-center font-bold transition-all duration-300 md:w-[120px] lg:w-[180px]",
         {
-          "gradient-gold text-black": pathname === link.href,
+          "gradient-gold text-black": pathname === link.href + "/",
 
-          "hover:gradient-gold_hover bg-transparent": pathname !== link.href,
+          "hover:gradient-gold_hover bg-transparent":
+            pathname !== link.href + "/",
         },
       )}
     >
@@ -65,9 +66,10 @@ const Navbar = () => {
       className={clsx(
         "py-2 text-center font-bold transition-all duration-300 md:w-[120px] lg:w-[180px]",
         {
-          "gradient-gold text-black": pathname === link.href,
+          "gradient-gold text-black": pathname === link.href + "/",
 
-          "hover:gradient-gold_hover bg-transparent": pathname !== link.href,
+          "hover:gradient-gold_hover bg-transparent":
+            pathname !== link.href + "/",
         },
       )}
     >

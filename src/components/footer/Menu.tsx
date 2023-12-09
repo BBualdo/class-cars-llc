@@ -23,8 +23,8 @@ const Menu = () => {
       key={link.key}
       href={link.href}
       className={clsx("transition-all duration-200 hover:text-gold", {
-        "text-gold": link.href === pathname,
-        "text-white": link.href !== pathname,
+        "text-gold": link.href + "/" === pathname,
+        "text-white": link.href + "/" !== pathname,
       })}
     >
       {fullName(link.name)}

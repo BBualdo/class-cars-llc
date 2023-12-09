@@ -33,9 +33,9 @@ export const MobileNavLinks = ({ toggle }: { toggle: () => void }) => {
           className={clsx(
             "w-full px-7 py-2 font-bold transition-all duration-300",
             {
-              "gradient-gold text-black": pathname === link.href,
+              "gradient-gold text-black": pathname === link.href + "/",
               "hover:gradient-gold_hover bg-transparent":
-                pathname !== link.href,
+                pathname !== link.href + "/",
             },
           )}
         >
