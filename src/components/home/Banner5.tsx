@@ -32,7 +32,7 @@ const Banner5 = () => {
           nienaruszonym stanie.
         </p>
         <Link
-          href="/portfolio"
+          href="/samochody-z-dubaju"
           className="gradient-gotham hover:gradient-gotham_hover rounded-full text-center font-bold text-white transition-all duration-200 xs:mt-6 xs:px-4 xs:py-2 xs:max-md:text-[10px] md:mt-12 md:px-12 md:py-4"
         >
           Odkryj naszą wyjątkową kolekcję samochodów!

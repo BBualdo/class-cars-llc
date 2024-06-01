@@ -31,7 +31,7 @@ const Banner2 = () => {
           przejrzysty. Wybierz klasę i komfort, jakiego szukasz, a my zadbamy o
           resztę.
         </p>
-        <Link href="/import" className="peer z-10 w-full py-5">
+        <Link href="/import-auta-z-dubaju" className="peer z-10 w-full py-5">
           <div className="peer flex w-full items-center justify-center font-bold uppercase text-white xs:gap-4 xs:text-[12px] md:gap-10 md:text-[24px] lg:text-[32px]">
             Sprawdź jak to działa
             <KeyboardDoubleArrowRight className="xs:text-base md:text-[40px] lg:text-[60px]" />
