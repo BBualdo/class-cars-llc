@@ -19,7 +19,7 @@ import { fadeIn } from "@/utils/fadeIn";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { config } from "@/lib/config";
-import { enqueueSnackbar } from "notistack";
+import { enqueueSnackbar, SnackbarProvider } from "notistack";
 
 const formSchema = z.object({
   name: z
@@ -66,75 +66,77 @@ const ContactForm = () => {
   }
 
   return (
-    <motion.section
-      variants={fadeIn("right", 0.3, 1, 1.2)}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true }}
-      className="flex flex-1 flex-col gap-10 text-black"
-    >
-      <h2 className="text-center uppercase text-black">Napisz do Nas</h2>
-      <Form {...form}>
-        <form
-          ref={formRef}
-          onSubmit={form.handleSubmit(onSubmit)}
-          className="space-y-4 font-bold"
-        >
-          <FormField
-            control={form.control}
-            name="name"
-            render={({ field }) => (
-              <FormItem>
-                <div className="flex items-center justify-between">
-                  <FormLabel>Imię i Nazwisko</FormLabel>
-                  <FormMessage />
-                </div>
-                <FormControl>
-                  <Input placeholder="Jan Kowalski" {...field} />
-                </FormControl>
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="email"
-            render={({ field }) => (
-              <FormItem>
-                <div className="flex items-center justify-between">
-                  <FormLabel>Email</FormLabel>
-                  <FormMessage />
-                </div>
-                <FormControl>
-                  <Input placeholder="jan.kowalski@gmail.com" {...field} />
-                </FormControl>
-              </FormItem>
-            )}
-          />
-          <FormField
-            control={form.control}
-            name="message"
-            render={({ field }) => (
-              <FormItem>
-                <div className="flex items-center justify-between">
-                  <FormLabel>Wiadomość</FormLabel>
-                  <FormMessage />
-                </div>
-
-                <FormControl>
-                  <Textarea placeholder="Jak możemy pomóc?" {...field} />
-                </FormControl>
-              </FormItem>
-            )}
-          />
-          <Button
-            type="submit"
-            className="w-full font-bold uppercase tracking-widest"
+    <SnackbarProvider>
+      <motion.section
+        variants={fadeIn("right", 0.3, 1, 1.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true }}
+        className="flex flex-1 flex-col gap-10 text-black"
+      >
+        <h2 className="text-center uppercase text-black">Napisz do Nas</h2>
+        <Form {...form}>
+          <form
+            ref={formRef}
+            onSubmit={form.handleSubmit(onSubmit)}
+            className="space-y-4 font-bold"
           >
-            Wyślij
-          </Button>
-        </form>
-      </Form>
-    </motion.section>
+            <FormField
+              control={form.control}
+              name="name"
+              render={({ field }) => (
+                <FormItem>
+                  <div className="flex items-center justify-between">
+                    <FormLabel>Imię i Nazwisko</FormLabel>
+                    <FormMessage />
+                  </div>
+                  <FormControl>
+                    <Input placeholder="Jan Kowalski" {...field} />
+                  </FormControl>
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <div className="flex items-center justify-between">
+                    <FormLabel>Email</FormLabel>
+                    <FormMessage />
+                  </div>
+                  <FormControl>
+                    <Input placeholder="jan.kowalski@gmail.com" {...field} />
+                  </FormControl>
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="message"
+              render={({ field }) => (
+                <FormItem>
+                  <div className="flex items-center justify-between">
+                    <FormLabel>Wiadomość</FormLabel>
+                    <FormMessage />
+                  </div>
+
+                  <FormControl>
+                    <Textarea placeholder="Jak możemy pomóc?" {...field} />
+                  </FormControl>
+                </FormItem>
+              )}
+            />
+            <Button
+              type="submit"
+              className="w-full font-bold uppercase tracking-widest"
+            >
+              Wyślij
+            </Button>
+          </form>
+        </Form>
+      </motion.section>
+    </SnackbarProvider>
   );
 };
 

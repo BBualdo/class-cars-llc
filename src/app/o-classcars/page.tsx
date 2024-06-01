@@ -1,7 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
-
 import Banner1 from "@/components/about/Banner1";
 import Bio1 from "@/components/about/Bio1";
 import Bio2 from "@/components/about/Bio2";
@@ -9,24 +5,22 @@ import Bio3 from "@/components/about/Bio3";
 import Bio4 from "@/components/about/Bio4";
 import Bio5 from "@/components/about/Bio5";
 import Bio6 from "@/components/about/Bio6";
-import { allison } from "@/fonts/fonts";
-import { fadeIn } from "@/utils/fadeIn";
 import Bio7 from "@/components/about/Bio7";
+import OwnerName from "@/components/about/OwnerName";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Importer Samochodów z Dubaju do Polski i Europy | ClassCars",
+  description:
+    "Poznaj ClassCars - ekspertów w imporcie samochodów z Dubaju do Polski i Europy. Dowiedz się więcej o naszej misji, wartościach i doświadczeniu w branży motoryzacyjnej. Twoi zaufani specjaliści w imporcie aut z Emiratów Arabskich",
+};
 
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col overflow-hidden">
       <Banner1 />
       <div className="flex flex-col items-center">
-        <motion.h2
-          variants={fadeIn("down", 1.2, 1, 1.2)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className={`${allison.className} gradient-gold bg-clip-text text-[100px] text-transparent xs:max-md:text-[64px]`}
-        >
-          Martin Adam
-        </motion.h2>
+        <OwnerName />
         <Bio1 />
         <Bio2 />
         <Bio3 />

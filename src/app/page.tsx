@@ -3,6 +3,14 @@ import Banner2 from "@/components/home/Banner2";
 import Banner3 from "@/components/home/Banner3";
 import Banner4 from "@/components/home/Banner4";
 import Banner5 from "@/components/home/Banner5";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Auta z Dubaju - Import Samochodów | ClassCars",
+  description:
+    "ClassCars - Twój zaufany partner w imporcie aut z Dubaju do Polski. Oferujemy kompleksową obsługę, bezpieczny transport i atrakcyjne ceny. Sprawdź naszą ofertę!",
+  keywords: ["Auta z Dubaju"],
+};
 
 export default function Home() {
   return (
