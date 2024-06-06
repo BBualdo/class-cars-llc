@@ -1,26 +1,11 @@
-import "./globals.css";
-import Navbar from "@/components/nav/Navbar";
-import { raleway } from "@/fonts/fonts";
-import { StyledEngineProvider } from "@mui/material";
-import Footer from "@/components/footer/Footer";
-import ScrollToTop from "@/components/interface/ScrollToTop";
-import React from "react";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import { config } from "@/lib/config";
-import { GoogleTagManager } from '@next/third-parties/google'
- 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en">
-      <GoogleTagManager gtmId="GTM-5KRGVNK6" />
-      <body>{children}</body>
-    </html>
-  )
-}
+import { GoogleTagManager } from '@next/third-parties/google';
+import { StyledEngineProvider } from '@mui/material/styles';
+import Navbar from '@/components/Navbar';
+import ScrollToTop from '@/components/ScrollToTop';
+import Footer from '@/components/Footer';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
+import { raleway } from '@/styles/fonts';
 
 export default function RootLayout({
   children,
@@ -30,6 +15,7 @@ export default function RootLayout({
   return (
     <StyledEngineProvider injectFirst>
       <html lang="en">
+        <GoogleTagManager gtmId="GTM-5KRGVNK6" />
         <body className={`${raleway.className} antialiased`}>
           <Navbar />
           {children}
