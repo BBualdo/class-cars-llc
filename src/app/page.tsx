@@ -6,7 +6,7 @@ import Banner5 from "@/components/home/Banner5";
 import type { Metadata } from "next";
 import { GoogleTagManager } from '@next/third-parties/google'
  
-export default function Page() {
+export default function Home() {
   return <GoogleTagManager gtmId="GTM-5KRGVNK6" />
 }
 
