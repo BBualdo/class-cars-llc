@@ -4,11 +4,25 @@ import Banner3 from "@/components/home/Banner3";
 import Banner4 from "@/components/home/Banner4";
 import Banner5 from "@/components/home/Banner5";
 import type { Metadata } from "next";
+import { GoogleTagManager } from '@next/third-parties/google'
+ 
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <GoogleTagManager gtmId="GTM-XYZ" />
+      <body>{children}</body>
+    </html>
+  )
+}
 
 export const metadata: Metadata = {
   title: "Auta z Dubaju - Import Samochodów | ClassCars",
   description:
-    "ClassCars - Twój zaufany partner w imporcie aut z Dubaju do Polski. Oferujemy kompleksową obsługę, bezpieczny transport i atrakcyjne ceny. Sprawdź naszą ofertę!",
+    "Twój zaufany partner w imporcie aut z Dubaju do Polski. Oferujemy kompleksową obsługę, bezpieczny transport i atrakcyjne ceny. Sprawdź naszą ofertę!",
   keywords: ["Auta z Dubaju"],
 };
 
