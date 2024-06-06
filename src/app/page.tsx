@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Auta z Dubaju - Import Samochodów | ClassCars",
   description:
-    "ClassCars - Twój zaufany partner w imporcie aut z Dubaju do Polski. Oferujemy kompleksową obsługę, bezpieczny transport i atrakcyjne ceny. Sprawdź naszą ofertę!",
+    "Twój zaufany partner w imporcie aut z Dubaju do Polski. Oferujemy kompleksową obsługę, bezpieczny transport i najniższe ceny. Sprawdź naszą ofertę!",
   keywords: ["Auta z Dubaju"],
 };
 
