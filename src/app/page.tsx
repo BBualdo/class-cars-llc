@@ -6,17 +6,8 @@ import Banner5 from "@/components/home/Banner5";
 import type { Metadata } from "next";
 import { GoogleTagManager } from '@next/third-parties/google'
  
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en">
-      <GoogleTagManager gtmId="GTM-5KRGVNK6" />
-      <body>{children}</body>
-    </html>
-  )
+export default function Page() {
+  return <GoogleTagManager gtmId="GTM-5KRGVNK6" />
 }
 
 export const metadata: Metadata = {
