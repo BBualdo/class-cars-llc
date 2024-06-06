@@ -5,17 +5,6 @@ import Banner4 from "@/components/home/Banner4";
 import Banner5 from "@/components/home/Banner5";
 import type { Metadata } from "next";
 import { GoogleTagManager } from '@next/third-parties/google'
- 
-export default function Home() {
-  return <GoogleTagManager gtmId="GTM-5KRGVNK6" />
-}
-
-export const metadata: Metadata = {
-  title: "Auta z Dubaju - Import Samochodów | ClassCars",
-  description:
-    "Twój zaufany partner w imporcie aut z Dubaju do Polski. Oferujemy kompleksową obsługę, bezpieczny transport i atrakcyjne ceny. Sprawdź naszą ofertę!",
-  keywords: ["Auta z Dubaju"],
-};
 
 export default function Home() {
   return (
@@ -28,3 +17,14 @@ export default function Home() {
     </main>
   );
 }
+
+export function Page() {
+  return <GoogleTagManager gtmId="GTM-5KRGVNK6" />;
+}
+
+export const metadata: Metadata = {
+  title: "Auta z Dubaju - Import Samochodów | ClassCars",
+  description:
+    "Twój zaufany partner w imporcie aut z Dubaju do Polski. Oferujemy kompleksową obsługę, bezpieczny transport i atrakcyjne ceny. Sprawdź naszą ofertę!",
+  keywords: ["Auta z Dubaju"],
+};
