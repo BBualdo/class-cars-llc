@@ -16,13 +16,13 @@ export default function RootLayout({
   return (
     <StyledEngineProvider injectFirst>
       <html lang="en">
+        <GoogleAnalytics gaId={config.gKey} />
         <body className={`${raleway.className} antialiased`}>
           <Navbar />
           {children}
           <ScrollToTop />
           <Footer />
         </body>
-        <GoogleAnalytics gaId={config.gKey} />
       </html>
     </StyledEngineProvider>
   );

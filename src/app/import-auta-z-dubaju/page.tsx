@@ -1,20 +1,6 @@
 import Banner1 from "@/components/import/Banner1";
 import Process from "@/components/import/Process";
 import type { Metadata } from "next";
-import { GoogleTagManager } from '@next/third-parties/google'
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en">
-      <GoogleTagManager gtmId="GTM-5KRGVNK6" />
-      <body>{children}</body>
-    </html>
-  )
-}
 
 export const metadata: Metadata = {
   title: "Import Auta z Dubaju - Bezpieczny i Szybki Proces | ClassCars",
