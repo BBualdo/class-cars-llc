@@ -45,6 +45,15 @@ const Menu = () => {
           Strona Główna
         </Link>
         {linksElements}
+        <Link
+          href={"/blog"}
+          className={clsx("transition-all duration-200 hover:text-gold", {
+            "text-gold": "/blog" + "/" === pathname,
+            "text-white": "/blog" + "/" !== pathname,
+          })}
+        >
+          Blog
+        </Link>
       </div>
     </div>
   );
