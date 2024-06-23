@@ -1,6 +1,7 @@
 import Accordions from "@/components/faq/Accordions";
 import Banner1 from "@/components/faq/Banner1";
 import type { Metadata } from "next";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title:
@@ -12,9 +13,18 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col overflow-hidden text-black">
-      <Banner1 />
-      <Accordions />
-    </main>
+    <>
+      <Head>
+        <link
+          rel="canonical"
+          href="https://classcarsllc.com/import-samochodow-z-dubaju-faq"
+          key="canonical"
+        />
+      </Head>
+      <main className="flex min-h-screen flex-col overflow-hidden text-black">
+        <Banner1 />
+        <Accordions />
+      </main>
+    </>
   );
 }

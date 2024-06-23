@@ -1,6 +1,7 @@
 import ArticleDetails from "@/components/blog/ArticleDetails";
 import { articles } from "@/data/articles";
 import { Metadata } from "next";
+import Head from "next/head";
 
 export function generateMetadata({
   params,
@@ -23,6 +24,17 @@ export function generateStaticParams() {
 export default function Page({ params }: { params: { slug: string } }) {
   const currentArticle = articles.find((a) => a.slug === params.slug);
   if (currentArticle) {
-    return <ArticleDetails currentArticle={currentArticle} />;
+    return (
+      <>
+        <Head>
+          <link
+            rel="canonical"
+            href={`https://classcarsllc.com/blog/${currentArticle!.slug}`}
+            key="canonical"
+          />
+        </Head>
+        <ArticleDetails currentArticle={currentArticle} />
+      </>
+    );
   }
 }

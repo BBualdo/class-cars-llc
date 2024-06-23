@@ -8,6 +8,7 @@ import Bio6 from "@/components/about/Bio6";
 import Bio7 from "@/components/about/Bio7";
 import OwnerName from "@/components/about/OwnerName";
 import type { Metadata } from "next";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Importer Samochodów z Dubaju do Polski i Europy | ClassCars",
@@ -17,18 +18,27 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col overflow-hidden">
-      <Banner1 />
-      <div className="flex flex-col items-center">
-        <OwnerName />
-        <Bio1 />
-        <Bio2 />
-        <Bio3 />
-        <Bio4 />
-        <Bio5 />
-        <Bio6 />
-        <Bio7 />
-      </div>
-    </main>
+    <>
+      <Head>
+        <link
+          rel="canonical"
+          href="https://classcarsllc.com/o-classcars"
+          key="canonical"
+        />
+      </Head>
+      <main className="flex min-h-screen flex-col overflow-hidden">
+        <Banner1 />
+        <div className="flex flex-col items-center">
+          <OwnerName />
+          <Bio1 />
+          <Bio2 />
+          <Bio3 />
+          <Bio4 />
+          <Bio5 />
+          <Bio6 />
+          <Bio7 />
+        </div>
+      </main>
+    </>
   );
 }

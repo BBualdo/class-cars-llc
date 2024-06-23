@@ -1,6 +1,7 @@
 import Banner1 from "@/components/import/Banner1";
 import Process from "@/components/import/Process";
 import type { Metadata } from "next";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Import Auta z Dubaju - Bezpieczny i Szybki Proces | ClassCars",
@@ -11,9 +12,18 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col overflow-hidden">
-      <Banner1 />
-      <Process />
-    </main>
+    <>
+      <Head>
+        <link
+          rel="canonical"
+          href="https://classcarsllc.com/import-auta-z-dubaju"
+          key="canonical"
+        />
+      </Head>
+      <main className="flex min-h-screen flex-col overflow-hidden">
+        <Banner1 />
+        <Process />
+      </main>
+    </>
   );
 }

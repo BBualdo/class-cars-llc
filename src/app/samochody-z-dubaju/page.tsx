@@ -1,6 +1,7 @@
 import Banner1 from "@/components/portfolio/Banner1";
 import Banner2 from "@/components/portfolio/Banner2";
 import type { Metadata } from "next";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Samochody z Dubaju - Portfolio Importowanych Aut | ClassCars",
@@ -11,9 +12,18 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col overflow-hidden text-black">
-      <Banner1 />
-      <Banner2 />
-    </main>
+    <>
+      <Head>
+        <link
+          rel="canonical"
+          href="https://classcarsllc.com/samochody-z-dubaju"
+          key="canonical"
+        />
+      </Head>
+      <main className="flex min-h-screen flex-col overflow-hidden text-black">
+        <Banner1 />
+        <Banner2 />
+      </main>
+    </>
   );
 }
