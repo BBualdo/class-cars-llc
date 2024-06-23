@@ -53,7 +53,10 @@ const ArticleDetails = ({
             <p>Spis treści:</p>
             <ul className="flex flex-col items-start gap-2">
               {currentArticle.sections.map((section) => (
-                <div className="flex cursor-pointer items-center gap-1 transition-all duration-200 hover:text-gold">
+                <div
+                  key={section.id}
+                  className="flex cursor-pointer items-center gap-1 transition-all duration-200 hover:text-gold"
+                >
                   <NavigateNextIcon className="text-base" />
                   <Link smooth to={section.title}>
                     {section.title}
@@ -63,7 +66,10 @@ const ArticleDetails = ({
             </ul>
           </div>
           {currentArticle.sections.map((section) => (
-            <div className="flex gap-2 text-white lg:max-w-[1200px]">
+            <div
+              key={section.id}
+              className="flex gap-2 text-white lg:max-w-[1200px]"
+            >
               <section id={section.title} className="flex flex-col gap-4">
                 <h2>{section.title}</h2>
                 <div className="flex flex-col gap-2">
