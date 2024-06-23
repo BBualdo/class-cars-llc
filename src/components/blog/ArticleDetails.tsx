@@ -42,10 +42,10 @@ const ArticleDetails = ({
           {currentArticle.title}
         </motion.h1>
       </div>
-      <div className="flex justify-center py-10">
+      <div className="flex justify-center py-10 xs:max-lg:px-10">
         <div className="flex flex-col gap-10 lg:min-w-[1200px]">
           <div>
-            <h2 className="max-w-[1200px] text-center text-[20px] text-white">
+            <h2 className="max-w-[1200px] text-center text-white xs:max-md:text-base">
               {currentArticle.description}
             </h2>
           </div>

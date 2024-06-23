@@ -3,7 +3,7 @@ import Link from "next/link";
 const Credits = () => {
   return (
     <div className="flex flex-col items-center border-t border-gray-400 pt-5">
-      <p className="text-gray-400">© Copyright 2023 ClassCarsLLC</p>
+      <p className="text-gray-400">© Copyright 2024 ClassCarsLLC</p>
       <p className="text-gray-400" id="credits" aria-hidden>
         Web Development By:{" "}
         <Link
