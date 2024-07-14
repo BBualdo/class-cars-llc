@@ -6,17 +6,17 @@ import { fadeIn } from "@/utils/fadeIn";
 const Banner6 = () => {
   return (
     <motion.section
-      variants={fadeIn("right", 1, 1, 1.2)}
+      variants={fadeIn("left", 1, 1, 1.2)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
       className="flex w-full items-center justify-center p-4"
     >
       <div className="flex flex-col gap-4 text-white lg:max-w-[1200px]">
-        <h2 className="text-center md:text-[32px] md:leading-[40px] lg:text-[40px]">
+        <h3 className="text-center font-bold xs:text-[20px] md:leading-[24px] lg:text-[32px]">
           Zapraszamy do Lektury
-        </h2>
-        <p className="text-center md:text-base lg:text-[24px]">
+        </h3>
+        <p className="text-center md:text-base lg:text-[20px]">
           Zachęcamy Cię do regularnego odwiedzania naszego bloga i śledzenia
           najnowszych wpisów. Nasza strona to kompendium wiedzy dla każdego
           miłośnika motoryzacji, który myśli o imporcie samochodu. Dowiesz się,

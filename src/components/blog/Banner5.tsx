@@ -13,10 +13,10 @@ const Banner5 = () => {
       className="flex w-full items-center justify-center p-4"
     >
       <div className="flex flex-col gap-4 text-white lg:max-w-[1200px]">
-        <h2 className="text-center md:text-[32px] md:leading-[40px] lg:text-[40px]">
+        <h3 className="text-center font-bold xs:text-[20px] md:leading-[24px] lg:text-[32px]">
           Ciekawostki i Porady
-        </h2>
-        <p className="text-center md:text-base lg:text-[24px]">
+        </h3>
+        <p className="text-center md:text-base lg:text-[20px]">
           Nasz blog to nie tylko twarde fakty, ale również interesujące
           ciekawostki ze świata motoryzacji. Czy wiesz, jakie są najnowsze
           trendy wśród luksusowych samochodów w Dubaju? A może chcesz poznać
