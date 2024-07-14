@@ -1,32 +1,31 @@
 "use client";
 
-import { v4 as uuidv4 } from "uuid";
-import cars from "@/data/cars";
-import Slider from "../interface/Slider";
-
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/fadeIn";
 
 const Banner2 = () => {
-  const carElement = cars.map((car) => (
-    <Slider images={car.images} key={uuidv4()}>
-      <h2 className="text-center text-gold xs:text-[16px] md:text-[14px] lg:text-[20px]">
-        {car.name} <span className="font-normal">({car.year})</span>
-      </h2>
-    </Slider>
-  ));
-
   return (
     <motion.section
-      variants={fadeIn("right", 0.5, 1, 1.2)}
+      variants={fadeIn("", 1, 1, 1.2)}
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className="gradient-gotham-mix"
+      className="flex items-center justify-center p-4 md:py-10"
     >
-      <div className="grid xs:grid-cols-1 xs:max-md:gap-10 md:grid-cols-2 lg:grid-cols-3">
-        {carElement}
-      </div>
+      <h2 className="text-center text-base text-white md:text-xl lg:max-w-[1200px] lg:text-2xl">
+        Witamy w naszym portfolio! Jesteśmy specjalistami w imporcie samochodów
+        z Dubaju, USA oraz Szwecji. Nasza firma oferuje import aut klasycznych,
+        terenowych oraz nowoczesnych pojazdów, które sprowadzamy bezpośrednio z
+        Dubaju, USA i Szwecji do Europy. Dzięki wieloletniemu doświadczeniu i
+        pasji do motoryzacji, zapewniamy naszym klientom tylko najwyższej
+        jakości auta, które spełniają najwyższe standardy. W naszym portfolio
+        znajdziesz ikoniczne modele, takie jak Volkswagen Garbus OVAL, Buick
+        Riviera, Toyota Land Cruiser, Hummer H1, oraz wiele innych. Każdy z tych
+        samochodów przeszedł dokładną kontrolę techniczną, aby zapewnić
+        niezawodność i komfort użytkowania. Zapraszamy do zapoznania się z naszą
+        ofertą i do kontaktu, aby dowiedzieć się więcej o możliwościach importu
+        samochodów z Dubaju.
+      </h2>
     </motion.section>
   );
 };

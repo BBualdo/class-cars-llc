@@ -31,7 +31,7 @@ const Banner1 = () => {
           viewport={{ once: true }}
           className={`${ibarra.className} gradient-sand-beam upper z-10 bg-clip-text text-center font-extrabold text-transparent xs:max-md:text-[40px] xs:max-md:leading-10`}
         >
-          Portfolio
+          Samochody z Dubaju, USA i Szwecji
         </motion.h1>
       </div>
     </section>

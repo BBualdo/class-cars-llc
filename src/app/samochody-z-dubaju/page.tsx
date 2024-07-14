@@ -1,7 +1,8 @@
 import Banner1 from "@/components/portfolio/Banner1";
-import Banner2 from "@/components/portfolio/Banner2";
+import Banner3 from "@/components/portfolio/Banner3";
 import type { Metadata } from "next";
 import Head from "next/head";
+import Banner2 from "@/components/portfolio/Banner2";
 
 export const metadata: Metadata = {
   title: "Samochody z Dubaju - Portfolio Importowanych Aut | ClassCars",
@@ -23,6 +24,7 @@ export default function Page() {
       <main className="flex min-h-screen flex-col overflow-hidden text-black">
         <Banner1 />
         <Banner2 />
+        <Banner3 />
       </main>
     </>
   );
