@@ -7,7 +7,7 @@ import { links1, links2 } from "@/data/navbar-links";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
 
-import { Facebook, Instagram, Place, WhatsApp } from "@mui/icons-material";
+import { Facebook, Instagram, Telegram, WhatsApp } from "@mui/icons-material";
 
 import { motion, useCycle } from "framer-motion";
 import { useRef } from "react";
@@ -115,12 +115,12 @@ const Navbar = () => {
         <div className="flex flex-1 gap-10 xs:max-md:hidden">
           <div className="flex items-center gap-1">
             <a
-              href="https://www.google.com/maps/place/Dawood+1+Building/@25.1856739,55.4077182,19.25z/data=!4m6!3m5!1s0x3e5f612bff6895ef:0x3437adf8fd6ccad2!8m2!3d25.1855853!4d55.4081599!16s%2Fg%2F11c5_vrlvw?entry=ttu"
+              href="https://t.me/+wrcTDAu0w6oxMTI8"
               target="_blank"
               className="flex items-center gap-1 text-gold transition-all duration-200 hover:text-white"
             >
-              <Place />
-              Znajdź nas
+              <Telegram />
+              Telegram
             </a>
           </div>
           <div className="flex items-center gap-1">

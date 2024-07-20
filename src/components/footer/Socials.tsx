@@ -1,4 +1,4 @@
-import { Facebook, Instagram } from "@mui/icons-material";
+import { Facebook, Instagram, Telegram } from "@mui/icons-material";
 import Link from "next/link";
 
 const Socials = () => {
@@ -23,6 +23,15 @@ const Socials = () => {
         >
           <Instagram className="text-[40px]" />
           Instagram
+        </Link>
+        <Link
+          aria-label="Contact us on Telegram"
+          href="https://t.me/+wrcTDAu0w6oxMTI8"
+          target="_blank"
+          className="flex cursor-pointer items-center gap-2 text-white transition-all duration-200 hover:text-gold"
+        >
+          <Telegram className="text-[40px]" />
+          Telegram
         </Link>
       </div>
     </div>
