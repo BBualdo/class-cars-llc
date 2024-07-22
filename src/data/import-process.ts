@@ -78,6 +78,33 @@ const importProcess: Array<ImportProcess> = [
     </p>
     `,
   },
+  {
+    id: "6",
+    title: "Zarządzanie Transportem",
+    description: `
+    <p>
+    Po zakupie zajmiemy się organizacją i koordynacją transportu pojazdu do wybranego miejsca docelowego w Europie.
+    </p>
+    `,
+  },
+  {
+    id: "7",
+    title: "Procedury Celne i Opłaty",
+    description: `
+    <p>
+    Przeprowadzimy wszystkie niezbędne procedury celne i zajmiemy się obliczeniem wszelkich opłat związanych z importem pojazdu w jak najkorzystniejszy dla klienta sposób.
+    </p>
+    `,
+  },
+  {
+    id: "8",
+    title: "Dostawa i Dokumentacja",
+    description: `
+    <p>
+    Na zakończenie, pojazd zostanie dostarczony wraz z pełnym zestawem dokumentów, co zapewni Ci bezproblemową rejestrację pojazdu w kraju.
+    </p>
+    `,
+  },
 ];
 
 export default importProcess;
