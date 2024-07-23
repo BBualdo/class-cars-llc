@@ -31,7 +31,7 @@ const Banner1 = () => {
           viewport={{ once: true }}
           className={`${ibarra.className} gradient-sand-beam z-10 bg-clip-text text-center font-extrabold text-transparent xs:max-md:text-[40px] xs:max-md:leading-10`}
         >
-          Witamy w ClassCars
+          ClassCars - Auta z Dubaju
         </motion.h1>
         <motion.p
           variants={fadeIn("up", 1.2, 1, 1.2)}
@@ -40,10 +40,11 @@ const Banner1 = () => {
           viewport={{ once: true }}
           className={`z-10 text-center text-[20px] font-extrabold text-white xs:max-md:text-[12px] md:w-5/6 lg:w-1/2`}
         >
-          W świecie importu samochodów, szczegóły są kluczem do sukcesu. Dzięki
-          naszej obecności w Dubaju, oferujemy kompleksową usługę importu
-          samochodów z tego egzotycznego rynku. Obsługujemy zarówno klientów
-          indywidualnych, jak i firmy.
+          W świecie importu samochodów, szczegóły są kluczem do sukcesu. 
+          Dzięki naszej obecności w Dubaju, oferujemy kompleksową usługę 
+          sprowadzania samochodów z tego egzotycznego rynku. 
+          Nasza specjalność to wyjątkowe auta, które zadowolą zarówno klientów indywidualnych, jak i firmy. 
+          ClassCars zapewnia najwyższą jakość i pełne wsparcie przy imporcie aut z Dubaju.
         </motion.p>
       </div>
     </section>
