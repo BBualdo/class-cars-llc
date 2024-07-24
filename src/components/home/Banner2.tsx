@@ -20,7 +20,7 @@ const Banner2 = () => {
         <h2
           className={`${alpha.className} gradient-beam bg-clip-text text-center uppercase text-transparent md:text-[40px] lg:text-[52px]`}
         >
-          Import Aut z Dubaju
+          Import Auta z Dubaju
         </h2>
         <p className="text-center font-bold text-white xs:px-4 xs:text-[10px] md:max-w-[730px] md:px-20 md:text-[16px] lg:max-w-[900px] lg:px-10 lg:text-[20px]">
           Specjalizujemy się w imporcie i eksporcie aut z Dubaju do Europy.
@@ -39,7 +39,7 @@ const Banner2 = () => {
         </p>
         <Link href="/import-auta-z-dubaju" className="peer z-10 w-full py-5">
           <div className="peer flex w-full items-center justify-center font-bold uppercase text-white xs:gap-4 xs:text-[12px] md:gap-10 md:text-[24px] lg:text-[32px]">
-            Import Auta z Dubaju - Proces
+            Proces Importu Auta z Dubaju
             <KeyboardDoubleArrowRight className="xs:text-base md:text-[40px] lg:text-[60px]" />
           </div>
         </Link>
