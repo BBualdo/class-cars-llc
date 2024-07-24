@@ -7,7 +7,7 @@ import Banner2 from "@/components/portfolio/Banner2";
 export const metadata: Metadata = {
   title: "Samochody z Dubaju - Portfolio Importowanych Aut | ClassCars",
   description:
-    "Zobacz nasze samochody-z-dubaju samochodów importowanych z Dubaju. Klasyczne, terenowe i kolekcjonerskie auta w najlepszym stanie. ClassCars - Twoje marzenie o idealnym samochodzie.",
+    "Zobacz nasze importowane Samochody z Dubaju. Auta Klasyczne, terenowe i kolekcjonerskie auta w najlepszym stanie. ClassCars - Twoje marzenie o idealnym samochodzie.",
   keywords: ["Samochody z Dubaju"],
 };
 
