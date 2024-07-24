@@ -23,7 +23,7 @@ const Banner2 = () => {
           Import Aut z Dubaju
         </h2>
         <p className="text-center font-bold text-white xs:px-4 xs:text-[10px] md:max-w-[730px] md:px-20 md:text-[16px] lg:max-w-[900px] lg:px-10 lg:text-[20px]">
-          Specjalizujemy się w imporcie luksusowych aut z Dubaju do Europy.
+          Specjalizujemy się w imporcie i eksporcie aut z Dubaju do Europy.
           ClassCars posiada bogate doświadczenie w sprowadzaniu różnych rodzajów samochodów
           w tym aut klasycznych, terenowych, luksusowych oraz kolekcjonerskich.
           Oferujemy kompleksową obsługę na każdym etapie procesu importu. 
