@@ -9,7 +9,7 @@ import Banner5 from "@/components/blog/Banner5";
 import Banner6 from "@/components/blog/Banner6";
 
 export const metadata: Metadata = {
-  title: "Blog | ClassCarsLLC",
+  title: "Blog Motoryzacyjny O Autach z Dubaju | ClassCars",
   description:
     "Interesują Cię samochody z Dubaju? Szukasz porad i ciekawostek dotyczących importu aut? Odwiedź blog ClassCars, aby znaleźć szczegółowe informacje o procesie importu aut oraz najlepszych praktykach zakupu aut z Dubaju.",
 };
