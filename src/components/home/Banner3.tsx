@@ -47,7 +47,7 @@ const Banner3 = () => {
               rozległej wiedzy i doświadczeniu, jesteśmy w stanie zaoferować nie
               tylko najlepsze pojazdy, ale także najkorzystniejsze warunki
               importu. Naszym celem jest zapewnienie, że każdy aspekt procesu
-              importu jest dla Ciebie wygodny, bezpieczny i bezproblemowy.
+              importu auta z Dubaju jest dla Ciebie wygodny, bezpieczny i bezproblemowy.
             </p>
           </div>
         </motion.div>
@@ -70,7 +70,7 @@ const Banner3 = () => {
               starannej selekcji i zakupu pojazdu, poprzez bezpieczny transport,
               aż po kompleksową obsługę celno-prawną transport z portu do kraju
               docelowego. Nasza usługa eliminuje wszelkie wyzwania związane z
-              importem, oferując Ci pełną spokojność i satysfakcję.
+              importem, oferując Ci pełny spokój i satysfakcję.
             </p>
           </div>
         </motion.div>
