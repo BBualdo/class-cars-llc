@@ -41,7 +41,7 @@ const importProcess: Array<ImportProcess> = [
     title: "Podpisanie Umowy i Wpłata Zadatku",
     description: `
     <p>
-    Po podjęciu decyzji o zakupie, formalizujemy proces poprzez zawarcie umowy i wpłacenie zadatku. Umowa precyzyjnie określa warunki transakcji, w tym szczegóły dotyczące wybranego pojazdu oraz harmonogram płatności. Nasz zespół przygotowuje wszystkie niezbędne dokumenty, aby zapewnić przejrzystość i bezpieczeństwo całego procesu.
+    Po podjęciu decyzji o zakupie <a href="https://classcarsllc.com" target="_blank" class="border-b border-white hover:text-gold transition-all duration-200">Auta z Dubaju</a>, formalizujemy proces poprzez zawarcie umowy i wpłacenie zadatku. Umowa precyzyjnie określa warunki transakcji, w tym szczegóły dotyczące wybranego pojazdu oraz harmonogram płatności. Nasz zespół przygotowuje wszystkie niezbędne dokumenty, aby zapewnić przejrzystość i bezpieczeństwo całego procesu.
     </p>
     <p>
     Podpisanie umowy jest kluczowym krokiem, który potwierdza Twoje poważne intencje zakupu oraz zabezpiecza transakcję. Zadatkowana kwota, którą wpłacasz na nasze konto, stanowi zabezpieczenie zarówno dla Ciebie, jak i dla nas, co pozwala nam na rozpoczęcie dalszych działań związanych z importem pojazdu.
