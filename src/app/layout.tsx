@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <StyledEngineProvider injectFirst>
       <html lang="pl-PL">
-        <GoogleAnalytics gaId={config.gKey} />
+        <GoogleAnalytics gaId="G-HPSDS9J65W" />
         <GoogleTagManager gtmId="GTM-5KRGVNK6" />
         <body className={`${raleway.className} antialiased`}>
           <Navbar />
