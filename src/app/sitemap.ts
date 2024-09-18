@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: "https://www.classcarsllc.com/o-classcars",
+      url: "https://www.classcarsllc.com/o-classcars/",
       priority: 0.9,
     },
     {

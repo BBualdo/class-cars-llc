@@ -27,15 +27,18 @@ const Banner5 = () => {
           transportowane w specjalnie przygotowanych kontenerach, które
           gwarantują najwyższy poziom zabezpieczenia. Dzięki starannie
           zaplanowanemu procesowi transportowemu, nasi klienci mogą być spokojni
-          o stan swoich luksusowych pojazdów. W ClassCars każdy samochód jest
+          o stan swoich nowych pojazdów. W ClassCars każdy samochód jest
           traktowany z największą troską, zapewniając, że dotrze do celu w
-          nienaruszonym stanie.
+          nienaruszonym stanie. Dzięki naszej obecności w Zjednoczonych Emiratach
+          Arabskich, auta z Dubaju są przez nas osobiście ładowane do kontenerów
+          oraz fotografowane przed wypłynięciem do Europy. Dokumentacja jest
+          dostarczana klientowi drogą mailową lub przez WhatsApp.
         </p>
         <Link
           href="/samochody-z-dubaju"
           className="gradient-gotham hover:gradient-gotham_hover rounded-full text-center font-bold text-white transition-all duration-200 xs:mt-6 xs:px-4 xs:py-2 xs:max-md:text-[10px] md:mt-12 md:px-12 md:py-4"
         >
-          Odkryj naszą wyjątkową kolekcję samochodów!
+          Nasze Auta - Dubaj, USA, Szwecja
         </Link>
       </motion.div>
 
