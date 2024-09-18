@@ -19,7 +19,7 @@ const Process = () => {
       viewport={{ once: true }}
       onClick={() => setSelectedStep(Number(step.id) - 1)}
       className={clsx(
-        "relative border border-gold py-2 font-bold hover:bg-gold/50 xs:max-md:w-full md:px-5 lg:px-10",
+        "relative border border-gold py-2 font-bold hover:bg-gold/50 md:px-5 lg:px-10",
         {
           "gradient-gold top-[2px] border-b-black text-white":
             Number(step.id) - 1 === selectedStep,
@@ -60,7 +60,7 @@ const Process = () => {
         </span>
       </motion.h2>
       <div className="flex-col items-center justify-center md:w-3/4 md:min-w-[750px] lg:min-w-[1055px]">
-        <div className="mt-12 flex w-full items-center justify-center">
+        <div className="mt-12 flex items-center justify-center xs:max-md:grid xs:max-md:grid-cols-4">
           {stepButtons}
         </div>
         <motion.div
@@ -68,7 +68,7 @@ const Process = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="md:h -[324px] border border-gold bg-black text-center xs:max-md:rounded-b-lg md:rounded-lg"
+          className="border border-gold bg-black text-center xs:max-md:rounded-b-lg md:rounded-lg"
         >
           {steps[selectedStep]}
         </motion.div>
